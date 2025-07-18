@@ -31,7 +31,7 @@ const About = () => {
             className="flex items-center justify-center w-full h-full"
           >
             <p className="flex items-end text-5xl text-gray-500">
-              CODE IS CRAFT
+              CODE IS ART
             </p>
             <Card
               style={{ rotate: "75deg", top: "30%", left: "20%" }}
