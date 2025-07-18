@@ -120,3 +120,5 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
     </div>
   );
 }
+
+//CHANGE NAME
