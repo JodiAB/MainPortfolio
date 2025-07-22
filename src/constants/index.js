@@ -33,7 +33,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/food-ordering.jpg",
+    image: "/assets/projects/food.jpg",
     tags: [
       { id: 1, name: "React Native", path: "/assets/logos/react.svg" },
       { id: 2, name: "Appwrite", path: "/assets/logos/appwrite.svg" },
@@ -56,7 +56,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/cocktails.jpg",
+    image: "/assets/projects/landing.jpg",
     tags: [
       { id: 1, name: "React", path: "/assets/logos/react.svg" },
       { id: 2, name: "GSAP", path: "/assets/logos/gsap.svg" },
@@ -64,71 +64,94 @@ export const myProjects = [
       { id: 4, name: "Vite", path: "/assets/logos/vitejs.svg" }
     ],
   },
-  {
-    id: 4,
-    title: "Travel Agency Dashboard",
-    description:
-      "An admin dashboard for a travel booking app built with React and React Router v7. Includes Syncfusion components, charts, and Gemini AI integration.",
-    subDescription: [
-      "Implemented routing and protected routes using React Router v7.",
-      "Built interactive charts and table views using Syncfusion components.",
-      "Used Gemini AI to enhance destination recommendations and customer support.",
-      "Connected to Appwrite for backend data and authentication."
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/travel-dashboard.jpg",
-    tags: [
-      { id: 1, name: "React", path: "/assets/logos/react.svg" },
-      { id: 2, name: "React Router v7", path: "/assets/logos/rr.svg" },
-      { id: 3, name: "Appwrite", path: "/assets/logos/appwrite.svg" },
-      { id: 4, name: "Gemini AI", path: "/assets/logos/gemini.svg" }
-    ],
-  },
-  {
-    id: 5,
-    title: "LMS SaaS App",
-    description:
-      "A learning management SaaS platform with authentication, payments, and AI voice interactions. Built using Next.js, Supabase, Stripe, and Vapi AI.",
-    subDescription: [
-      "Handled subscriptions and payments via Stripe and Supabase integration.",
-      "Integrated Vapi AI voice assistant for interactive learning support.",
-      "Built responsive UI with TailwindCSS and Next.js 13+ app router.",
-      "Used Sentry for error monitoring and session tracking."
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/saas-app.jpg",
-    tags: [
-      { id: 1, name: "Next.js", path: "/assets/logos/Next.svg" },
-      { id: 2, name: "Supabase", path: "/assets/logos/supabase.svg" },
-      { id: 3, name: "Stripe", path: "/assets/logos/stripe.svg" },
-      { id: 4, name: "Vapi AI", path: "/assets/logos/vapi.png" },
-      { id: 5, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
-      { id: 6, name: "Sentry", path: "/assets/logos/sentry.svg" }
-    ],
-  },
-{
-    id: 6,
-    title: "React Movies App",
-    description:
-      "A hands-on React crash course app demonstrating real-world concepts from JSX to hooks, built with a modern UI and responsive TailwindCSS v4 layout.",
-    subDescription: [
-      "Built a real-world movie browsing UI with React 19 and functional components.",
-      "Used hooks like useState, useEffect, and conditional rendering for dynamic user interactions.",
-      "Implemented responsive layouts and utility-first styling using TailwindCSS v4.",
-      "Provided a simple search and display mechanism for listing and filtering movie data."
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/react-movies.jpg",
-    tags: [
-      { id: 1, name: "React", path: "/assets/logos/react.svg" },
-      { id: 2, name: "TailwindCSS v4", path: "/assets/logos/tailwindcss.svg" },
-      { id: 3, name: "React 19", path: "/assets/logos/react.svg" }
-    ],
-  },
+  // {
+  //   id: 4,
+  //   title: "Travel Agency Dashboard",
+  //   description:
+  //     "An admin dashboard for a travel booking app built with React and React Router v7. Includes Syncfusion components, charts, and Gemini AI integration.",
+  //   subDescription: [
+  //     "Implemented routing and protected routes using React Router v7.",
+  //     "Built interactive charts and table views using Syncfusion components.",
+  //     "Used Gemini AI to enhance destination recommendations and customer support.",
+  //     "Connected to Appwrite for backend data and authentication."
+  //   ],
+  //   href: "",
+  //   logo: "",
+  //   image: "/assets/projects/travel-dashboard.jpg",
+  //   tags: [
+  //     { id: 1, name: "React", path: "/assets/logos/react.svg" },
+  //     { id: 2, name: "React Router v7", path: "/assets/logos/rr.svg" },
+  //     { id: 3, name: "Appwrite", path: "/assets/logos/appwrite.svg" },
+  //     { id: 4, name: "Gemini AI", path: "/assets/logos/gemini.svg" }
+  //   ],
+  // },
+  // {
+  //   id: 5,
+  //   title: "LMS SaaS App",
+  //   description:
+  //     "A learning management SaaS platform with authentication, payments, and AI voice interactions. Built using Next.js, Supabase, Stripe, and Vapi AI.",
+  //   subDescription: [
+  //     "Handled subscriptions and payments via Stripe and Supabase integration.",
+  //     "Integrated Vapi AI voice assistant for interactive learning support.",
+  //     "Built responsive UI with TailwindCSS and Next.js 13+ app router.",
+  //     "Used Sentry for error monitoring and session tracking."
+  //   ],
+  //   href: "",
+  //   logo: "",
+  //   image: "/assets/projects/saas-app.jpg",
+  //   tags: [
+  //     { id: 1, name: "Next.js", path: "/assets/logos/Next.svg" },
+  //     { id: 2, name: "Supabase", path: "/assets/logos/supabase.svg" },
+  //     { id: 3, name: "Stripe", path: "/assets/logos/stripe.svg" },
+  //     { id: 4, name: "Vapi AI", path: "/assets/logos/vapi.png" },
+  //     { id: 5, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
+  //     { id: 6, name: "Sentry", path: "/assets/logos/sentry.svg" }
+  //   ],
+  // },
+// {
+//     id: 6,
+//     title: "React Movies App",
+//     description:
+//       "A hands-on React crash course app demonstrating real-world concepts from JSX to hooks, built with a modern UI and responsive TailwindCSS v4 layout.",
+//     subDescription: [
+//       "Built a real-world movie browsing UI with React 19 and functional components.",
+//       "Used hooks like useState, useEffect, and conditional rendering for dynamic user interactions.",
+//       "Implemented responsive layouts and utility-first styling using TailwindCSS v4.",
+//       "Provided a simple search and display mechanism for listing and filtering movie data."
+//     ],
+//     href: "",
+//     logo: "",
+//     image: "/assets/projects/react-movies.jpg",
+//     tags: [
+//       { id: 1, name: "React", path: "/assets/logos/react.svg" },
+//       { id: 2, name: "TailwindCSS v4", path: "/assets/logos/tailwindcss.svg" },
+//       { id: 3, name: "React 19", path: "/assets/logos/react.svg" }
+//     ],
+//   },
  
+  {
+  id: 4, // Adjust based on order in your array
+  title: "AI Resume Analyzer",
+  description:
+    "AI-powered resume parsing platform built with React and Puter.js. Features smart candidate-job matching, clean UI, and real-time resume handling with seamless authentication and state management.",
+  subDescription: [
+    "Built a modern web app using React 19, TypeScript, and Zustand for global state control.",
+    "Integrated Puter.js for user authentication, resume upload, and secure file storage.",
+    "Implemented AI logic to evaluate and match resumes to job roles using keyword/context extraction.",
+    "Designed a clean, modular UI with reusable components for scalable feature expansion."
+  ],
+  href: "",
+  logo: "",
+  image: "/assets/projects/ai-resume.jpg",
+  tags: [
+    { id: 1, name: "React", path: "/assets/logos/react.svg" },
+    { id: 2, name: "TypeScript", path: "/assets/logos/typescript.svg" },
+    { id: 3, name: "Zustand", path: "/assets/logos/zustand.svg" },
+    { id: 4, name: "Puter.js", path: "/assets/logos/puter.svg" },
+    { id: 5, name: "React router", path: "/assets/logos/react-router.svg" }
+  ]
+}
+
 
 ];
 
