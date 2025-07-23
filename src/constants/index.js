@@ -1,27 +1,27 @@
 export const myProjects = [
+  // {
+  //   id: 4,
+  //   title: "GTA VI Website Clone",
+  //   description:
+  //     "Scroll-driven cinematic website inspired by the GTA VI trailer. Built using React, TailwindCSS, and GSAP to create a responsive, animation-rich experience with parallax, image masking, and pinned sections.",
+  //   subDescription: [
+  //     "Crafted interactive, scroll-synced animations using GSAP and ScrollTrigger.",
+  //     "Implemented image masking and parallax transitions for a cinematic UX.",
+  //     "Ensured full responsiveness across devices with TailwindCSS and React best practices.",
+  //     "Used video syncing and pinned sections to mimic Rockstar’s trailer reveal effects."
+  //   ],
+  //   href: "",
+  //   logo: "",
+  //   image: "/assets/projects/gta6.jpg",
+  //   tags: [
+  //     { id: 1, name: "React", path: "/assets/logos/react.svg" },
+  //     { id: 2, name: "GSAP", path: "/assets/logos/gsap.svg" },
+  //     { id: 3, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
+  //     { id: 4, name: "React 19", path: "/assets/logos/react.svg" }
+  //   ],
+  // },
   {
     id: 1,
-    title: "GTA VI Website Clone",
-    description:
-      "Scroll-driven cinematic website inspired by the GTA VI trailer. Built using React, TailwindCSS, and GSAP to create a responsive, animation-rich experience with parallax, image masking, and pinned sections.",
-    subDescription: [
-      "Crafted interactive, scroll-synced animations using GSAP and ScrollTrigger.",
-      "Implemented image masking and parallax transitions for a cinematic UX.",
-      "Ensured full responsiveness across devices with TailwindCSS and React best practices.",
-      "Used video syncing and pinned sections to mimic Rockstar’s trailer reveal effects."
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/gta6.jpg",
-    tags: [
-      { id: 1, name: "React", path: "/assets/logos/react.svg" },
-      { id: 2, name: "GSAP", path: "/assets/logos/gsap.svg" },
-      { id: 3, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
-      { id: 4, name: "React 19", path: "/assets/logos/react.svg" }
-    ],
-  },
-  {
-    id: 2,
     title: "Food Ordering App",
     description:
       "A mobile food delivery app with a smooth user experience, secure backend, and real-time data. Built using React Native, TypeScript, and Appwrite.",
@@ -31,7 +31,7 @@ export const myProjects = [
       "Used Zustand and NativeWind for global state management and styling.",
       "Tested performance with Expo and Sentry for monitoring crashes and behavior."
     ],
-    href: "",
+    href: "https://github.com/JodiAB/foody",
     logo: "",
     image: "/assets/projects/food.jpg",
     tags: [
@@ -44,7 +44,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     title: "Cocktail Animation Website",
     description:
       "Stylish cocktail recipe site powered by React and GSAP. Featuring SplitText reveals, scroll-based animations, parallax effects, and a custom carousel.",
@@ -54,7 +54,7 @@ export const myProjects = [
       "Implemented parallax scrolling and scroll-triggered content reveals.",
       "Created a custom slider for featured cocktails and categories."
     ],
-    href: "",
+    href: "https://gsap-landing-eight.vercel.app/",
     logo: "",
     image: "/assets/projects/landing.jpg",
     tags: [
@@ -64,6 +64,29 @@ export const myProjects = [
       { id: 4, name: "Vite", path: "/assets/logos/vitejs.svg" }
     ],
   },
+
+    {
+  id: 3, // Adjust based on order in your array
+  title: "AI Resume Analyzer",
+  description:
+    "AI-powered resume parsing platform built with React and Puter.js. Features smart candidate-job matching, clean UI, and real-time resume handling with seamless authentication and state management.",
+  subDescription: [
+    "Built a modern web app using React 19, TypeScript, and Zustand for global state control.",
+    "Integrated Puter.js for user authentication, resume upload, and secure file storage.",
+    "Implemented AI logic to evaluate and match resumes to job roles using keyword/context extraction.",
+    "Designed a clean, modular UI with reusable components for scalable feature expansion."
+  ],
+  href: "https://joding-resume-analyzer.vercel.app/auth?next=/",
+  logo: "",
+  image: "/assets/projects/resume ai.jpg",
+  tags: [
+    { id: 1, name: "React", path: "/assets/logos/react.svg" },
+    { id: 2, name: "TypeScript", path: "/assets/logos/typescript.svg" },
+    { id: 3, name: "Zustand", path: "/assets/logos/zustand.svg" },
+    { id: 4, name: "Puter.js", path: "/assets/logos/puter.svg" },
+    { id: 5, name: "React router", path: "/assets/logos/react-router.svg" }
+  ]
+}
   // {
   //   id: 4,
   //   title: "Travel Agency Dashboard",
@@ -129,28 +152,7 @@ export const myProjects = [
 //     ],
 //   },
  
-  {
-  id: 4, // Adjust based on order in your array
-  title: "AI Resume Analyzer",
-  description:
-    "AI-powered resume parsing platform built with React and Puter.js. Features smart candidate-job matching, clean UI, and real-time resume handling with seamless authentication and state management.",
-  subDescription: [
-    "Built a modern web app using React 19, TypeScript, and Zustand for global state control.",
-    "Integrated Puter.js for user authentication, resume upload, and secure file storage.",
-    "Implemented AI logic to evaluate and match resumes to job roles using keyword/context extraction.",
-    "Designed a clean, modular UI with reusable components for scalable feature expansion."
-  ],
-  href: "",
-  logo: "",
-  image: "/assets/projects/ai-resume.jpg",
-  tags: [
-    { id: 1, name: "React", path: "/assets/logos/react.svg" },
-    { id: 2, name: "TypeScript", path: "/assets/logos/typescript.svg" },
-    { id: 3, name: "Zustand", path: "/assets/logos/zustand.svg" },
-    { id: 4, name: "Puter.js", path: "/assets/logos/puter.svg" },
-    { id: 5, name: "React router", path: "/assets/logos/react-router.svg" }
-  ]
-}
+
 
 
 ];
