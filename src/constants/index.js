@@ -101,14 +101,14 @@ export const myProjects = [
     "Used shadcn/ui with TailwindCSS for a modern, responsive UI.",
     "Error tracking and performance monitoring with Sentry."
   ],
-  href: "joding-saas-app.vercel.app", // update with your repo/demo if different
+  href: "https://joding-saas-app.vercel.app/", 
   logo: "",
-  image: "/assets/projects/saas.png", // update path if you have a banner/preview image
+  image: "/assets/projects/saas.png", 
   tags: [
     { id: 1, name: "Next.js", path: "/assets/logos/next.svg" },
     { id: 2, name: "Supabase", path: "/assets/logos/supabase.svg" },
     { id: 3, name: "Stripe", path: "/assets/logos/stripe.svg" },
-    { id: 4, name: "Clerk", path: "/assets/logos/clerk.svg" },
+    { id: 4, name: "Clerk", path: "/assets/logos/Clerk.svg" },
     { id: 5, name: "Vapi", path: "/assets/logos/vapi.svg" },
     { id: 6, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
     { id: 7, name: "shadcn/ui", path: "/assets/logos/shadcn.svg" },
