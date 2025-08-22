@@ -105,7 +105,7 @@ export const myProjects = [
   logo: "",
   image: "/assets/projects/saas.png", 
   tags: [
-    { id: 1, name: "Next.js", path: "/assets/logos/next.svg" },
+    { id: 1, name: "Next.js", path: "/assets/logos/nextjs.svg" },
     { id: 2, name: "Supabase", path: "/assets/logos/supabase.svg" },
     { id: 3, name: "Stripe", path: "/assets/logos/stripe.svg" },
     { id: 4, name: "Clerk", path: "/assets/logos/Clerk.svg" },
