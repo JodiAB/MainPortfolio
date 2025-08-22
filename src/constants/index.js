@@ -87,6 +87,36 @@ export const myProjects = [
     { id: 5, name: "React router", path: "/assets/logos/react-router.svg" }
   ]
 }
+
+{
+  id: 5,
+  title: "LMS SaaS App",
+  description:
+    "A modern LMS SaaS platform built with Next.js, Supabase, and Stripe, featuring secure authentication, subscription management, and real-time learning experiences. The app also integrates Vapi’s AI voice agent to enable interactive, conversational tutoring sessions.",
+  subDescription: [
+    "Built with Next.js 15 and TypeScript for scalability and performance.",
+    "Integrated Clerk for authentication, subscriptions, and user management.",
+    "Implemented Supabase for real-time database, storage, and session handling.",
+    "Added Vapi AI voice agent for interactive tutoring with speech-to-text and text-to-speech.",
+    "Used shadcn/ui with TailwindCSS for a modern, responsive UI.",
+    "Error tracking and performance monitoring with Sentry."
+  ],
+  href: "joding-saas-app.vercel.app", // update with your repo/demo if different
+  logo: "",
+  image: "/assets/projects/saas.png", // update path if you have a banner/preview image
+  tags: [
+    { id: 1, name: "Next.js", path: "/assets/logos/nextjs.svg" },
+    { id: 2, name: "Supabase", path: "/assets/logos/supabase.svg" },
+    { id: 3, name: "Stripe", path: "/assets/logos/stripe.svg" },
+    { id: 4, name: "Clerk", path: "/assets/logos/clerk.svg" },
+    { id: 5, name: "Vapi", path: "/assets/logos/vapi.svg" },
+    { id: 6, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
+    { id: 7, name: "shadcn/ui", path: "/assets/logos/shadcn.svg" },
+    { id: 8, name: "Sentry", path: "/assets/logos/sentry.svg" },
+    { id: 9, name: "TypeScript", path: "/assets/logos/typescript.svg" }
+  ],
+}
+
   // {
   //   id: 4,
   //   title: "Travel Agency Dashboard",
