@@ -86,7 +86,7 @@ export const myProjects = [
     { id: 4, name: "Puter.js", path: "/assets/logos/puter.svg" },
     { id: 5, name: "React router", path: "/assets/logos/react-router.svg" }
   ]
-}
+},
 
 {
   id: 5,
