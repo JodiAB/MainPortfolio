@@ -89,7 +89,7 @@ export const myProjects = [
 },
 
 {
-  id: 5,
+  id: 4,
   title: "LMS SaaS App",
   description:
     "A modern LMS SaaS platform built with Next.js, Supabase, and Stripe, featuring secure authentication, subscription management, and real-time learning experiences. The app also integrates Vapi’s AI voice agent to enable interactive, conversational tutoring sessions.",
@@ -115,8 +115,59 @@ export const myProjects = [
     { id: 8, name: "Sentry", path: "/assets/logos/sentry.svg" },
     { id: 9, name: "TypeScript", path: "/assets/logos/typescript.svg" }
   ],
-}
+},
 
+{
+  id: 5,
+  title: "Nike-style eCommerce",
+  description:
+    "A sleek eCommerce platform inspired by Nike, built with Next.js, TypeScript, and Devin AI, featuring dynamic product pages, cart functionality, and seamless checkout with Stripe payments. The app leverages Neon PostgreSQL with Drizzle ORM for efficient data management.",
+  subDescription: [
+    "Developed with Next.js 15 and TypeScript for robust performance.",
+    "Integrated Devin AI for enhanced development workflows and automation.",
+    "Used Better Auth for secure authentication and user management.",
+    "Implemented Stripe for secure payment processing and checkout.",
+    "Built with Neon PostgreSQL and Drizzle ORM for scalable database operations.",
+    "Styled with TailwindCSS for a modern, responsive UI."
+  ],
+  href: "https://joding-ecomm.vercel.app/",
+  logo: "",
+  image: "/assets/projects/nike.png",
+  tags: [
+    { id: 1, name: "Next.js", path: "/assets/logos/nextjs.svg" },
+    { id: 2, name: "TypeScript", path: "/assets/logos/typescript.svg" },
+    // { id: 3, name: "Devin AI", path: "/assets/logos/devinai.svg" },
+    { id: 4, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
+    { id: 5, name: "Better Auth", path: "/assets/logos/better.svg" },
+    // { id: 6, name: "Stripe", path: "/assets/logos/stripe.svg" },
+    { id: 7, name: "Neon PostgreSQL", path: "/assets/logos/neon.png" },
+    { id: 8, name: "Drizzle ORM", path: "/assets/logos/drizzle.png" }
+  ]
+},
+
+{
+  id: 6, // Update ID if needed based on your array
+  title: "AI Stock Market App",
+  description:
+    "A next-gen, AI-driven stock trading platform built with Next.js, Shadcn, Better Auth, and Inngest. It lets users track live stock data, set alerts, explore market insights, and manage personalized watchlists, all in real time.",
+  subDescription: [
+    "Developed a modern stock trading dashboard with live price tracking, watchlists, and smart alerts.",
+    "Built an admin panel to manage stocks, publish financial news, and monitor platform activity.",
+    "Integrated event-driven workflows to automate alerts, daily summaries, earnings notifications, and sentiment analysis.",
+    "Utilized Next.js for performance, Shadcn UI for design consistency, and Inngest for scalable event handling."
+  ],
+  href: "https://stock-app-uhvi.vercel.app/", // Add your GitHub or live link here
+  logo: "",
+  image: "/assets/projects/Stockapp.png", // Replace with your image path
+  tags: [
+    { id: 1, name: "Next.js", path: "/assets/logos/nextjs.svg" },
+    { id: 2, name: "Shadcn", path: "/assets/logos/shadcn.svg" },
+    { id: 3, name: "Better Auth", path: "/assets/logos/better.svg" },
+    { id: 4, name: "Inngest", path: "/assets/logos/inngest.jpeg" },
+    { id: 5, name: "TypeScript", path: "/assets/logos/typescript.svg" },
+    { id: 6, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" }
+  ]
+},
   // {
   //   id: 4,
   //   title: "Travel Agency Dashboard",
