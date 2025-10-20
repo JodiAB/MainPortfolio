@@ -7,6 +7,7 @@ import Testimonial from './sections/Testimonial';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import Approach from './sections/Approach';
+import ProjectsSection from './sections/ProjectsSection';
 
 const App = () => {
   return (
@@ -20,6 +21,9 @@ const App = () => {
       </div>
       <div id="work">
         <Projects />
+      </div>
+        <div id="work">
+        <ProjectsSection />
       </div>
        <div id="work">
         <Approach />
