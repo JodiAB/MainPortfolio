@@ -29,7 +29,7 @@ export const Timeline = ({ data }) => {
 
       <div ref={lineRef} className="relative mx-auto max-w-5xl">
         {/* Vertical timeline line */}
-        <div className="absolute left-[25px] top-0 w-[2px] h-full bg-neutral-800 rounded-full overflow-hidden">
+        <div className="absolute left-[30px] top-0 w-[2px] h-full bg-neutral-800 rounded-full overflow-hidden">
           <motion.div
             style={{ height: lineProgress }}
             className="absolute top-0 left-0 w-full bg-gradient-to-b from-purple-500 via-lavender/50 to-transparent"
