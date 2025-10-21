@@ -190,6 +190,7 @@ export const experiences = [
     title: "Lead Full Stack Developer",
     job: "Crunchtime Deliveries",
     date: "2024 - Present",
+    logo: "/assets/logos/crunchtime.jpg", // Replace with actual path
     contents: [
       "Built and maintained a multi-role food delivery platform for vendors, customers, and admins using React, Node.js, and Appwrite.",
       "Integrated secure Payfast payments and implemented real-time order tracking features.",
@@ -202,6 +203,7 @@ export const experiences = [
     title: "Web Developer Intern",
     job: "Life Choices Studio",
     date: "2024",
+    logo: "/assets/logos/life.jpg", // Replace with actual path
     contents: [
       "Developed a WordPress e-commerce site for a fruit and veg store using SEO best practices.",
       "Led daily standups and sprint reviews as Scrum Master, fostering team communication.",
@@ -213,6 +215,7 @@ export const experiences = [
     title: "Support Engineer",
     job: "Securicom",
     date: "2022 - 2024",
+    logo: "/assets/logos/securicom.jpg", // Replace with actual path
     contents: [
       "Blocked phishing/spam emails across multiple domains and secured user email environments.",
       "Provided support for system access, mail setup, and IT incidents via ticketing system.",
@@ -223,6 +226,7 @@ export const experiences = [
     title: "Junior Network Technician (Volunteer)",
     job: "Cape Peninsula University of Technology",
     date: "2017",
+    logo: "/assets/logos/cput.jpg", // Replace with actual path
     contents: [
       "Installed routers, switches, and wireless access points across campus buildings.",
       "Assisted with LAN setup and resolved basic connectivity issues for staff and students.",

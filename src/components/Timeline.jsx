@@ -3,73 +3,99 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
 export const Timeline = ({ data }) => {
-  const ref = useRef(null);
   const containerRef = useRef(null);
-  const [height, setHeight] = useState(0);
+  const lineRef = useRef(null);
+  const [lineHeight, setLineHeight] = useState(0);
 
   useEffect(() => {
-    if (ref.current) {
-      const rect = ref.current.getBoundingClientRect();
-      setHeight(rect.height);
+    if (lineRef.current) {
+      setLineHeight(lineRef.current.scrollHeight);
     }
-  }, [ref]);
+  }, [data]);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 10%", "end 50%"],
+    offset: ["start 10%", "end 80%"],
   });
 
-  const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
-  const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
+  const lineProgress = useTransform(scrollYProgress, [0, 1], [0, lineHeight]);
 
   return (
-    <div className="c-space section-spacing" ref={containerRef}>
-      <h2 className="text-heading">My Work Experience</h2>
-      <div ref={ref} className="relative pb-20">
-        {data.map((item, index) => (
-          <div
-            key={index}
-            className="flex justify-start pt-10 md:pt-40 md:gap-10"
-          >
-            <div className="sticky z-40 flex flex-col items-center self-start max-w-xs md:flex-row top-40 lg:max-w-sm md:w-full">
-              <div className="absolute flex items-center justify-center w-10 h-10 rounded-full -left-[15px] bg-midnight">
-                <div className="w-4 h-4 p-2 border rounded-full bg-neutral-800 border-neutral-700" />
-              </div>
-              <div className="flex-col hidden gap-2 text-xl font-bold md:flex md:pl-20 md:text-4xl text-neutral-300">
-                <h3>{item.date}</h3>
-                <h3 className="text-3xl text-neutral-400">{item.title}</h3>
-                <h3 className="text-3xl text-neutral-500">{item.job}</h3>
-              </div>
-            </div>
+    <section
+      ref={containerRef}
+      className="relative c-space section-spacing min-h-screen overflow-hidden"
+    >
+      <h2 className="text-heading text-center mb-16">My Work Experience</h2>
 
-            <div className="relative w-full pl-20 pr-4 md:pl-4">
-              <div className="block mb-4 text-2xl font-bold text-left text-neutral-300 md:hidden ">
-                <h3>{item.date}</h3>
-                <h3>{item.job}</h3>
-              </div>
-              {item.contents.map((content, index) => (
-                <p className="mb-3 font-normal text-neutral-400" key={index}>
-                  {content}
-                </p>
-              ))}
-            </div>
-          </div>
-        ))}
-        <div
-          style={{
-            height: height + "px",
-          }}
-          className="absolute md:left-1 left-1 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-700 to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] "
-        >
+      <div ref={lineRef} className="relative mx-auto max-w-5xl">
+        {/* Vertical timeline line */}
+        <div className="absolute left-[25px] top-0 w-[2px] h-full bg-neutral-800 rounded-full overflow-hidden">
           <motion.div
-            style={{
-              height: heightTransform,
-              opacity: opacityTransform,
-            }}
-            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-lavender/50 to-transparent from-[0%] via-[10%] rounded-full"
+            style={{ height: lineProgress }}
+            className="absolute top-0 left-0 w-full bg-gradient-to-b from-purple-500 via-lavender/50 to-transparent"
           />
         </div>
+
+        <div className="space-y-28">
+          {data.map((item, index) => {
+            // Each item’s scroll trigger range (based on index)
+            const itemStart = index / data.length;
+            const itemEnd = (index + 1) / data.length;
+
+            // Logo appears when the scroll line “reaches” the circle
+            const logoOpacity = useTransform(
+              scrollYProgress,
+              [itemStart - 0.1, itemStart, itemEnd],
+              [0, 1, 1]
+            );
+            const logoScale = useTransform(
+              scrollYProgress,
+              [itemStart - 0.1, itemStart],
+              [0.5, 1]
+            );
+
+            return (
+              <div
+                key={index}
+                className="relative flex flex-col md:flex-row md:gap-12 items-start"
+              >
+                {/* Left side: circle + logo */}
+                <div className="relative flex-shrink-0 flex flex-col items-center w-16">
+                  <div className="w-8 h-8 rounded-full bg-neutral-800 border border-neutral-700 flex items-center justify-center relative z-10">
+                    <motion.div
+                      className="absolute inset-0 rounded-full bg-purple-500/20"
+                      style={{ scale: logoScale, opacity: logoOpacity }}
+                    />
+                    {item.logo && (
+                      <motion.img
+                        src={item.logo}
+                        alt={item.company + " logo"}
+                        className="w-8 h-8 rounded-full object-cover z-20"
+                        style={{ opacity: logoOpacity, scale: logoScale }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                      />
+                    )}
+                  </div>
+                </div>
+
+                {/* Right side: details */}
+                <div className="mt-6 md:mt-0">
+                  <h3 className="text-xl font-semibold text-neutral-300">
+                    {item.title}
+                  </h3>
+                  <p className="text-neutral-400 text-lg mb-2">{item.job}</p>
+                  <p className="text-sm text-neutral-500 mb-4">{item.date}</p>
+                  <ul className="space-y-2 text-neutral-400">
+                    {item.contents.map((point, i) => (
+                      <li key={i}>• {point}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
