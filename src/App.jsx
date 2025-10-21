@@ -11,7 +11,8 @@ import ProjectsSection from './sections/ProjectsSection';
 
 const App = () => {
   return (
-    <div className="container mx-auto max-w-7xl">
+<div className="w-full overflow-x-hidden">
+
       <Navbar />
       <div id="home">
         <Hero />
@@ -22,9 +23,9 @@ const App = () => {
       <div id="work">
         <Projects />
       </div>
-        <div id="work">
+        {/* <div id="work">
         <ProjectsSection />
-      </div>
+      </div> */}
        <div id="work">
         <Approach />
       </div>
