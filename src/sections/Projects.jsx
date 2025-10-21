@@ -30,12 +30,13 @@ const Projects = () => {
 
           {/* ✅ Add Case Study Button */}
           <div className="flex justify-end mt-4 mb-8">
-            <button
-              onClick={() => setSelectedProject(project)}
-              className="px-5 py-2 rounded-xl bg-purple-500 text-white font-medium hover:bg-purple-400 transition-colors"
-            >
-              View Case Study
-            </button>
+          <button
+  onClick={() => setSelectedProject(project)}
+  className="btn-9"
+>
+  View Case Study
+</button>
+
           </div>
 
           <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />

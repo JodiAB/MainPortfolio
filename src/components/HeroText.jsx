@@ -69,18 +69,13 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1.6 }}
         >
-          <a
-            href="#work"
-            className="px-6 py-3 text-lg font-medium text-black bg-purple-400 rounded-2xl hover:bg-purple-300 transition-colors"
-          >
-            View My Work
-          </a>
-          <a
-            href="#contact"
-            className="px-6 py-3 text-lg font-medium text-neutral-300 border border-neutral-600 rounded-2xl hover:bg-neutral-800 transition-colors"
-          >
-            Let’s Connect
-          </a>
+       <a href="#work" className="btn-9">
+  View My Work
+</a>
+<a href="#contact" className="btn-9">
+  Let’s Connect
+</a>
+
         </motion.div>
       </div>
 
