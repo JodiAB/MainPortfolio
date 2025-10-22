@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 const ContactButtons = () => {
   const [copied, setCopied] = useState(false);
   const email = "jodiabrahams9@gmail.com";
-  const cvFile = "/assets/CV_of_Jodi_Abrahams_2025.pdf"; // Correct path as provided
+  const cvFile = "/assets/CV_Jodi_Abrahams.pdf"; // Correct path as provided
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(email);
