@@ -17,7 +17,7 @@ const ContactButtons = () => {
   const downloadCV = () => {
     const link = document.createElement("a");
     link.href = cvFile;
-    link.download = "CV_of_Jodi_Abrahams_2025.pdf"; // Updated to match file name
+    link.download = "CV_Jodi_Abrahams.pdf"; // Updated to match file name
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
