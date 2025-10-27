@@ -187,16 +187,18 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Lead Full Stack Developer",
-    job: "Crunchtime Deliveries",
-    date: "2024 - Present",
-    logo: "/assets/logos/crunchtime.jpg", // Replace with actual path
+    title: "Freelance Full Stack Developer",
+    job: "Self-Employed",
+    date: "2020 - Present",
+    logo: "/assets/logos/freelance.jpg", // Add a simple generic logo
     contents: [
-      "Built and maintained a multi-role food delivery platform for vendors, customers, and admins using React, Node.js, and Appwrite.",
-      "Integrated secure Payfast payments and implemented real-time order tracking features.",
-      "Designed scalable database architecture with Appwrite to handle 500+ concurrent users.",
-      "Collaborated with UI/UX designers and QA teams within Agile sprints to deliver production-ready features.",
-      "Applied performance and DevOps best practices to ensure fast, secure deployments.",
+      "Built and deployed multiple responsive websites and web apps for local businesses, improving online visibility and usability.",
+      "Developed a multi-role SaaS delivery platform using React, Next.js, Node.js, and SQL with secure payments and real-time tracking.",
+      "Created a cross-platform food ordering app using React Native, Appwrite, Zustand, and Expo for seamless mobile experiences.",
+      "Tested REST APIs with Postman and validated integrations between frontend and backend.",
+      "Used Jest for unit testing and explored end-to-end testing with Cypress for reliability.",
+      "Implemented CI/CD workflows with GitHub and managed code versions using Git.",
+      "Translated Figma designs into responsive, pixel-perfect, and mobile-first interfaces.",
     ],
   },
   {
@@ -234,6 +236,7 @@ export const experiences = [
     ],
   },
 ];
+
 
 export const reviews = [
   { name: "Thabo M.", username: "@thabom", body: "Honestly, this blew me away. Didn’t expect something this good. Big up!", img: "https://robohash.org/thabo" },
