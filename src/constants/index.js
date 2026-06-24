@@ -12,7 +12,7 @@ export const myProjects = [
       "Integrated Google Auth and Appwrite for secure login and database functionality.",
       "Implemented cart functionality, category filtering, and a search system.",
       "Used Zustand and NativeWind for global state management and styling.",
-      "Tested performance with Expo and Sentry for monitoring crashes and behavior."
+      "Tested performance with Expo and Sentry for monitoring crashes and behavior.",
     ],
     href: "https://github.com/JodiAB/foody",
     logo: "",
@@ -23,7 +23,7 @@ export const myProjects = [
       { id: 3, name: "NativeWind", path: "/assets/logos/tailwindcss.svg" },
       { id: 4, name: "Zustand", path: "/assets/logos/zustand.svg" },
       { id: 5, name: "Expo", path: "/assets/logos/expo.svg" },
-      { id: 6, name: "Sentry", path: "/assets/logos/sentry.svg" }
+      { id: 6, name: "Sentry", path: "/assets/logos/sentry.svg" },
     ],
   },
   {
@@ -39,7 +39,7 @@ export const myProjects = [
       "Built with React, GSAP, and Vite for fast and interactive frontend performance.",
       "Designed immersive UI with TailwindCSS and fluid animation flow.",
       "Implemented parallax scrolling and scroll-triggered content reveals.",
-      "Created a custom slider for featured cocktails and categories."
+      "Created a custom slider for featured cocktails and categories.",
     ],
     href: "https://gsap-landing-eight.vercel.app/",
     logo: "",
@@ -48,7 +48,7 @@ export const myProjects = [
       { id: 1, name: "React", path: "/assets/logos/react.svg" },
       { id: 2, name: "GSAP", path: "/assets/logos/gsap.svg" },
       { id: 3, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
-      { id: 4, name: "Vite", path: "/assets/logos/vitejs.svg" }
+      { id: 4, name: "Vite", path: "/assets/logos/vitejs.svg" },
     ],
   },
   {
@@ -64,7 +64,7 @@ export const myProjects = [
       "Built a modern web app using React 19, TypeScript, and Zustand for global state control.",
       "Integrated Puter.js for user authentication, resume upload, and secure file storage.",
       "Implemented AI logic to evaluate and match resumes to job roles using keyword/context extraction.",
-      "Designed a clean, modular UI with reusable components for scalable feature expansion."
+      "Designed a clean, modular UI with reusable components for scalable feature expansion.",
     ],
     href: "https://joding-resume-analyzer.vercel.app/auth?next=/",
     logo: "",
@@ -74,7 +74,7 @@ export const myProjects = [
       { id: 2, name: "TypeScript", path: "/assets/logos/typescript.svg" },
       { id: 3, name: "Zustand", path: "/assets/logos/zustand.svg" },
       { id: 4, name: "Puter.js", path: "/assets/logos/puter.svg" },
-      { id: 5, name: "React router", path: "/assets/logos/react-router.svg" }
+      { id: 5, name: "React router", path: "/assets/logos/react-router.svg" },
     ],
   },
   {
@@ -92,7 +92,7 @@ export const myProjects = [
       "Implemented Supabase for real-time database, storage, and session handling.",
       "Added Vapi AI voice agent for interactive tutoring with speech-to-text and text-to-speech.",
       "Used shadcn/ui with TailwindCSS for a modern, responsive UI.",
-      "Error tracking and performance monitoring with Sentry."
+      "Error tracking and performance monitoring with Sentry.",
     ],
     href: "https://joding-saas-app.vercel.app/",
     logo: "",
@@ -106,7 +106,7 @@ export const myProjects = [
       { id: 6, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
       { id: 7, name: "shadcn/ui", path: "/assets/logos/shadcn.svg" },
       { id: 8, name: "Sentry", path: "/assets/logos/sentry.svg" },
-      { id: 9, name: "TypeScript", path: "/assets/logos/typescript.svg" }
+      { id: 9, name: "TypeScript", path: "/assets/logos/typescript.svg" },
     ],
   },
   {
@@ -124,7 +124,7 @@ export const myProjects = [
       "Used Better Auth for secure authentication and user management.",
       "Implemented Stripe for secure payment processing and checkout.",
       "Built with Neon PostgreSQL and Drizzle ORM for scalable database operations.",
-      "Styled with TailwindCSS for a modern, responsive UI."
+      "Styled with TailwindCSS for a modern, responsive UI.",
     ],
     href: "https://joding-ecomm.vercel.app/",
     logo: "",
@@ -135,8 +135,8 @@ export const myProjects = [
       { id: 4, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
       { id: 5, name: "Better Auth", path: "/assets/logos/better.svg" },
       { id: 7, name: "Neon PostgreSQL", path: "/assets/logos/neon.png" },
-      { id: 8, name: "Drizzle ORM", path: "/assets/logos/drizzle.png" }
-    ]
+      { id: 8, name: "Drizzle ORM", path: "/assets/logos/drizzle.png" },
+    ],
   },
   {
     id: 6,
@@ -151,7 +151,7 @@ export const myProjects = [
       "Developed a modern stock trading dashboard with live price tracking, watchlists, and smart alerts.",
       "Built an admin panel to manage stocks, publish financial news, and monitor platform activity.",
       "Integrated event-driven workflows to automate alerts, daily summaries, earnings notifications, and sentiment analysis.",
-      "Utilized Next.js for performance, Shadcn UI for design consistency, and Inngest for scalable event handling."
+      "Utilized Next.js for performance, Shadcn UI for design consistency, and Inngest for scalable event handling.",
     ],
     href: "https://stock-app-uhvi.vercel.app/",
     logo: "",
@@ -162,10 +162,41 @@ export const myProjects = [
       { id: 3, name: "Better Auth", path: "/assets/logos/better.svg" },
       { id: 4, name: "Inngest", path: "/assets/logos/inngest.jpeg" },
       { id: 5, name: "TypeScript", path: "/assets/logos/typescript.svg" },
-      { id: 6, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" }
-    ]
-  }
-];
+      { id: 6, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
+    ],
+  },
+  {
+    id: 7,
+    title: "OpsFlow",
+    description:
+      "A full-stack SaaS operations workspace for managing projects, tasks, teams, reports, and workspace analytics.",
+    problem:
+      "Small teams often manage projects, tasks, reports, and members across disconnected tools, which makes it harder to track progress, permissions, and team activity from one place.",
+    solution:
+      "I built a production-style operations workspace with authentication, workspace-scoped data, role-based permissions, project and task workflows, team management, report editing, PDF export, and deployment-ready documentation.",
+    subDescription: [
+      "Built with Next.js, TypeScript, Prisma, PostgreSQL, Tailwind CSS, TipTap, Vitest, and Vercel.",
+      "Implemented authentication, protected routes, workspace-scoped data, invited member registration, and owner/admin/member role-based access.",
+      "Added project management, task tracking, team invitations, role updates, workspace settings, dashboard analytics, and recent activity workflows.",
+      "Built a rich text report editor with headings, formatting controls, tables, word count, page estimates, publishing, archiving, and print/PDF export.",
+      "Prepared the project for portfolio review with screenshots, a live Vercel demo, README documentation, deployment notes, and a full case study.",
+    ],
+    href: "https://ops-flow-kappa.vercel.app/",
+    github: "https://github.com/JodiAB/OpsFlow",
+    logo: "",
+    image: "/assets/projects/screenshots/dashboard.png",
+    tags: [
+      { id: 1, name: "Next.js", path: "/assets/logos/nextjs.svg" },
+      { id: 2, name: "TypeScript", path: "/assets/logos/typescript.svg" },
+      { id: 3, name: "Prisma", path: "/assets/logos/prisma.svg" },
+      { id: 4, name: "PostgreSQL", path: "/assets/logos/postgresql.svg" },
+      { id: 5, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
+      { id: 6, name: "TipTap", path: "/assets/logos/tiptap.svg" },
+      { id: 7, name: "Vitest", path: "/assets/logos/vitest.svg" },
+      { id: 8, name: "Vercel", path: "/assets/logos/vercel.svg" },
+    ],
+  },
+]
 
 export const mySocials = [
   {
@@ -183,14 +214,14 @@ export const mySocials = [
     href: "https://www.instagram.com/theejodas?utm_source=qr&igsh=MXBqeWthMGhxN20xOA==",
     icon: "/assets/socials/instagram.svg",
   },
-];
+]
 
 export const experiences = [
   {
     title: "Freelance Full Stack Developer",
     job: "Self-Employed",
     date: "2020 - Present",
-    logo: "/assets/logos/freelance.jpg", // Add a simple generic logo
+    logo: "/assets/logos/freelance.jpg",
     contents: [
       "Built and deployed multiple responsive websites and web apps for local businesses, improving online visibility and usability.",
       "Developed a multi-role SaaS delivery platform using React, Next.js, Node.js, and SQL with secure payments and real-time tracking.",
@@ -205,7 +236,7 @@ export const experiences = [
     title: "Web Developer Intern",
     job: "Life Choices Studio",
     date: "2024",
-    logo: "/assets/logos/life.jpg", // Replace with actual path
+    logo: "/assets/logos/life.jpg",
     contents: [
       "Developed a WordPress e-commerce site for a fruit and veg store using SEO best practices.",
       "Led daily standups and sprint reviews as Scrum Master, fostering team communication.",
@@ -217,7 +248,7 @@ export const experiences = [
     title: "Support Engineer",
     job: "Securicom",
     date: "2022 - 2024",
-    logo: "/assets/logos/securicom.jpg", // Replace with actual path
+    logo: "/assets/logos/securicom.jpg",
     contents: [
       "Blocked phishing/spam emails across multiple domains and secured user email environments.",
       "Provided support for system access, mail setup, and IT incidents via ticketing system.",
@@ -228,23 +259,62 @@ export const experiences = [
     title: "Junior Network Technician (Volunteer)",
     job: "Cape Peninsula University of Technology",
     date: "2017",
-    logo: "/assets/logos/cput.jpg", // Replace with actual path
+    logo: "/assets/logos/cput.jpg",
     contents: [
       "Installed routers, switches, and wireless access points across campus buildings.",
       "Assisted with LAN setup and resolved basic connectivity issues for staff and students.",
       "Supported network engineers during major infrastructure upgrades.",
     ],
   },
-];
-
+]
 
 export const reviews = [
-  { name: "Thabo M.", username: "@thabom", body: "Honestly, this blew me away. Didn’t expect something this good. Big up!", img: "https://robohash.org/thabo" },
-  { name: "Lerato P.", username: "@leratop", body: "Yo, this is brilliant. It just works and looks amazing. Love it!", img: "https://robohash.org/lerato" },
-  { name: "Sipho D.", username: "@siphod", body: "I'm really impressed. You can see real effort went into this. Well done.", img: "https://robohash.org/sipho" },
-  { name: "Naledi K.", username: "@naledik", body: "This is hands down one of the cleanest and most useful things I’ve seen online.", img: "https://robohash.org/naledi" },
-  { name: "Zane E.", username: "@zanee", body: "From the layout to the user experience — everything is on point. Mad respect!", img: "https://robohash.org/zane" },
-  { name: "Anele R.", username: "@aneler", body: "Exceeded my expectations, seriously. Sleek, smooth, and just works.", img: "https://robohash.org/anele" },
-  { name: "Karabo N.", username: "@karabon", body: "Honestly, I’d recommend this to anyone. Professional and super clean.", img: "https://robohash.org/karabo" },
-  { name: "Jody A.", username: "@jodya", body: "So glad I gave this a shot. Everything just feels polished and well thought out.", img: "https://robohash.org/jody" },
-];
+  {
+    name: "Thabo M.",
+    username: "@thabom",
+    body: "Honestly, this blew me away. Didn’t expect something this good. Big up!",
+    img: "https://robohash.org/thabo",
+  },
+  {
+    name: "Lerato P.",
+    username: "@leratop",
+    body: "Yo, this is brilliant. It just works and looks amazing. Love it!",
+    img: "https://robohash.org/lerato",
+  },
+  {
+    name: "Sipho D.",
+    username: "@siphod",
+    body: "I'm really impressed. You can see real effort went into this. Well done.",
+    img: "https://robohash.org/sipho",
+  },
+  {
+    name: "Naledi K.",
+    username: "@naledik",
+    body: "This is hands down one of the cleanest and most useful things I’ve seen online.",
+    img: "https://robohash.org/naledi",
+  },
+  {
+    name: "Zane E.",
+    username: "@zanee",
+    body: "From the layout to the user experience — everything is on point. Mad respect!",
+    img: "https://robohash.org/zane",
+  },
+  {
+    name: "Anele R.",
+    username: "@aneler",
+    body: "Exceeded my expectations, seriously. Sleek, smooth, and just works.",
+    img: "https://robohash.org/anele",
+  },
+  {
+    name: "Karabo N.",
+    username: "@karabon",
+    body: "Honestly, I’d recommend this to anyone. Professional and super clean.",
+    img: "https://robohash.org/karabo",
+  },
+  {
+    name: "Jody A.",
+    username: "@jodya",
+    body: "So glad I gave this a shot. Everything just feels polished and well thought out.",
+    img: "https://robohash.org/jody",
+  },
+]
