@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 const ContactButtons = () => {
   const [copied, setCopied] = useState(false);
   const email = "jodiabrahams9@gmail.com";
-  const cvFile = "/assets/CV_Jodi_Abrahams.pdf"; // Correct path as provided
+  const cvFile = "/assets/Jodi_Abrahams_CV_Freelancing.pdf"; // Correct path as provided
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(email);
@@ -17,7 +17,7 @@ const ContactButtons = () => {
   const downloadCV = () => {
     const link = document.createElement("a");
     link.href = cvFile;
-    link.download = "CV_Jodi_Abrahams.pdf"; // Updated to match file name
+    link.download = "Jodi_Abrahams_CV_Freelancing"; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
