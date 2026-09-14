@@ -45,7 +45,7 @@ export const myProjects = [
     year: "2026",
     role: "Full Stack Developer",
     description:
-      "A production-style SaaS operations workspace for managing projects, tasks, teams, reports, and workspace analytics.",
+      "Built responsive SaaS dashboards, a rich-text report editor, role-based workflows and exports, with automated tests and production-style architecture.",
     problem:
       "Small teams often manage projects, tasks, reports, and members across disconnected tools, making it difficult to track progress, permissions, and workspace activity from one reliable place.",
     solution:
@@ -122,7 +122,7 @@ export const myProjects = [
     id: 2,
     title: "LMS SaaS App",
     category: "SaaS Platform",
-    featured: true,
+    featured: false,
     year: "2025",
     role: "Full Stack Developer",
     description:
@@ -161,7 +161,7 @@ export const myProjects = [
     id: 3,
     title: "AI Resume Analyzer",
     category: "AI Tool",
-    featured: true,
+    featured: false,
     year: "2025",
     role: "Frontend Developer",
     description:
@@ -292,11 +292,11 @@ export const myProjects = [
     id: 7,
     title: "Cocktail Animation Website",
     category: "Frontend Animation",
-    featured: false,
+    featured: true,
     year: "2025",
     role: "Frontend Developer",
     description:
-      "A visually rich cocktail recipe website with GSAP animations, SplitText reveals, parallax effects, scroll-based interactions, and a custom carousel.",
+      "Built a responsive interactive landing experience using GSAP, SplitText, parallax effects, scroll-triggered animations and a custom carousel, with a focus on animation timing, usability and frontend performance.",
     problem:
       "Many recipe websites feel static and uninspiring, resulting in low engagement and short session times.",
     solution:
@@ -323,7 +323,7 @@ export const myProjects = [
     year: "2026",
     role: "Full Stack Developer",
     description:
-      "A South African fuel-cost platform that helps drivers, delivery workers, households, and small fleets calculate, plan, and manage fuel expenses using local fuel price data.",
+      "Built and deployed a responsive South African fuel-cost platform with interactive calculators, API-backed data, authentication, saved account workflows, automated tests and production-ready release tooling.",
     problem:
       "South African drivers face frequent fuel price changes, but most people do not know how those changes affect their monthly budget, trip costs, delivery profit, or vehicle ownership costs.",
     solution:
@@ -397,19 +397,7 @@ export const myProjects = [
 ];
 
 export const mySocials = [
-  {
-    name: "WhatsApp",
-    href: "https://wa.me/27782096121",
-    icon: "/assets/socials/whatsApp.svg",
-  },
-  {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/jodi-abrahams/",
-    icon: "/assets/socials/linkedIn.svg",
-  },
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/theejodas?utm_source=qr&igsh=MXBqeWthMGhxN20xOA==",
-    icon: "/assets/socials/instagram.svg",
-  },
+  { name: "GitHub", href: "https://github.com/JodiAB", icon: "/assets/logos/github.svg" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/jodi-abrahams/", icon: "/assets/socials/linkedIn.svg" },
+  { name: "WhatsApp", href: "https://wa.me/27782096121", icon: "/assets/socials/whatsApp.svg" },
 ];

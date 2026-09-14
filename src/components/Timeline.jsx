@@ -13,6 +13,7 @@ export function Timeline({ data }) {
             <div>
               <h3>{item.title}</h3>
               <p className="experience-company">{item.job}</p>
+              {item.note && <p className="experience-note">{item.note}</p>}
               {index > 3 ? (
                 <details>
                   <summary>Responsibilities</summary>

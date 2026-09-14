@@ -5,6 +5,7 @@ import { myProjects } from "../constants";
 const priority = [
   "OpsFlow",
   "FuelWise SA",
+  "Cocktail Animation Website",
   "AI Resume Analyzer",
   "LMS SaaS App",
   "Food Ordering App",
@@ -24,6 +25,10 @@ export default function Projects() {
         Production workflows, practical tools and carefully considered
         interfaces. Explore what I built and how it works.
       </p>
+      <a className="text-link recruiter-github" href="https://github.com/JodiAB" target="_blank" rel="noreferrer">
+        <img src="/assets/logos/github.svg" alt="" width="20" height="20" />
+        Explore my GitHub <span aria-hidden="true">↗</span>
+      </a>
       <div className="projects-grid">
         {orderedProjects.map((project) => (
           <Project

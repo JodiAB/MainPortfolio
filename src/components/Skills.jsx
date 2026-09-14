@@ -2,7 +2,7 @@ const skillGroups = [
   {
     title: "Frontend",
     skills: [
-      "JavaScript (ES6+/ES2017+)",
+      "JavaScript ES2017+",
       "TypeScript",
       "React",
       "Next.js",
@@ -11,9 +11,11 @@ const skillGroups = [
       "CSS3",
       "Tailwind CSS",
       "Responsive UI",
-      "GSAP",
-      "Framer Motion",
     ],
+  },
+  {
+    title: "Interactive UI & Digital Experiences",
+    skills: ["GSAP", "Framer Motion", "React Three Fiber / Three.js", "JavaScript animations", "Responsive interfaces", "Responsive landing pages"],
   },
   {
     title: "Backend & APIs",
@@ -51,6 +53,7 @@ const skillGroups = [
       "Git",
       "GitHub",
       "npm",
+      "Vite",
       "Vercel",
       "Docker basics",
       "CI/CD basics",
@@ -71,6 +74,7 @@ const Skills = () => {
           mobile products. From responsive interfaces to APIs and release
           workflows.
         </p>
+        <p className="subtext mt-3">This portfolio combines React Three Fiber / Three.js for its astronaut presentation with GSAP scroll interactions.</p>
       </div>
 
       <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

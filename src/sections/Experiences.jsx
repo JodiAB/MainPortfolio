@@ -5,6 +5,7 @@ const experiences = [
     title: "Freelance Front-end / Full Stack Developer",
     job: "Independent / Remote",
     date: "Jan 2020 – Present",
+    note: "Part-time alongside employed roles; full-time since Apr 2026",
     logo: "/assets/logos/freelance.jpg",
     contents: [
       "Own end-to-end delivery of responsive websites and web applications using JavaScript, TypeScript, React, Next.js, HTML5, CSS3, and Tailwind CSS.",

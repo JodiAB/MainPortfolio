@@ -11,12 +11,14 @@ const Footer = () => {
         {mySocials.map((social, index) => (
           <a
             href={social.href}
+            className={social.name === "GitHub" ? "footer-github" : undefined}
             key={index}
             target="_blank"
             rel="noreferrer"
             aria-label={social.name}
           >
             <img src={social.icon} className="h-5 w-5" alt="" />
+            {social.name === "GitHub" && <span>GitHub</span>}
           </a>
         ))}
       </div>

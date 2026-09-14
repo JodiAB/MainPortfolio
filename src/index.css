@@ -1009,3 +1009,17 @@ textarea.field-input {
   .text-heading, .about-grid > article, .skill-group, .project-card,
   .stage-card, .experience-item, .contact-panel { translate: none; }
 }
+
+.recruiter-github { gap: 10px; margin-top: 16px; }
+.recruiter-github img, .footer-github img { filter: invert(1); }
+.footer-socials .footer-github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  padding-inline: 14px;
+  gap: 8px;
+  border-radius: 12px;
+  color: #e2dcf5;
+}
+.experience-note { margin-top: 10px; color: #b9a7e4; font-size: .85rem; }
