@@ -1,86 +1,53 @@
-import React, { useState } from "react"
-import ProjectDetails from "./ProjectDetails"
-
-const Project = ({
-  title,
-  description,
-  subDescription = [],
-  href,
-  github,
-  image,
-  tags = [],
-  setPreview,
-  onViewCaseStudy,
-}) => {
-  const [isOpen, setIsOpen] = useState(false)
-
+import { useState } from "react";
+import ProjectDetails from "./ProjectDetails";
+import ProjectLinks from "./ProjectLinks";
+export default function Project(props) {
+  const {
+    title,
+    category,
+    featured,
+    description,
+    role,
+    image,
+    tags = [],
+    onViewCaseStudy,
+  } = props;
+  const [open, setOpen] = useState(false);
   return (
-    <>
-      <div
-        className="flex-wrap items-center justify-between py-10 space-y-8 sm:flex sm:space-y-0"
-        onMouseEnter={() => setPreview?.(image)}
-        onMouseLeave={() => setPreview?.(null)}
-      >
-        <div>
-          <p className="text-2xl text-white">{title}</p>
-
-          {tags.length > 0 && (
-            <div className="flex flex-wrap gap-3 mt-2 text-sand">
-              {tags.map((tag) => (
-                <span key={tag.id}>{tag.name}</span>
-              ))}
-            </div>
-          )}
+    <article className={`project-card surface ${featured ? "featured" : ""}`}>
+      <img
+        className="project-image"
+        src={image}
+        alt={`${title} interface preview`}
+        loading="lazy"
+        decoding="async"
+        width="800"
+        height="450"
+      />
+      <div className="project-body">
+        <div className="project-meta">
+          <span>{category}</span>
+          {featured && <span className="featured-label">Featured</span>}
         </div>
-
-        <div className="flex flex-wrap items-center gap-4">
-          {onViewCaseStudy && (
-            <button
-              type="button"
-              onClick={() =>
-                onViewCaseStudy({
-                  title,
-                  description,
-                  subDescription,
-                  href,
-                  github,
-                  image,
-                  tags,
-                })
-              }
-              className="btn-9"
-            >
-              View Case Study
-            </button>
-          )}
-
-          <button
-            type="button"
-            onClick={() => setIsOpen(true)}
-            className="flex items-center gap-1 cursor-pointer hover-animation"
-          >
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <p className="project-role">Role: {role}</p>
+        <ul className="tech-list">
+          {tags.slice(0, 5).map((tag) => (
+            <li key={tag.id}>{tag.name}</li>
+          ))}
+        </ul>
+        <div className="actions">
+          <ProjectLinks project={props} />
+          <button className="text-link" onClick={onViewCaseStudy}>
+            Case Study
+          </button>
+          <button className="text-link" onClick={() => setOpen(true)}>
             Read More
-            <img src="assets/arrow-right.svg" className="w-5" alt="" />
           </button>
         </div>
       </div>
-
-      <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
-
-      {isOpen && (
-        <ProjectDetails
-          title={title}
-          description={description}
-          subDescription={subDescription}
-          image={image}
-          tags={tags}
-          href={href}
-          github={github}
-          closeModal={() => setIsOpen(false)}
-        />
-      )}
-    </>
-  )
+      {open && <ProjectDetails {...props} closeModal={() => setOpen(false)} />}
+    </article>
+  );
 }
-
-export default Project

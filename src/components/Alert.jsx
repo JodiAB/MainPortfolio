@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from "motion/react";
+import { motion as Motion, AnimatePresence } from "motion/react";
 const Alert = ({ type, text }) => {
   const alertVarients = {
     hidden: { opacity: 0, y: 50, scale: 0.8 },
@@ -7,7 +7,7 @@ const Alert = ({ type, text }) => {
   };
   return (
     <AnimatePresence>
-      <motion.div
+      <Motion.div
         className="fixed z-50 flex items-center justify-center bottom-5 right-5"
         initial="hidden"
         animate="visible"
@@ -29,7 +29,7 @@ const Alert = ({ type, text }) => {
           </p>
           <p className="mr-2 text-left">{text}</p>
         </div>
-      </motion.div>
+      </Motion.div>
     </AnimatePresence>
   );
 };

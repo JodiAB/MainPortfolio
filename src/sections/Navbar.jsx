@@ -1,159 +1,77 @@
-import { useEffect, useState } from "react"
-import { motion } from "framer-motion"
-import SmokyButton from "../components/SmokyButton"
-
-
-
-const CV_PATH = "/assets/Jodi-Abrahams-CV.pdf"
-
-const navItems = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Work", href: "#work" },
-  { name: "Contact", href: "#contact" },
-]
-
-function Navigation({ activeSection, setActiveSection, onNavigate }) {
-  const handleClick = (event, href) => {
-    event.preventDefault()
-
-    const targetId = href.replace("#", "")
-    const element = document.getElementById(targetId)
-
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-      setActiveSection(targetId)
-      onNavigate?.()
-    }
-  }
-
-  return (
-    <ul className="nav-ul flex flex-col sm:flex-row sm:items-center sm:gap-6">
-      {navItems.map((item) => {
-        const sectionId = item.href.replace("#", "")
-        const isActive = activeSection === sectionId
-
-        return (
-          <li key={item.href} className="nav-li">
-            <a
-              className={`nav-link block py-2 transition-colors sm:py-0 ${
-                isActive
-                  ? "font-bold text-white"
-                  : "text-neutral-400 hover:text-white"
-              }`}
-              href={item.href}
-              onClick={(event) => handleClick(event, item.href)}
-            >
-              {item.name}
-            </a>
-          </li>
-        )
-      })}
-    </ul>
-  )
-}
-
-function DownloadCvButton({ className = "" }) {
-  return (
-    <SmokyButton
-      href={CV_PATH}
-      download
-      className={className}
-      ariaLabel="Download Jodi Abrahams CV"
-    >
-      Download CV
-    </SmokyButton>
-  )
-}
-
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState("home")
-
+import { useEffect, useRef, useState } from "react";
+import { CV_PATH } from "../constants/site";
+const items = ["Home", "About", "Projects", "Experience", "Contact"];
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
+  const [active, setActive] = useState("home");
+  const toggle = useRef(null);
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = navItems.map((item) => item.href.replace("#", ""))
-      const scrollOffset = 120
-
-      for (const section of sections) {
-        const element = document.getElementById(section)
-
-        if (!element) continue
-
-        const rect = element.getBoundingClientRect()
-
-        if (rect.top <= scrollOffset && rect.bottom >= scrollOffset) {
-          setActiveSection(section)
-          break
-        }
-      }
-    }
-
-    handleScroll()
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-
+    const update = () => {
+      let current = "home";
+      items.forEach((item) => {
+        if (
+          document.getElementById(item.toLowerCase())?.getBoundingClientRect()
+            .top <= 160
+        )
+          current = item.toLowerCase();
+      });
+      setActive(current);
+    };
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    return () => window.removeEventListener("scroll", update);
+  }, []);
   return (
-    <div className="fixed inset-x-0 z-20 w-full border-b border-white/10 bg-primary/40 backdrop-blur-lg">
-      <div className="mx-auto max-w-7xl px-4">
-        <div className="flex items-center justify-between py-2">
-          <a
-            href="/"
-            className="text-xl font-bold text-neutral-400 transition-colors hover:text-white"
-          >
-            Jodi
+    <header
+      className="site-header"
+      onKeyDown={(event) => {
+        if (event.key === "Escape") {
+          setOpen(false);
+          toggle.current?.focus();
+        }
+      }}
+    >
+      <div className="nav-container">
+        <a href="#home" className="brand" aria-label="Jodi Abrahams home">
+          Jodi<span>.</span>
+        </a>
+        <button
+          ref={toggle}
+          className="menu-toggle button button-secondary"
+          aria-expanded={open}
+          aria-controls="primary-navigation"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? "Close" : "Menu"}{" "}
+          <span aria-hidden="true">{open ? "×" : "☰"}</span>
+        </button>
+        <nav
+          id="primary-navigation"
+          className={open ? "navigation is-open" : "navigation"}
+          aria-label="Primary navigation"
+        >
+          {items.map((item) => (
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              aria-current={
+                active === item.toLowerCase() ? "location" : undefined
+              }
+              onClick={() => {
+                setOpen(false);
+                document
+                  .getElementById(item.toLowerCase())
+                  ?.focus({ preventScroll: true });
+              }}
+            >
+              {item}
+            </a>
+          ))}
+          <a className="button button-secondary button-neon" href={CV_PATH} download>
+            Download CV ↓
           </a>
-
-          <div className="hidden items-center gap-6 sm:flex">
-            <nav>
-              <Navigation
-                activeSection={activeSection}
-                setActiveSection={setActiveSection}
-              />
-            </nav>
-
-            <DownloadCvButton />
-          </div>
-
-          <button
-            type="button"
-            onClick={() => setIsOpen((current) => !current)}
-            className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden"
-            aria-label={isOpen ? "Close menu" : "Open menu"}
-            aria-expanded={isOpen}
-          >
-            <img
-              src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
-              className="h-6 w-6"
-              alt=""
-            />
-          </button>
-        </div>
+        </nav>
       </div>
-
-      <motion.div
-        className="sm:hidden"
-        initial={{ height: 0, opacity: 0 }}
-        animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
-        transition={{ duration: 0.3, ease: "easeInOut" }}
-        style={{ overflow: "hidden" }}
-      >
-        {isOpen && (
-          <nav className="border-t border-white/10 px-4 pb-5 pt-3 text-center">
-            <Navigation
-              activeSection={activeSection}
-              setActiveSection={setActiveSection}
-              onNavigate={() => setIsOpen(false)}
-            />
-
-            <DownloadCvButton className="mt-4 w-full justify-center" />
-          </nav>
-        )}
-      </motion.div>
-    </div>
-  )
+    </header>
+  );
 }
-
-export default Navbar

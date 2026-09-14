@@ -28,13 +28,13 @@ const TECH = {
   tiptap: { name: "TipTap", path: "/assets/logos/tiptap.svg" },
   vitest: { name: "Vitest", path: "/assets/logos/vitest.svg" },
   vercel: { name: "Vercel", path: "/assets/logos/vercel.svg" },
-}
+};
 
 const buildTags = (keys) =>
   keys.map((key, index) => ({
     id: index + 1,
     ...TECH[key],
-  }))
+  }));
 
 export const myProjects = [
   {
@@ -96,7 +96,7 @@ export const myProjects = [
     href: "https://ops-flow-kappa.vercel.app/",
     github: "https://github.com/JodiAB/OpsFlow",
     logo: "",
-    image: "/assets/projects/screenshots/dashboard.png",
+    image: "/assets/projects/screenshots/dashboard.webp",
     screenshots: [
       "/assets/projects/screenshots/dashboard.png",
       "/assets/projects/screenshots/projects.png",
@@ -144,7 +144,7 @@ export const myProjects = [
     href: "https://joding-saas-app.vercel.app/",
     github: "",
     logo: "",
-    image: "/assets/projects/saas.png",
+    image: "/assets/projects/saas.webp",
     tags: buildTags([
       "nextjs",
       "typescript",
@@ -181,7 +181,7 @@ export const myProjects = [
     href: "https://joding-resume-analyzer.vercel.app/auth?next=/",
     github: "",
     logo: "",
-    image: "/assets/projects/resume ai.jpg",
+    image: "/assets/projects/resume ai.webp",
     tags: buildTags(["react", "typescript", "zustand", "puter", "reactRouter"]),
   },
   {
@@ -208,8 +208,15 @@ export const myProjects = [
     href: "https://stock-app-uhvi.vercel.app/",
     github: "",
     logo: "",
-    image: "/assets/projects/Stockapp.png",
-    tags: buildTags(["nextjs", "typescript", "shadcn", "betterAuth", "inngest", "tailwind"]),
+    image: "/assets/projects/Stockapp.webp",
+    tags: buildTags([
+      "nextjs",
+      "typescript",
+      "shadcn",
+      "betterAuth",
+      "inngest",
+      "tailwind",
+    ]),
   },
   {
     id: 5,
@@ -236,8 +243,15 @@ export const myProjects = [
     href: "https://joding-ecomm.vercel.app/",
     github: "",
     logo: "",
-    image: "/assets/projects/nike.png",
-    tags: buildTags(["nextjs", "typescript", "tailwind", "betterAuth", "neon", "drizzle"]),
+    image: "/assets/projects/nike.webp",
+    tags: buildTags([
+      "nextjs",
+      "typescript",
+      "tailwind",
+      "betterAuth",
+      "neon",
+      "drizzle",
+    ]),
   },
   {
     id: 6,
@@ -263,8 +277,16 @@ export const myProjects = [
     href: "https://github.com/JodiAB/foody",
     github: "https://github.com/JodiAB/foody",
     logo: "",
-    image: "/assets/projects/food.jpg",
-    tags: buildTags(["reactNative", "typescript", "appwrite", "nativewind", "zustand", "expo", "sentry"]),
+    image: "/assets/projects/food.webp",
+    tags: buildTags([
+      "reactNative",
+      "typescript",
+      "appwrite",
+      "nativewind",
+      "zustand",
+      "expo",
+      "sentry",
+    ]),
   },
   {
     id: 7,
@@ -290,95 +312,94 @@ export const myProjects = [
     href: "https://gsap-landing-eight.vercel.app/",
     github: "",
     logo: "",
-    image: "/assets/projects/landing.jpg",
+    image: "/assets/projects/landing.webp",
     tags: buildTags(["react", "gsap", "tailwind", "vite"]),
   },
   {
-id: 8,
-title: "FuelWise SA",
-category: "SaaS / Fintech Tool",
-featured: true,
-year: "2026",
-role: "Full Stack Developer",
-description:
-"A South African fuel-cost platform that helps drivers, delivery workers, households, and small fleets calculate, plan, and manage fuel expenses using local fuel price data.",
-problem:
-"South African drivers face frequent fuel price changes, but most people do not know how those changes affect their monthly budget, trip costs, delivery profit, or vehicle ownership costs.",
-solution:
-"I built FuelWise SA as a production-ready fuel planning platform with SA fuel price data, calculators, account features, saved vehicles, fuel alerts, fleet reporting, nearby stations, SEO pages, and launch-ready safety checks.",
-outcome:
-"Created a practical public web app with real production deployment, Supabase-backed data, Google authentication, cached fuel prices, test coverage, smoke tests, SEO setup, and growth-focused tools for South African users.",
-subDescription: [
-"Built with React, TypeScript, Vite, Supabase, TailwindCSS, Vitest, and Vercel.",
-"Implemented fuel calculators for full tank costs, monthly budgets, trip costs, delivery driver profit, travel claims, transport fare impact, car ownership, and fleet fuel reports.",
-"Integrated Supabase for Google authentication, saved vehicles, saved calculations, cached fuel prices, fuel alert preferences, and subscription-ready account data.",
-"Added production API endpoints for fuel price syncing, alert dry-runs, unsubscribe handling, and safe health checks with defensive error handling.",
-"Prepared the app for launch with sitemap and robots.txt setup, Google Search Console verification, privacy/legal pages, release checklists, and automated test/smoke coverage.",
-],
-architecture: [
-"React and Vite frontend with route-based pages for calculators, fuel prices, nearby stations, pricing, account features, and fleet reports.",
-"Supabase authentication and database tables for profiles, vehicles, saved calculations, cached fuel prices, alert preferences, and subscription-ready data.",
-"Serverless Vercel API routes for syncing SA fuel prices, sending alert dry-runs, unsubscribe handling, billing foundations, and production health checks.",
-"Fuel price fallback flow using cached Supabase data first, live API fallback where available, and manual/user-input pricing when needed.",
-"Growth and launch infrastructure including SEO metadata, sitemap, robots.txt, Search Console documentation, release checklist, and marketing copy planning.",
-],
-caseStudy: {
-overview:
-"FuelWise SA was built to solve a real local problem: helping South Africans understand what petrol and diesel prices mean for their wallets. The project focuses on practical calculators, local pricing logic, account-based saving, fleet reporting, alert infrastructure, and production launch readiness.",
-keyFeatures: [
-"SA fuel price calculator tools for commuters, families, delivery drivers, and small fleets.",
-"Cached fuel price sync flow using Supabase and a protected Vercel API endpoint.",
-"Google authentication with account features for saved vehicles, saved calculations, and alert preferences.",
-"Delivery driver profit calculator and fleet reporting tools with cost-per-kilometre insights.",
-"Nearby stations beta with clear regional estimate and station-price trust disclaimers.",
-"Email alert infrastructure with dry-run safety, unsubscribe flow, and real-send feature flags.",
-"SEO and launch setup including sitemap, robots.txt, Google Search Console checklist, privacy page, and production release checklist.",
-],
-challenges: [
-"Designing fuel calculations that stay accurate, understandable, and honest for different user types.",
-"Handling South African inland/coastal pricing differences and unavailable fuel combinations such as Petrol 93 coastal.",
-"Keeping production serverless endpoints safe with secrets, feature flags, dry-runs, and defensive JSON error handling.",
-"Balancing free public calculators with account-based features, future subscriptions, and launch safety.",
-"Preparing the app for real users with testing, smoke tests, Search Console setup, privacy notes, and release documentation.",
-],
-improvements: [
-"Add Fuel Shock Share Cards so users can share how monthly fuel price changes affect their budget.",
-"Upgrade delivery calculations into Driver Profit Radar with accept/reject trip verdicts.",
-"Add FuelWise Coach missions for weekly savings goals and shareable progress.",
-"Improve community station price reporting with confidence scores and moderation.",
-"Add manual fuel receipt logs and later OCR-based receipt scanning.",
-],
-},
-href: "https://fuelwise-sa.vercel.app/",
-github: "",
-logo: "",
-image: "/assets/projects/homepage.png",
-screenshots: [
-"/assets/projects/fuelwise-sa/homepage.png",
-"/assets/projects/fuelwise-sa/fuel-prices.png",
-"/assets/projects/fuelwise-sa/calculator.png",
-"/assets/projects/fuelwise-sa/nearby-stations.png",
-"/assets/projects/fuelwise-sa/fleet-reports.png",
-"/assets/projects/fuelwise-sa/account.png",
-],
-tags: buildTags([
-"react",
-"typescript",
-"vite",
-"supabase",
-"tailwind",
-"vitest",
-"stripe",
-"vercel",
-]),
-},
-
-]
+    id: 8,
+    title: "FuelWise SA",
+    category: "SaaS / Fintech Tool",
+    featured: true,
+    year: "2026",
+    role: "Full Stack Developer",
+    description:
+      "A South African fuel-cost platform that helps drivers, delivery workers, households, and small fleets calculate, plan, and manage fuel expenses using local fuel price data.",
+    problem:
+      "South African drivers face frequent fuel price changes, but most people do not know how those changes affect their monthly budget, trip costs, delivery profit, or vehicle ownership costs.",
+    solution:
+      "I built FuelWise SA as a production-ready fuel planning platform with SA fuel price data, calculators, account features, saved vehicles, fuel alerts, fleet reporting, nearby stations, SEO pages, and launch-ready safety checks.",
+    outcome:
+      "Created a practical public web app with real production deployment, Supabase-backed data, Google authentication, cached fuel prices, test coverage, smoke tests, SEO setup, and growth-focused tools for South African users.",
+    subDescription: [
+      "Built with React, TypeScript, Vite, Supabase, TailwindCSS, Vitest, and Vercel.",
+      "Implemented fuel calculators for full tank costs, monthly budgets, trip costs, delivery driver profit, travel claims, transport fare impact, car ownership, and fleet fuel reports.",
+      "Integrated Supabase for Google authentication, saved vehicles, saved calculations, cached fuel prices, fuel alert preferences, and subscription-ready account data.",
+      "Added production API endpoints for fuel price syncing, alert dry-runs, unsubscribe handling, and safe health checks with defensive error handling.",
+      "Prepared the app for launch with sitemap and robots.txt setup, Google Search Console verification, privacy/legal pages, release checklists, and automated test/smoke coverage.",
+    ],
+    architecture: [
+      "React and Vite frontend with route-based pages for calculators, fuel prices, nearby stations, pricing, account features, and fleet reports.",
+      "Supabase authentication and database tables for profiles, vehicles, saved calculations, cached fuel prices, alert preferences, and subscription-ready data.",
+      "Serverless Vercel API routes for syncing SA fuel prices, sending alert dry-runs, unsubscribe handling, billing foundations, and production health checks.",
+      "Fuel price fallback flow using cached Supabase data first, live API fallback where available, and manual/user-input pricing when needed.",
+      "Growth and launch infrastructure including SEO metadata, sitemap, robots.txt, Search Console documentation, release checklist, and marketing copy planning.",
+    ],
+    caseStudy: {
+      overview:
+        "FuelWise SA was built to solve a real local problem: helping South Africans understand what petrol and diesel prices mean for their wallets. The project focuses on practical calculators, local pricing logic, account-based saving, fleet reporting, alert infrastructure, and production launch readiness.",
+      keyFeatures: [
+        "SA fuel price calculator tools for commuters, families, delivery drivers, and small fleets.",
+        "Cached fuel price sync flow using Supabase and a protected Vercel API endpoint.",
+        "Google authentication with account features for saved vehicles, saved calculations, and alert preferences.",
+        "Delivery driver profit calculator and fleet reporting tools with cost-per-kilometre insights.",
+        "Nearby stations beta with clear regional estimate and station-price trust disclaimers.",
+        "Email alert infrastructure with dry-run safety, unsubscribe flow, and real-send feature flags.",
+        "SEO and launch setup including sitemap, robots.txt, Google Search Console checklist, privacy page, and production release checklist.",
+      ],
+      challenges: [
+        "Designing fuel calculations that stay accurate, understandable, and honest for different user types.",
+        "Handling South African inland/coastal pricing differences and unavailable fuel combinations such as Petrol 93 coastal.",
+        "Keeping production serverless endpoints safe with secrets, feature flags, dry-runs, and defensive JSON error handling.",
+        "Balancing free public calculators with account-based features, future subscriptions, and launch safety.",
+        "Preparing the app for real users with testing, smoke tests, Search Console setup, privacy notes, and release documentation.",
+      ],
+      improvements: [
+        "Add Fuel Shock Share Cards so users can share how monthly fuel price changes affect their budget.",
+        "Upgrade delivery calculations into Driver Profit Radar with accept/reject trip verdicts.",
+        "Add FuelWise Coach missions for weekly savings goals and shareable progress.",
+        "Improve community station price reporting with confidence scores and moderation.",
+        "Add manual fuel receipt logs and later OCR-based receipt scanning.",
+      ],
+    },
+    href: "https://fuelwise-sa.vercel.app/",
+    github: "",
+    logo: "",
+    image: "/assets/projects/homepage.webp",
+    screenshots: [
+      "/assets/projects/fuelwise-sa/homepage.png",
+      "/assets/projects/fuelwise-sa/fuel-prices.png",
+      "/assets/projects/fuelwise-sa/calculator.png",
+      "/assets/projects/fuelwise-sa/nearby-stations.png",
+      "/assets/projects/fuelwise-sa/fleet-reports.png",
+      "/assets/projects/fuelwise-sa/account.png",
+    ],
+    tags: buildTags([
+      "react",
+      "typescript",
+      "vite",
+      "supabase",
+      "tailwind",
+      "vitest",
+      "stripe",
+      "vercel",
+    ]),
+  },
+];
 
 export const mySocials = [
   {
     name: "WhatsApp",
-    href: "0782096121",
+    href: "https://wa.me/27782096121",
     icon: "/assets/socials/whatsApp.svg",
   },
   {
@@ -391,83 +412,4 @@ export const mySocials = [
     href: "https://www.instagram.com/theejodas?utm_source=qr&igsh=MXBqeWthMGhxN20xOA==",
     icon: "/assets/socials/instagram.svg",
   },
-]
-
-export const experiences = [
-  {
-    title: "Freelance Full Stack Developer",
-    job: "Self-Employed",
-    date: "2020 - Present",
-    logo: "/assets/logos/freelance.jpg",
-    contents: [
-      "Built and deployed responsive websites, dashboards, and web applications for local businesses and personal product ideas.",
-      "Developed SaaS-style applications using React, Next.js, TypeScript, SQL databases, authentication, and modern UI systems.",
-      "Created a cross-platform food ordering app using React Native, Appwrite, Zustand, and Expo for mobile-first user experiences.",
-      "Integrated frontend applications with backend services, databases, authentication providers, payment systems, and third-party APIs.",
-      "Used Git, GitHub, Vercel, and CI-style workflows to manage code, deployment, and project delivery.",
-      "Translated product ideas and Figma-style layouts into responsive, accessible, mobile-first interfaces.",
-    ],
-  },
-  {
-    title: "Web Developer Intern",
-    job: "Life Choices Studio",
-    date: "2024",
-    logo: "/assets/logos/life.jpg",
-    contents: [
-      "Developed a WordPress eCommerce site for a fruit and veg store using SEO and responsive design best practices.",
-      "Led daily standups and sprint reviews as Scrum Master, improving team communication and delivery rhythm.",
-      "Designed responsive layouts and converted them into functional WordPress pages and content sections.",
-      "Reduced image load impact through optimization strategies and improved page performance.",
-    ],
-  },
-  {
-    title: "Support Engineer",
-    job: "Securicom",
-    date: "2022 - 2024",
-    logo: "/assets/logos/securicom.jpg",
-    contents: [
-      "Blocked phishing and spam emails across multiple domains to improve user security and reduce business risk.",
-      "Provided support for system access, email setup, account issues, and IT incidents through a ticketing workflow.",
-      "Monitored server-side infrastructure and escalated technical issues where required.",
-      "Strengthened troubleshooting, communication, and production support skills in a real business environment.",
-    ],
-  },
-  {
-    title: "Junior Network Technician (Volunteer)",
-    job: "Cape Peninsula University of Technology",
-    date: "2017",
-    logo: "/assets/logos/cput.jpg",
-    contents: [
-      "Installed routers, switches, and wireless access points across campus buildings.",
-      "Assisted with LAN setup and resolved basic connectivity issues for staff and students.",
-      "Supported network engineers during infrastructure upgrades and learned practical networking fundamentals.",
-    ],
-  },
-]
-
-export const reviews = [
-  {
-    name: "Portfolio Review",
-    username: "Full-stack focus",
-    body: "The strongest projects demonstrate practical SaaS workflows, authentication, dashboards, role-based access, and deployment-ready thinking.",
-    img: "https://robohash.org/fullstack",
-  },
-  {
-    name: "Project Quality",
-    username: "Product polish",
-    body: "OpsFlow stands out because it feels like a real product, with workspace data, permissions, reports, exports, screenshots, and documentation.",
-    img: "https://robohash.org/product",
-  },
-  {
-    name: "Technical Growth",
-    username: "Architecture",
-    body: "The portfolio shows growth from frontend animation and mobile apps into more complete full-stack systems with databases and server-side logic.",
-    img: "https://robohash.org/architecture",
-  },
-  {
-    name: "Recruiter Signal",
-    username: "Hiring ready",
-    body: "Live demos, GitHub links, case studies, and clear problem-solution explanations make the projects easier to evaluate quickly.",
-    img: "https://robohash.org/recruiter",
-  },
-]
+];

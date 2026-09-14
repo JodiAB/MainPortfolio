@@ -11,17 +11,18 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 import { useMotionValue, useSpring } from "motion/react";
 import { useFrame } from "@react-three/fiber";
 
-export function Astronaut(props) {
+export function Astronaut({ reducedMotion = false, ...props }) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(
     "/models/tenhun_falling_spaceman_fanart.glb"
   );
   const { actions } = useAnimations(animations, group);
   useEffect(() => {
-    if (animations.length > 0) {
+    if (animations.length > 0 && !reducedMotion) {
       actions[animations[0].name]?.play();
     }
-  }, [actions, animations]);
+      return () => Object.values(actions).forEach((action) => action?.stop());
+  }, [actions, animations, reducedMotion]);
 
   const yPosition = useMotionValue(5);
   const ySpring = useSpring(yPosition, { damping: 30 });
@@ -29,7 +30,7 @@ export function Astronaut(props) {
     ySpring.set(-1);
   }, [ySpring]);
   useFrame(() => {
-    group.current.position.y = ySpring.get();
+    if (group.current) group.current.position.y = reducedMotion ? -1 : ySpring.get();
   });
   return (
     <group
@@ -126,5 +127,3 @@ export function Astronaut(props) {
     </group>
   );
 }
-
-useGLTF.preload("/models/tenhun_falling_spaceman_fanart.glb");

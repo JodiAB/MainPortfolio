@@ -1,133 +1,124 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import Alert from "../components/Alert";
-import { Particles } from "../components/Particles";
-const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [isLoading, setIsLoading] = useState(false);
-  const [showAlert, setShowAlert] = useState(false);
-  const [alertType, setAlertType] = useState("success");
-  const [alertMessage, setAlertMessage] = useState("");
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-  const showAlertMessage = (type, message) => {
-    setAlertType(type);
-    setAlertMessage(message);
-    setShowAlert(true);
-    setTimeout(() => {
-      setShowAlert(false);
-    }, 5000);
-  };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-
+export default function Contact() {
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [loading, setLoading] = useState(false);
+  const [feedback, setFeedback] = useState(null);
+  const change = (event) =>
+    setForm({ ...form, [event.target.name]: event.target.value });
+  const submit = async (event) => {
+    event.preventDefault();
+    if (loading) return;
+    setLoading(true);
+    setFeedback(null);
     try {
-      console.log("From submitted:", formData);
       await emailjs.send(
         "service_63gz2xs",
         "template_ohw15fy",
         {
-          from_name: formData.name,
+          from_name: form.name,
           to_name: "Jodi",
-          from_email: formData.email,
+          from_email: form.email,
           to_email: "jodiabrahams9@gmail.com",
-          message: formData.message,
+          message: form.message,
         },
-        "Vx50QTme9PSXQ21ZH"
+        "Vx50QTme9PSXQ21ZH",
       );
-      setIsLoading(false);
-      setFormData({ name: "", email: "", message: "" });
-      showAlertMessage("success", "You message has been sent!");
-    } catch (error) {
-      setIsLoading(false);
-      console.log(error);
-      showAlertMessage("danger", "Somthing went wrong!");
+      setForm({ name: "", email: "", message: "" });
+      setFeedback({
+        type: "success",
+        text: "Your message has been sent. Thanks for getting in touch!",
+      });
+    } catch {
+      setFeedback({
+        type: "danger",
+        text: "Your message could not be sent. Please try again or email me directly.",
+      });
+    } finally {
+      setLoading(false);
     }
   };
   return (
-    <section className="relative flex items-center c-space section-spacing">
-      <Particles
-        className="absolute inset-0 -z-50"
-        quantity={100}
-        ease={80}
-        color={"#ffffff"}
-        refresh
-      />
-      {showAlert && <Alert type={alertType} text={alertMessage} />}
-      <div className="flex flex-col items-center justify-center max-w-md p-5 mx-auto border border-white/10 rounded-2xl bg-primary">
-        <div className="flex flex-col items-start w-full gap-5 mb-10">
-          <h2 className="text-heading">Let's Talk</h2>
-          <p className="font-normal text-neutral-400">
-            Whether you're loking to build a new website, improve your existing
-            platform, or bring a unique project to life, I'm here to help
+    <section
+      tabIndex={-1}
+      id="contact"
+      className="c-space section-spacing contact-section"
+    >
+      <div className="surface contact-panel">
+        <div className="contact-copy">
+          <p className="eyebrow">Have a role or product in mind?</p>
+          <h2 className="text-heading">Let’s Talk</h2>
+          <p>
+            Whether you’re hiring for a development role, looking for a
+            technical collaborator, or building a product that needs thoughtful
+            engineering, I’d be glad to connect.
           </p>
+          <a className="text-link" href="mailto:jodiabrahams9@gmail.com">
+            jodiabrahams9@gmail.com ↗
+          </a>
         </div>
-        <form className="w-full" onSubmit={handleSubmit}>
+        <form onSubmit={submit} aria-busy={loading}>
+          <div role="status" aria-live="polite">
+            {feedback && (
+              <p className={`form-feedback ${feedback.type}`}>
+                {feedback.text}
+              </p>
+            )}
+          </div>
           <div className="mb-5">
-            <label htmlFor="name" className="feild-label">
-              Full Name
+            <label className="field-label" htmlFor="contact-name">
+              Full name
             </label>
             <input
-              id="name"
+              className="field-input"
+              id="contact-name"
               name="name"
-              type="text"
-              className="field-input field-input-focus"
-              placeholder="John Doe"
               autoComplete="name"
-              value={formData.name}
-              onChange={handleChange}
+              placeholder="Your name"
+              value={form.name}
+              onChange={change}
               required
             />
           </div>
           <div className="mb-5">
-            <label htmlFor="email" className="feild-label">
+            <label className="field-label" htmlFor="contact-email">
               Email
             </label>
             <input
-              id="email"
+              className="field-input"
+              id="contact-email"
               name="email"
               type="email"
-              className="field-input field-input-focus"
-              placeholder="JohnDoe@email.com"
               autoComplete="email"
-              value={formData.email}
-              onChange={handleChange}
+              placeholder="you@example.com"
+              value={form.email}
+              onChange={change}
               required
             />
           </div>
           <div className="mb-5">
-            <label htmlFor="message" className="feild-label">
+            <label className="field-label" htmlFor="contact-message">
               Message
             </label>
             <textarea
-              id="message"
+              className="field-input"
+              id="contact-message"
               name="message"
-              type="text"
-              rows="4"
-              className="field-input field-input-focus"
-              placeholder="Share your thoughts..."
-              autoComplete="message"
-              value={formData.message}
-              onChange={handleChange}
+              rows="5"
+              placeholder="Tell me about the role, project or problem you’re working on…"
+              value={form.message}
+              onChange={change}
               required
             />
           </div>
           <button
-            type="submit"
-            className="w-full px-1 py-3 text-lg text-center rounded-md cursor-pointer bg-radial from-lavender to-royal hover-animation"
+            className="button button-primary w-full disabled:opacity-60"
+            disabled={loading}
           >
-            {!isLoading ? "Send" : "Sending..."}
+            {loading ? "Sending…" : "Send Message"}
           </button>
         </form>
       </div>
     </section>
   );
-};
-
-export default Contact;
+}

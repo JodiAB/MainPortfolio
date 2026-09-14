@@ -1,50 +1,32 @@
-import Navbar from './sections/Navbar';
-import Hero from './sections/Hero';
-import About from './sections/About';
-import Projects from './sections/Projects';
-import Experiences from './sections/Experiences';
-import Testimonial from './sections/Testimonial';
-import Contact from './sections/Contact';
-import Footer from './sections/Footer';
-import Approach from './sections/Approach';
-import ProjectsSection from './sections/ProjectsSection';
-
-const App = () => {
+import { useRef } from "react";
+import useScrollMotion from "./hooks/useScrollMotion";
+import Navbar from "./sections/Navbar";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Projects from "./sections/Projects";
+import Experiences from "./sections/Experiences";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
+import Approach from "./sections/Approach";
+import { MotionConfig } from "motion/react";
+export default function App() {
+  const mainRef = useRef(null);
+  useScrollMotion(mainRef);
   return (
-<div className="w-full overflow-x-hidden">
-
+    <MotionConfig reducedMotion="user">
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
       <Navbar />
-      <div id="home">
+      <main ref={mainRef} id="main" tabIndex={-1}>
         <Hero />
-      </div>
-      <div id="about">
         <About />
-      </div>
-      <div id="work">
         <Projects />
-      </div>
-        {/* <div id="work">
-        <ProjectsSection />
-      </div> */}
-       <div id="work">
         <Approach />
-      </div>
-      <div id="work">
         <Experiences />
-      </div>
-      <div id="work">
-        <Testimonial />
-      </div>
-      <div id="contact">
         <Contact />
-      </div>
-      <div id="footer">
-        <Footer />
-      </div>
-    </div>
+      </main>
+      <Footer />
+    </MotionConfig>
   );
-};
-
-
-export default App;
-
+}

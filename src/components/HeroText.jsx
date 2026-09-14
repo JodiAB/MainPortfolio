@@ -1,128 +1,37 @@
-"use client";
-import { FlipWords } from "./FlipWords";
-import { motion } from "motion/react";
-import { TypeAnimation } from "react-type-animation";
-
-const HeroText = () => {
-  const words = ["Scalable", "Performant", "AI-Driven", "Secure"];
-  const variants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-  };
-
+import { CV_PATH } from "../constants/site";
+export default function HeroText() {
   return (
-    <div className="z-10 mt-24 text-center md:mt-48 md:text-left bg-clip-text">
-      {/* Desktop View */}
-      <div className="flex-col hidden md:flex c-space">
-       <motion.h1
-  className="text-5xl font-semibold text-white"
-  variants={variants}
-  initial="hidden"
-  animate="visible"
-  transition={{ delay: 0.3 }}
->
-  Hi, I’m{" "}
-  <span className="text-purple-400 font-bold whitespace-nowrap inline-block">
-    Jodi Abrahams
-  </span>
-</motion.h1>
-
-<motion.h2
-  className="mt-4 text-6xl font-bold text-neutral-200 leading-tight"
-  variants={variants}
-  initial="hidden"
-  animate="visible"
-  transition={{ delay: 0.6 }}
->
-  I build <FlipWords words={words} className="text-white" />{" "}
-  <span className="whitespace-nowrap inline-block">digital experiences</span>
-</motion.h2>
-
-
-        {/* Typing subtitle */}
-        <motion.div
-          className="mt-4 text-2xl text-neutral-400 font-light"
-          variants={variants}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 1.2 }}
-        >
-          <TypeAnimation
-            sequence={[
-              "Front-End Engineer specializing in high-performance UI.",
-              2000,
-              "Building modern apps with Next.js, TypeScript & Framer Motion.",
-              2000,
-              "Transforming complex ideas into elegant interfaces.",
-              2000,
-            ]}
-            wrapper="span"
-            speed={50}
-            repeat={Infinity}
-          />
-        </motion.div>
-
-        <motion.div
-          className="mt-10 flex gap-6"
-          variants={variants}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 1.6 }}
-        >
-       <a href="#work" className="btn-9">
-  View My Work
-</a>
-<a href="#contact" className="btn-9">
-  Let’s Connect
-</a>
-
-        </motion.div>
+    <div className="hero-copy">
+      <p className="eyebrow">Cape Town, South Africa · Open to remote work</p>
+      <h1>
+        Hi, I’m <span>Jodi Abrahams.</span>
+      </h1>
+      <p className="hero-position">
+        Full Stack Developer.
+        <br />
+        <span>Strong frontend focus.</span>
+      </p>
+      <p className="hero-description">
+        I build fast, scalable and production-ready web and mobile products
+        using modern JavaScript and TypeScript technologies.
+      </p>
+      <p className="hero-stack">
+        React · Next.js · TypeScript · Vue.js · React Native · Node.js
+      </p>
+      <div className="actions">
+        <a className="button button-primary" href="#projects">
+          View My Work <span aria-hidden="true">↗</span>
+        </a>
+        <a className="button button-secondary" href="#contact">
+          Let’s Connect
+        </a>
+        <a className="button button-secondary button-neon" href={CV_PATH} download>
+          Download CV ↓
+        </a>
       </div>
-
-      {/* Mobile View */}
-      <div className="flex flex-col space-y-6 md:hidden">
-        <motion.h1
-          className="text-4xl font-semibold text-white"
-          variants={variants}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 0.3 }}
-        >
-          Hi, I’m <span className="text-purple-400 font-bold">Jodi</span>
-        </motion.h1>
-
-        <motion.h2
-          className="text-5xl font-bold text-neutral-200"
-          variants={variants}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 0.6 }}
-        >
-          Building <FlipWords words={words} className="text-white" /> apps
-        </motion.h2>
-
-        <motion.div
-          className="text-lg text-neutral-400"
-          variants={variants}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 1 }}
-        >
-          <TypeAnimation
-            sequence={[
-              "Front-End Engineer with a focus on user experience.",
-              2000,
-              "Crafting modern, responsive web apps.",
-              2000,
-            ]}
-            wrapper="span"
-            speed={50}
-            repeat={Infinity}
-          />
-        </motion.div>
-      </div>
+      <p className="hero-proof">
+        5+ years hands-on · 2+ years professional experience
+      </p>
     </div>
   );
-};
-
-export default HeroText;
+}
