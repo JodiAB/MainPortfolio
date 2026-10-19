@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { CV_PATH } from "../constants/site";
 const items = ["Home", "About", "Projects", "Experience", "Contact"];
-export default function Navbar() {
+export default function Navbar({ basePath = "" }) {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("home");
   const toggle = useRef(null);
   useEffect(() => {
+    if (basePath) return;
     const update = () => {
       let current = "home";
       items.forEach((item) => {
@@ -20,7 +21,7 @@ export default function Navbar() {
     update();
     window.addEventListener("scroll", update, { passive: true });
     return () => window.removeEventListener("scroll", update);
-  }, []);
+  }, [basePath]);
   return (
     <header
       className="site-header"
@@ -32,7 +33,7 @@ export default function Navbar() {
       }}
     >
       <div className="nav-container">
-        <a href="#home" className="brand" aria-label="Jodi Abrahams home">
+        <a href={`${basePath}#home`} className="brand" aria-label="Jodi Abrahams home">
           Jodi<span>.</span>
         </a>
         <button
@@ -53,9 +54,9 @@ export default function Navbar() {
           {items.map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`${basePath}#${item.toLowerCase()}`}
               aria-current={
-                active === item.toLowerCase() ? "location" : undefined
+                !basePath && active === item.toLowerCase() ? "location" : undefined
               }
               onClick={() => {
                 setOpen(false);

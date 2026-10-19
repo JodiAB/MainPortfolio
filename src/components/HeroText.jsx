@@ -12,8 +12,8 @@ export default function HeroText() {
         <span>Strong frontend focus.</span>
       </p>
       <p className="hero-description">
-        I build fast, scalable and production-ready web and mobile products
-        using modern JavaScript and TypeScript technologies.
+        I build web and mobile products with JavaScript and TypeScript,
+        and integrate and evaluate AI systems with explicit evidence checks.
       </p>
       <p className="hero-stack">
         React · Next.js · TypeScript · Vue.js · React Native · Node.js

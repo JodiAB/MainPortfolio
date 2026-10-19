@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none">
+ <title>Possibility Engine — retrieve, reason, verify</title>
+ <desc>An original architecture illustration, not a screenshot of the application.</desc>
+ <defs><radialGradient id="glow"><stop stop-color="#51328f" stop-opacity=".6"/><stop offset="1" stop-color="#080c20" stop-opacity="0"/></radialGradient><linearGradient id="line"><stop stop-color="#a78bfa"/><stop offset="1" stop-color="#55d7df"/></linearGradient></defs>
+ <rect width="1200" height="675" fill="#080c20"/><ellipse cx="700" cy="270" rx="570" ry="400" fill="url(#glow)"/>
+ <g stroke="#ffffff" opacity=".035"><path d="M0 135H1200M0 270H1200M0 405H1200M0 540H1200M150 0V675M300 0V675M450 0V675M600 0V675M750 0V675M900 0V675M1050 0V675"/></g>
+ <g font-family="Arial,sans-serif"><text x="76" y="100" fill="#b7a1ed" font-size="17" letter-spacing="4">AI ENGINEERING / RAG</text><text x="76" y="172" fill="#f4f1ff" font-size="52" font-weight="700">Possibility Engine</text><text x="78" y="215" fill="#acb7d1" font-size="21">Reasoning with evidence. Engineering with uncertainty.</text>
+ <path d="M160 365H1030" stroke="url(#line)" stroke-width="2"/>
+ <g fill="#10162c" stroke="#685199"><rect x="76" y="288" width="300" height="156" rx="18"/><rect x="450" y="288" width="300" height="156" rx="18"/><rect x="824" y="288" width="300" height="156" rx="18"/></g>
+ <text x="102" y="327" fill="#a78bfa" font-size="15">01 / RETRIEVE</text><text x="102" y="370" fill="#fff" font-size="23">Find relevant evidence</text><text x="102" y="409" fill="#b7bfd5" font-size="17">Ollama + PostgreSQL / pgvector</text>
+ <text x="476" y="327" fill="#a78bfa" font-size="15">02 / REASON</text><text x="476" y="370" fill="#fff" font-size="23">Generate a proposal</text><text x="476" y="409" fill="#b7bfd5" font-size="17">Gemini + structured outputs</text>
+ <text x="850" y="327" fill="#62d7de" font-size="15">03 / VERIFY</text><text x="850" y="370" fill="#fff" font-size="23">Check before saving</text><text x="850" y="409" fill="#b7bfd5" font-size="17">Safety · citations · grounding</text>
+ <circle cx="413" cy="365" r="15" fill="#191e38" stroke="#a78bfa"/><path d="m409 359 6 6-6 6" stroke="#e0d3ff" stroke-width="2"/><circle cx="787" cy="365" r="15" fill="#191e38" stroke="#55d7df"/><path d="m783 359 6 6-6 6" stroke="#b5f5f2" stroke-width="2"/>
+ <text x="78" y="522" fill="#d7c5ff" font-size="19">Structured reasoning. Measured retrieval. Explicit limitations.</text><text x="78" y="562" fill="#9caac7" font-size="17">Engineering prototype / evidence is not proof of physical feasibility</text></g>
+</svg>

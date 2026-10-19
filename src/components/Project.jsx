@@ -9,6 +9,8 @@ export default function Project(props) {
     description,
     role,
     image,
+    imageAlt,
+    caseStudyPath,
     tags = [],
     onViewCaseStudy,
   } = props;
@@ -18,7 +20,7 @@ export default function Project(props) {
       <img
         className="project-image"
         src={image}
-        alt={`${title} interface preview`}
+        alt={imageAlt || `${title} interface preview`}
         loading="lazy"
         decoding="async"
         width="800"
@@ -39,12 +41,12 @@ export default function Project(props) {
         </ul>
         <div className="actions">
           <ProjectLinks project={props} />
-          <button className="text-link" onClick={onViewCaseStudy}>
+          {caseStudyPath ? <a className="button button-secondary" href={caseStudyPath}>Explore Case Study <span aria-hidden="true">↗</span></a> : <button className="text-link" onClick={onViewCaseStudy}>
             Case Study
-          </button>
-          <button className="text-link" onClick={() => setOpen(true)}>
+          </button>}
+          {!caseStudyPath && <button className="text-link" onClick={() => setOpen(true)}>
             Read More
-          </button>
+          </button>}
         </div>
       </div>
       {open && <ProjectDetails {...props} closeModal={() => setOpen(false)} />}

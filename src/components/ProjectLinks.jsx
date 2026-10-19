@@ -6,7 +6,11 @@ export default function ProjectLinks({ project }) {
     project.href && !project.href.includes("github.com/") ? project.href : "";
   return (
     <>
-      {live && (
+      {live && (project.demoUnavailable ? (
+        <span className="button button-secondary project-action-unavailable">
+          Demo · Temporarily unavailable
+        </span>
+      ) : (
         <a
           className="button button-secondary button-neon"
           href={live}
@@ -15,8 +19,12 @@ export default function ProjectLinks({ project }) {
         >
           Live Demo ↗
         </a>
-      )}
-      {github && (
+      ))}
+      {github && (project.sourcePrivate ? (
+        <span className="button button-secondary project-action-unavailable">
+          GitHub · Private
+        </span>
+      ) : (
         <a
           className="button button-secondary"
           href={github}
@@ -25,7 +33,7 @@ export default function ProjectLinks({ project }) {
         >
           GitHub ↗
         </a>
-      )}
+      ))}
     </>
   );
 }

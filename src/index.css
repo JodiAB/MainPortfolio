@@ -1023,3 +1023,19 @@ textarea.field-input {
   color: #e2dcf5;
 }
 .experience-note { margin-top: 10px; color: #b9a7e4; font-size: .85rem; }
+/* Readable availability labels share button spacing without button interactions. */
+.button.project-action-unavailable,
+.button.project-action-unavailable:hover,
+.button.project-action-unavailable:active {
+  color: #c6cde0;
+  background: #ffffff05;
+  border-color: #ffffff29;
+  cursor: default;
+  white-space: normal;
+  max-width: 100%;
+  min-width: 0;
+  transform: none;
+  box-shadow: none;
+}
+.button.project-action-unavailable::before,
+.button.project-action-unavailable::after { display: none; }

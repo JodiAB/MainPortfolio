@@ -3,6 +3,7 @@ import Project from "../components/Project";
 import CaseStudyModal from "../components/CaseStudyModal";
 import { myProjects } from "../constants";
 const priority = [
+  "Possibility Engine",
   "OpsFlow",
   "FuelWise SA",
   "Cocktail Animation Website",
@@ -19,7 +20,7 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
   return (
     <section tabIndex={-1} id="projects" className="c-space section-spacing">
-      <p className="eyebrow">Web · Mobile · SaaS</p>
+      <p className="eyebrow">AI Engineering · Web · Mobile · SaaS</p>
       <h2 className="text-heading">Selected Projects</h2>
       <p className="section-intro">
         Production workflows, practical tools and carefully considered

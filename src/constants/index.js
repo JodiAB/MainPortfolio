@@ -38,8 +38,23 @@ const buildTags = (keys) =>
 
 export const myProjects = [
   {
+    id: 9,
+    title: "Possibility Engine",
+    category: "AI Engineering / RAG",
+    featured: true,
+    year: "2026",
+    role: "AI & Full-Stack Developer",
+    description:
+      "An AI-powered problem-solving application combining structured LLM reasoning, semantic retrieval and deterministic validation to explore solutions using resources people already have. Built and evaluated as an engineering prototype, with explicit evidence checks and documented limitations.",
+    image: "/assets/projects/possibility-engine.svg",
+    imageAlt: "Possibility Engine architecture diagram: retrieve, reason and verify",
+    caseStudyPath: "/projects/possibility-engine/",
+    tags: ["TypeScript", "Next.js", "Gemini", "Ollama", "pgvector"].map((name, index) => ({ id: index + 1, name })),
+  },
+  {
     id: 1,
     title: "OpsFlow",
+    sourcePrivate: true,
     category: "Full-stack SaaS",
     featured: true,
     year: "2026",
@@ -121,6 +136,7 @@ export const myProjects = [
   {
     id: 2,
     title: "LMS SaaS App",
+    demoUnavailable: true,
     category: "SaaS Platform",
     featured: false,
     year: "2025",
@@ -187,6 +203,7 @@ export const myProjects = [
   {
     id: 4,
     title: "AI Stock Market App",
+    demoUnavailable: true,
     category: "Finance Dashboard",
     featured: false,
     year: "2025",
