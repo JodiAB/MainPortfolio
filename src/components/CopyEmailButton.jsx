@@ -1,4 +1,4 @@
-import { CV_PATH } from "../constants/site";
+import { CV_PATH, CV_FILENAME } from "../constants/site";
 import { useState } from "react";
 import { AnimatePresence, motion as Motion } from "motion/react";
 
@@ -18,7 +18,7 @@ const ContactButtons = () => {
   const downloadCV = () => {
     const link = document.createElement("a");
     link.href = cvFile;
-    link.download = "Jodi_Abrahams_CV_Freelancing";
+    link.download = CV_FILENAME;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

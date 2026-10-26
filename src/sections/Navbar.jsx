@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { CV_PATH } from "../constants/site";
+import { CV_PATH, CV_FILENAME } from "../constants/site";
 const items = ["Home", "About", "Projects", "Experience", "Contact"];
 export default function Navbar({ basePath = "" }) {
   const [open, setOpen] = useState(false);
@@ -68,7 +68,7 @@ export default function Navbar({ basePath = "" }) {
               {item}
             </a>
           ))}
-          <a className="button button-secondary button-neon" href={CV_PATH} download>
+          <a className="button button-secondary button-neon" href={CV_PATH} download={CV_FILENAME}>
             Download CV ↓
           </a>
         </nav>

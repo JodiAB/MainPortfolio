@@ -2,10 +2,10 @@ import { Timeline } from "../components/Timeline";
 
 const experiences = [
   {
-    title: "Freelance Front-end / Full Stack Developer",
+    title: "Freelance Full-Stack Software Developer",
     job: "Independent / Remote",
-    date: "Jan 2020 – Present",
-    note: "Part-time alongside employed roles; full-time since Apr 2026",
+    date: "Apr 2026 – Present",
+    note: "Full-time freelance and independent software development",
     logo: "/assets/logos/freelance.jpg",
     contents: [
       "Own end-to-end delivery of responsive websites and web applications using JavaScript, TypeScript, React, Next.js, HTML5, CSS3, and Tailwind CSS.",
@@ -15,8 +15,8 @@ const experiences = [
     ],
   },
   {
-    title: "Contract Full Stack Developer",
-    job: "Transhumanity",
+    title: "Contract Full-Stack Developer",
+    job: "TransHumanity",
     date: "Nov 2025 – Apr 2026",
     logo: "/assets/logos/freelance.jpg",
     contents: [
@@ -27,7 +27,7 @@ const experiences = [
     ],
   },
   {
-    title: "Full Stack Developer",
+    title: "Full-Stack Developer",
     job: "Crunchtime Deliveries",
     date: "Jun 2024 – Jun 2025",
     logo: "/assets/logos/freelance.jpg",

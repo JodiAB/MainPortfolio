@@ -59,3 +59,26 @@ test('shared project actions label unavailable destinations without navigable li
   assert(render('Nike-style eCommerce').includes('href="https://joding-ecomm.vercel.app/"'));
  }finally{await server.close();}
 });
+import {createHash} from 'node:crypto';
+import {CV_PATH,CV_FILENAME} from '../src/constants/site.js';
+
+test('CV version matches the canonical PDF and all download controls use its filename',()=>{
+ const bytes=readFileSync('public/assets/'+CV_FILENAME);
+ assert.equal(bytes.subarray(0,5).toString(),'%PDF-');
+ assert.equal(CV_PATH,`/assets/${CV_FILENAME}?v=${createHash('sha256').update(bytes).digest('hex').slice(0,12)}`);
+ for(const file of ['src/components/HeroText.jsx','src/sections/Navbar.jsx']){
+  const source=readFileSync(file,'utf8');assert(source.includes('href={CV_PATH} download={CV_FILENAME}'));
+ }
+ assert(readFileSync('src/components/HeroText.jsx','utf8').includes('View CV'));
+ assert(readFileSync('src/components/CopyEmailButton.jsx','utf8').includes('link.download = CV_FILENAME'));
+});
+
+test('built server returns the exact versioned CV PDF',async()=>{
+ const {preview}=await import('vite');
+ const server=await preview({preview:{host:'127.0.0.1',port:0,open:false}});
+ try{
+  const response=await fetch(`http://127.0.0.1:${server.httpServer.address().port}${CV_PATH}`);
+  assert.equal(response.status,200);assert.match(response.headers.get('content-type'),/application\/pdf/);
+  assert.deepEqual(Buffer.from(await response.arrayBuffer()),readFileSync('public/assets/'+CV_FILENAME));
+ }finally{await new Promise((resolve,reject)=>server.httpServer.close(error=>error?reject(error):resolve()));}
+});

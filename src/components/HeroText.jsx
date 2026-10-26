@@ -1,4 +1,4 @@
-import { CV_PATH } from "../constants/site";
+import { CV_PATH, CV_FILENAME } from "../constants/site";
 export default function HeroText() {
   return (
     <div className="hero-copy">
@@ -25,12 +25,15 @@ export default function HeroText() {
         <a className="button button-secondary" href="#contact">
           Let’s Connect
         </a>
-        <a className="button button-secondary button-neon" href={CV_PATH} download>
+        <a className="button button-secondary button-neon" href={CV_PATH} download={CV_FILENAME}>
           Download CV ↓
+        </a>
+        <a className="text-link" href={CV_PATH} target="_blank" rel="noreferrer" aria-label="View CV (PDF, opens in a new tab)">
+          View CV ↗
         </a>
       </div>
       <p className="hero-proof">
-        5+ years hands-on · 2+ years professional experience
+        5+ years hands-on · 3 years professional experience
       </p>
     </div>
   );
