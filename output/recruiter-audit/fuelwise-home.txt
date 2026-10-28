@@ -1,0 +1,282 @@
+- link "Skip to main content":
+  - /url: "#main-content"
+- banner:
+  - link "FW FuelWise SA Fuel costs made clearer":
+    - /url: /
+    - generic: FW
+    - generic: FuelWise SA
+    - generic: Fuel costs made clearer
+  - navigation "Main navigation":
+    - link "Home":
+      - /url: /
+    - link "Dashboard":
+      - /url: /dashboard
+    - button "Tools":
+      - generic: Tools
+    - link "Sign in":
+      - /url: /login
+- region "FuelWise public beta":
+  - paragraph:
+    - strong: FuelWise SA is currently in public beta.
+    - text: Fuel prices are provided for planning purposes and should be verified before major financial decisions.
+  - link "Give feedback":
+    - /url: /contact?feedback=1&page=%2F#feedback-heading
+  - button "Dismiss public beta banner": Dismiss
+- main:
+  - paragraph: FuelWise SA fuel-cost planning
+  - heading "Plan your fuel money before you drive." [level=1]
+  - paragraph: Estimate full tanks, trips, monthly fuel budgets, cost per km, and fuel price impact using South African fuel-price context.
+  - link "Calculate your fuel cost":
+    - /url: /fuel-cost-calculator-south-africa
+  - link "Check fuel prices":
+    - /url: /fuel-prices
+  - generic "FuelWise SA planning preview":
+    - generic: FuelWise planning snapshot
+    - strong: Latest price status pending
+    - article:
+      - generic: Full tank estimate
+      - strong: Litres and pump price
+    - article:
+      - generic: Trip estimate
+      - strong: Distance and consumption
+    - article:
+      - generic: Monthly spend
+      - strong: Commute days and L/100km
+    - article:
+      - generic: Cost per km
+      - strong: Fuel-only estimate
+    - article:
+      - generic: Fuel price context
+      - strong: Freshness and source labels
+    - generic: Estimate-first
+    - paragraph: Use the latest labelled fuel-price context when available, or enter your own pump price when your local station differs.
+  - region "What do you need to work out?":
+    - paragraph: Quick actions
+    - heading "What do you need to work out?" [level=2]
+    - paragraph: Start with the fuel question in front of you. Each tool keeps the result labelled as an estimate and lets you adjust your inputs.
+    - link "Full tank cost Enter litres and pump price to estimate a tank or partial fill. Estimate a fill-up":
+      - /url: /full-tank
+      - strong: Full tank cost
+      - paragraph: Enter litres and pump price to estimate a tank or partial fill.
+      - generic: Estimate a fill-up
+    - link "Trip fuel cost Work out one-way, return, or shared trip fuel estimates. Estimate a trip":
+      - /url: /trip-fuel-cost-calculator
+      - strong: Trip fuel cost
+      - paragraph: Work out one-way, return, or shared trip fuel estimates.
+      - generic: Estimate a trip
+    - link "Monthly fuel budget Turn regular driving into a practical monthly fuel budget. Plan my month":
+      - /url: /monthly-fuel-budget-calculator
+      - strong: Monthly fuel budget
+      - paragraph: Turn regular driving into a practical monthly fuel budget.
+      - generic: Plan my month
+    - link "Fuel cost per km Estimate fuel-only cost per kilometre from consumption and price. Work out per-km cost":
+      - /url: /fuel-cost-per-km-south-africa
+      - strong: Fuel cost per km
+      - paragraph: Estimate fuel-only cost per kilometre from consumption and price.
+      - generic: Work out per-km cost
+    - link "Fuel prices Check labelled South African petrol and diesel price context. View fuel prices":
+      - /url: /fuel-prices
+      - strong: Fuel prices
+      - paragraph: Check labelled South African petrol and diesel price context.
+      - generic: View fuel prices
+    - link "Find My FuelWise Tools Answer 5 optional questions and get suggested FuelWise tools. Find my tool":
+      - /url: /find-my-tools
+      - strong: Find My FuelWise Tools
+      - paragraph: Answer 5 optional questions and get suggested FuelWise tools.
+      - generic: Find my tool
+  - region "View latest fuel prices":
+    - paragraph: Fuel price context
+    - heading "View latest fuel prices" [level=2]
+    - paragraph: FuelWise SA shows fuel price source labels when data is available. Open the fuel prices page to check the latest petrol and diesel status.
+    - link "View latest fuel prices":
+      - /url: /fuel-prices
+  - region "Clear source labels, cautious estimates.":
+    - paragraph: Trust and freshness
+    - heading "Clear source labels, cautious estimates." [level=2]
+    - paragraph: FuelWise SA is for planning estimates. Fuel price context includes freshness and source labels where available, but real pump costs can differ by station, timing, grade, and local conditions.
+    - paragraph: FuelWise SA is not an official government fuel price service and is not affiliated with DMPR.
+    - link "Check price labels":
+      - /url: /fuel-prices
+    - link "Learn cost per km":
+      - /url: /guides/how-to-calculate-fuel-cost-per-km
+    - link "45 litres guide":
+      - /url: /guides/how-much-is-45-litres-of-petrol
+  - region "Fuel planning for daily driving, work, and long trips.":
+    - paragraph: Built for South African drivers
+    - heading "Fuel planning for daily driving, work, and long trips." [level=2]
+    - paragraph: Choose the use case that sounds closest to your fuel question.
+    - link "Commuters Plan recurring commuting, payday fuel pressure, and pump-price changes.":
+      - /url: /monthly-fuel-budget-calculator
+      - generic: Commuters
+      - paragraph: Plan recurring commuting, payday fuel pressure, and pump-price changes.
+    - link "Families and students Budget for school runs, shopping, campus travel, and family trips.":
+      - /url: /car-running-cost-calculator
+      - generic: Families and students
+      - paragraph: Budget for school runs, shopping, campus travel, and family trips.
+    - link "E-hailing drivers Estimate pickup distance, shifts, traffic, and fuel pressure.":
+      - /url: /e-hailing-fuel-cost-calculator
+      - generic: E-hailing drivers
+      - paragraph: Estimate pickup distance, shifts, traffic, and fuel pressure.
+    - link "Delivery drivers Plan route clusters, return distance, and delivery fuel assumptions.":
+      - /url: /delivery-driver-fuel-profit-calculator
+      - generic: Delivery drivers
+      - paragraph: Plan route clusters, return distance, and delivery fuel assumptions.
+    - link "Small fleets Compare route, vehicle, and monthly fuel assumptions for small teams.":
+      - /url: /fleet-fuel-cost-calculator
+      - generic: Small fleets
+      - paragraph: Compare route, vehicle, and monthly fuel assumptions for small teams.
+    - link "Road trips Estimate long-distance fuel cost before holiday or family travel.":
+      - /url: /trip-fuel-cost-calculator
+      - generic: Road trips
+      - paragraph: Estimate long-distance fuel cost before holiday or family travel.
+  - region "Answers people search before they fill up.":
+    - paragraph: Popular fuel questions
+    - heading "Answers people search before they fill up." [level=2]
+    - paragraph: Read the plain-language guide, then open the matching calculator when you are ready to use your own numbers.
+    - link "How much is 45 litres of petrol? Use litres and the latest pump price to estimate a fill-up.":
+      - /url: /guides/how-much-is-45-litres-of-petrol
+      - generic: How much is 45 litres of petrol?
+      - paragraph: Use litres and the latest pump price to estimate a fill-up.
+    - link "How much is a full tank? Learn how tank size, grade, and pump price change the estimate.":
+      - /url: /guides/how-much-is-a-full-tank-of-petrol
+      - generic: How much is a full tank?
+      - paragraph: Learn how tank size, grade, and pump price change the estimate.
+    - link "How do I calculate fuel cost per km? See the simple formula behind per-kilometre fuel planning.":
+      - /url: /guides/how-to-calculate-fuel-cost-per-km
+      - generic: How do I calculate fuel cost per km?
+      - paragraph: See the simple formula behind per-kilometre fuel planning.
+    - link "Petrol consumption calculator guide Turn L/100km into practical litres and cost estimates.":
+      - /url: /guides/petrol-consumption-calculator-guide
+      - generic: Petrol consumption calculator guide
+      - paragraph: Turn L/100km into practical litres and cost estimates.
+    - link "Petrol 93 vs 95 cost difference Understand when grade choice can affect a planning estimate.":
+      - /url: /guides/petrol-93-vs-95-cost-difference
+      - generic: Petrol 93 vs 95 cost difference
+      - paragraph: Understand when grade choice can affect a planning estimate.
+  - region "Fuel planning in your pocket.":
+    - paragraph: FuelWise on mobile
+    - heading "Fuel planning in your pocket." [level=2]
+    - paragraph: Use FuelWise SA on your phone to check fuel price context, estimate tank and trip costs, and find the right calculator before you drive.
+    - link "View Android app":
+      - /url: /fuelwise-android-app
+    - link "Join testers":
+      - /url: /join-fuelwise-testers
+  - region "Do the fuel maths before the trip, shift, or month starts.":
+    - paragraph: Start planning
+    - heading "Do the fuel maths before the trip, shift, or month starts." [level=2]
+    - paragraph: Calculate from your own numbers, check labelled fuel-price context, or let FuelWise SA suggest the best tool for your driving needs.
+    - link "Calculate your fuel cost":
+      - /url: /fuel-cost-calculator-south-africa
+    - link "Find my best tools":
+      - /url: /find-my-tools
+    - link "Check fuel prices":
+      - /url: /fuel-prices
+- contentinfo:
+  - paragraph: FuelWise SA is in public beta. Fuel prices and calculator results are estimates for planning and should be verified before major decisions.
+  - paragraph: Legal and payment policy pages are provided in English until reviewed translations are ready.
+  - generic: Language
+  - combobox "Language":
+    - option "English" [selected]
+    - option "Afrikaans"
+    - option "isiZulu"
+    - option "isiXhosa"
+    - option "Sesotho"
+    - option "Setswana"
+  - navigation "Fuel guides":
+    - link "Full tank calculator":
+      - /url: /full-tank-calculator
+    - link "Fuel cost calculator South Africa":
+      - /url: /fuel-cost-calculator-south-africa
+    - link "Monthly fuel budget guide":
+      - /url: /monthly-fuel-budget-calculator
+    - link "Delivery driver profit guide":
+      - /url: /delivery-driver-fuel-profit-calculator
+    - link "Trip fuel cost calculator":
+      - /url: /trip-fuel-cost-calculator
+    - link "Fleet fuel cost guide":
+      - /url: /fleet-fuel-cost-calculator
+    - link "Car ownership cost calculator":
+      - /url: /car-ownership-cost-calculator
+    - link "Travel claim calculator":
+      - /url: /travel-claim-calculator
+    - link "Transport fare impact calculator":
+      - /url: /transport-fare-impact-calculator
+    - link "Trip petrol split calculator":
+      - /url: /trip-petrol-split-calculator
+    - link "Nearby petrol stations South Africa":
+      - /url: /nearby-petrol-stations-south-africa
+    - link "Fuel price increase calculator":
+      - /url: /fuel-price-increase-calculator
+    - link "Petrol cost calculator":
+      - /url: /petrol-cost-calculator
+    - link "Diesel cost calculator":
+      - /url: /diesel-cost-calculator
+    - link "E-hailing fuel cost calculator":
+      - /url: /e-hailing-fuel-cost-calculator
+    - link "Car running cost calculator":
+      - /url: /car-running-cost-calculator
+    - link "Route fuel cost calculator":
+      - /url: /route-fuel-cost-calculator
+    - link "What affects fuel price South Africa":
+      - /url: /what-affects-fuel-price-south-africa
+    - link "How to budget for fuel South Africa":
+      - /url: /how-to-budget-for-fuel-south-africa
+    - link "Fuel cost per km South Africa":
+      - /url: /fuel-cost-per-km-south-africa
+    - link "E-hailing fuel cost guide South Africa":
+      - /url: /e-hailing-fuel-cost-guide-south-africa
+    - link "Delivery driver fuel cost guide South Africa":
+      - /url: /delivery-driver-fuel-cost-guide-south-africa
+    - link "December road trip fuel budget South Africa":
+      - /url: /december-road-trip-fuel-budget-south-africa
+    - link "FuelWise Android app":
+      - /url: /fuelwise-android-app
+    - link "Petrol price South Africa":
+      - /url: /petrol-price-south-africa
+    - link "Diesel price South Africa":
+      - /url: /diesel-price-south-africa
+    - link "Fuel price calculator South Africa":
+      - /url: /fuel-price-calculator-south-africa
+    - link "Inland vs coastal fuel prices":
+      - /url: /inland-vs-coastal-fuel-prices
+    - link "Diesel 50ppm vs 500ppm":
+      - /url: /diesel-50ppm-vs-500ppm
+    - link "Petrol 93 vs 95 South Africa":
+      - /url: /petrol-93-vs-95-south-africa
+    - link "August 2026 fuel price South Africa":
+      - /url: /august-2026-fuel-price-south-africa
+    - link "Join FuelWise testers":
+      - /url: /join-fuelwise-testers
+  - navigation "Legal links":
+    - link "Guides":
+      - /url: /guides
+    - link "About":
+      - /url: /about
+    - link "Status":
+      - /url: /status
+    - link "Roadmap":
+      - /url: /roadmap
+    - link "Give feedback":
+      - /url: /contact?feedback=1&page=%2F#feedback-heading
+    - link "Privacy Policy":
+      - /url: /privacy
+    - link "Terms of Use":
+      - /url: /terms
+    - link "Refund Policy":
+      - /url: /refund-policy
+    - link "Contact / Support":
+      - /url: /contact
+    - link "Data deletion":
+      - /url: /data-deletion
+    - link "support@fuelwisesa.co.za":
+      - /url: mailto:support@fuelwisesa.co.za
+- button "Open FuelWise tutorial guide":
+  - generic: Tutorial guide
+  - strong: "?"
+- dialog "Find your best FuelWise tools":
+  - paragraph: Optional setup
+  - heading "Find your best FuelWise tools" [level=2]
+  - paragraph: Answer 5 quick questions and we'll suggest the best tools for your fuel needs.
+  - paragraph: No account or payment required. Your answers stay on this device.
+  - button "Start"
+  - button "Maybe later"

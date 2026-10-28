@@ -1,0 +1,5 @@
+- main:
+  - heading "Welcome" [level=1]
+  - heading "Log In to Continue Your Job Journey" [level=2]
+  - button "Log In":
+    - paragraph: Log In

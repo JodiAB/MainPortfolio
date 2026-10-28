@@ -1,0 +1,140 @@
+{
+  "base": "397d2e9047174c1279beb9fa92f9e528a4178248",
+  "branch": "main",
+  "repository": "JodiAB/MainPortfolio",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 1876,
+      "sha256": "e837b71ad5eb274ef2ecf65d0433a75ab62f9433e66374fe9999f8f72f1df8ff"
+    },
+    {
+      "path": "projects/possibility-engine/index.html",
+      "bytes": 16710,
+      "sha256": "33670a58e12370f405031af7d8ab59efd90024d3e993ffdd24541c83f719e254"
+    },
+    {
+      "path": "src/App.jsx",
+      "bytes": 1066,
+      "sha256": "8e8c72ba4f68771f226ac796bdd2827f43061a0e1216de46c0437a4cff3ebc58"
+    },
+    {
+      "path": "src/components/CaseStudyModal.jsx",
+      "bytes": 1559,
+      "sha256": "d368b487d2b101743b95396f6950c8f8a5a9f7056d6d9722dd0ec1561c1b97cb"
+    },
+    {
+      "path": "src/components/HeroText.jsx",
+      "bytes": 1547,
+      "sha256": "9f62f72ce9ab88ff9ffb77d5fa0ce5f964ead4f2bc60dbc1d767ab112dd91080"
+    },
+    {
+      "path": "src/components/Project.jsx",
+      "bytes": 1821,
+      "sha256": "5578a6b319d7855cda5cc223a7c35ced3d73293e3d870cb3c94ef0704e9d69b5"
+    },
+    {
+      "path": "src/components/ProjectDetails.jsx",
+      "bytes": 807,
+      "sha256": "6161b3cf343da84c0d89e3e89ddf4accb51bcc14c2b48927677696c555d4db01"
+    },
+    {
+      "path": "src/components/ProjectLinks.jsx",
+      "bytes": 1209,
+      "sha256": "2a249d4d5628d6ba9a16687926bea988e7a67d6c9de4de6a5f39322aa65bb4e0"
+    },
+    {
+      "path": "src/constants/index.js",
+      "bytes": 23197,
+      "sha256": "f3e80b982ca9c90a69976a608961e3113e6cee98ac27dd7469fd092c09b92579"
+    },
+    {
+      "path": "src/hooks/useScrollMotion.js",
+      "bytes": 2313,
+      "sha256": "9f51bfa0a1b377e735aace990945ee462e247c84bd94c31558d7ea3b1ebff370"
+    },
+    {
+      "path": "src/index.css",
+      "bytes": 25164,
+      "sha256": "4c9d04412e9beac6e8d26579b8942cb5f935e3116e1e743a8070e9853eab4a98"
+    },
+    {
+      "path": "src/sections/About.jsx",
+      "bytes": 2521,
+      "sha256": "acbed693107b4510ae0376f8bc5507f972edc2a7f186bde6825963235421959d"
+    },
+    {
+      "path": "src/sections/Hero.jsx",
+      "bytes": 1283,
+      "sha256": "04d16a651e107546a3190d0c2d28f404459d3163756140e03782776adfbcb9e3"
+    },
+    {
+      "path": "src/sections/Navbar.jsx",
+      "bytes": 2599,
+      "sha256": "bb8ef03aba7a53f51cf50629e6bc5fed45c11b7d255a8c7dc65679c1fe8d3693"
+    },
+    {
+      "path": "src/sections/Projects.jsx",
+      "bytes": 1837,
+      "sha256": "2103e0641f7df56923a368beef73dff41b1a7716d441a496202f5b3b8114193b"
+    },
+    {
+      "path": "public/assets/astronaut-attribution.txt",
+      "bytes": 429,
+      "sha256": "b371d74a61238bde34aeaf3d08c8a8923d5f052a555e77582b162519faaaa43a"
+    },
+    {
+      "path": "public/assets/astronaut-poster.jpg",
+      "bytes": 26528,
+      "sha256": "25f2689bae1f5815d75128827a3966027c1b72e53f902921a0e3a5efac3fc5cf"
+    },
+    {
+      "path": "public/assets/fonts/funnel-display-latin.woff2",
+      "bytes": 17712,
+      "sha256": "96468ae7727580c804f679aa5d29c75389e605fb2e41ae6a067ad86e5e9a86a9"
+    },
+    {
+      "path": "public/assets/fonts/OFL.txt",
+      "bytes": 4382,
+      "sha256": "a32303f6ea3542927121212a9e4f3fe3548741e6d448d9dc6f29e97cf50102e6"
+    },
+    {
+      "path": "public/robots.txt",
+      "bytes": 86,
+      "sha256": "f4f001ab7e6d2de97d66f7ea15288ef441c934aff85aff6cb12f67d4ad809ffd"
+    },
+    {
+      "path": "public/sitemap.xml",
+      "bytes": 270,
+      "sha256": "c224beedf467150ce2f7914429fb488d59727ef891ee0b770033dbf2acd60b15"
+    },
+    {
+      "path": "src/components/CommercialHighlights.jsx",
+      "bytes": 1193,
+      "sha256": "6aa3bf6b0fff4c6fb3b13bccc8ea19312e62d01e30e87a27e59011cc177ac11d"
+    },
+    {
+      "path": "src/components/ProjectEvidence.jsx",
+      "bytes": 288,
+      "sha256": "6cdcce04a09851b13a36ac80a929d9cab2f3ab9b8ca86787446dc9e76b889e67"
+    },
+    {
+      "path": "src/constants/projectEvidence.js",
+      "bytes": 2300,
+      "sha256": "c53b6c1a5b7989acfdf33c4e107e0b1e204880dcfde3b69967274cb7de9bdba2"
+    },
+    {
+      "path": "src/hooks/useVisibleEffects.js",
+      "bytes": 514,
+      "sha256": "2687dfbc4d1d7d3ebd9e610a1d293d95f431e03f62aec35a62132ed86e61763f"
+    }
+  ],
+  "excluded": [
+    "output/",
+    "tmp/",
+    "docs/",
+    "node_modules/",
+    "dist/"
+  ],
+  "secretPatternFindings": []
+}

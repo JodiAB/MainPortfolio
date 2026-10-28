@@ -8,25 +8,28 @@ import Experiences from "./sections/Experiences";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Approach from "./sections/Approach";
-import { MotionConfig } from "motion/react";
+import CommercialHighlights from "./components/CommercialHighlights";
+import useVisibleEffects from "./hooks/useVisibleEffects";
 export default function App() {
   const mainRef = useRef(null);
   useScrollMotion(mainRef);
+  useVisibleEffects();
   return (
-    <MotionConfig reducedMotion="user">
+    <>
       <a className="skip-link" href="#main">
         Skip to content
       </a>
       <Navbar />
       <main ref={mainRef} id="main" tabIndex={-1}>
         <Hero />
-        <About />
+        <CommercialHighlights />
         <Projects />
-        <Approach />
         <Experiences />
+        <About />
+        <Approach />
         <Contact />
       </main>
       <Footer />
-    </MotionConfig>
+    </>
   );
 }

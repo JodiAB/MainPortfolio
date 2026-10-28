@@ -7,16 +7,17 @@ export default function HeroText() {
         Hi, I’m <span>Jodi Abrahams.</span>
       </h1>
       <p className="hero-position">
-        Full Stack Developer.
+        Full-Stack Software Developer.
         <br />
-        <span>Strong frontend focus.</span>
+        <span>From interface to API.</span>
       </p>
       <p className="hero-description">
-        I build web and mobile products with JavaScript and TypeScript,
-        and integrate and evaluate AI systems with explicit evidence checks.
+        I build SaaS applications, responsive interfaces and APIs. Commercial
+        work includes reporting tools at TransHumanity and delivery workflows
+        at Crunchtime Deliveries.
       </p>
       <p className="hero-stack">
-        React · Next.js · TypeScript · Vue.js · React Native · Node.js
+        React · Next.js · TypeScript · Node.js · PostgreSQL
       </p>
       <div className="actions">
         <a className="button button-primary" href="#projects">
@@ -33,7 +34,7 @@ export default function HeroText() {
         </a>
       </div>
       <p className="hero-proof">
-        5+ years hands-on · 3 years professional experience
+        5+ years hands-on · 3 years across software development and IT support
       </p>
     </div>
   );

@@ -1,0 +1,33 @@
+- alert
+- main:
+  - link "OpsFlow":
+    - /url: /
+    - generic: OpsFlow
+  - text: Workspace operations platform
+  - heading "Manage projects, tasks, teams, and reports from one workspace." [level=1]
+  - paragraph: OpsFlow gives teams a focused place to track work, manage access, create reports, and export polished updates.
+  - paragraph: Workspace overview
+  - heading "Operations dashboard" [level=2]
+  - generic: Live
+  - paragraph: "12"
+  - paragraph: Projects
+  - paragraph: "48"
+  - paragraph: Tasks done
+  - paragraph: "8"
+  - paragraph: Members
+  - paragraph: Progress overview
+  - paragraph: Reports ready
+  - paragraph: Build, save, and export clean project updates.
+  - paragraph: Welcome back
+  - generic: Log in to OpsFlow
+  - paragraph: Access your workspace dashboard, projects, tasks, team, and reports.
+  - generic: Email
+  - textbox "Email":
+    - /placeholder: jodi@example.com
+  - generic: Password
+  - textbox "Password"
+  - button "Log in"
+  - paragraph:
+    - text: Don't have an account?
+    - link "Create one":
+      - /url: /register

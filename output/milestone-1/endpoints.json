@@ -1,0 +1,30 @@
+[
+  {
+    "path": "/robots.txt",
+    "status": 200,
+    "type": "text/plain",
+    "bytes": 86,
+    "sha256": "f4f001ab7e6d2de97d66f7ea15288ef441c934aff85aff6cb12f67d4ad809ffd"
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 200,
+    "type": "text/xml",
+    "bytes": 270,
+    "sha256": "c224beedf467150ce2f7914429fb488d59727ef891ee0b770033dbf2acd60b15"
+  },
+  {
+    "path": "/assets/Jodi_Abrahams_CV.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 72812,
+    "sha256": "fc8834564fbe1ac8484195578ed5f0f59b3008e6755723c1ee32beefd31eab6b"
+  },
+  {
+    "path": "/assets/Jodi_Abrahams_CV.pdf?v=fc8834564fbe",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 72812,
+    "sha256": "fc8834564fbe1ac8484195578ed5f0f59b3008e6755723c1ee32beefd31eab6b"
+  }
+]

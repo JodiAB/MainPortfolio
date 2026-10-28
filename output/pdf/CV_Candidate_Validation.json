@@ -1,0 +1,40 @@
+{
+  "pageCount": 2,
+  "links": [
+    "tel:+27782096121",
+    "mailto:jodiabrahams9@gmail.com",
+    "https://jodiabrahamsportfolio.vercel.app/",
+    "https://github.com/JodiAB",
+    "https://www.linkedin.com/in/jodi-abrahams/"
+  ],
+  "webLinkChecks": [
+    {
+      "url": "https://jodiabrahamsportfolio.vercel.app/",
+      "status": 200,
+      "final": "https://jodiabrahamsportfolio.vercel.app/"
+    },
+    {
+      "url": "https://github.com/JodiAB",
+      "status": 200,
+      "final": "https://github.com/JodiAB"
+    },
+    {
+      "url": "https://www.linkedin.com/in/jodi-abrahams/",
+      "status": "BLOCKED",
+      "reason": "HTTP Error 999: <none>"
+    }
+  ],
+  "bounds": [
+    {
+      "page": 1,
+      "characters": 2701,
+      "outsidePage": 0
+    },
+    {
+      "page": 2,
+      "characters": 2709,
+      "outsidePage": 0
+    }
+  ],
+  "pdfParses": true
+}

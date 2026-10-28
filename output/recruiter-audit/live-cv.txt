@@ -1,0 +1,63 @@
+Jodi Abrahams  |  1
+JODI ABRAHAMS
+FULL-STACK SOFTWARE DEVELOPER | REACT · NEXT.JS · TYPESCRIPT · NODE.JS
+Cape Town, South Africa | 078 209 6121 | jodiabrahams9@gmail.com
+jodiabrahamsportfolio.vercel.app | github.com/JodiAB | linkedin.com/in/jodi-abrahams/
+PROFESSIONAL SUMMARY
+Full-stack software developer with 2+ years of professional development experience and additional independent
+project experience. Build reliable web and SaaS applications using React, Next.js, TypeScript, Node.js, REST APIs and
+PostgreSQL. Delivered commercial reporting and delivery-platform functionality, including rich-text editing, PDF
+exports, real-time tracking and payment integrations. Experienced in debugging, automated testing,
+requirements-to-release delivery and AI-assisted engineering with Claude and Codex. Open to remote full-stack,
+frontend and software engineering opportunities.
+TECHNICAL SKILLS
+Frontend: React, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, responsive UI, Figma
+Backend & data: Node.js, REST APIs, PostgreSQL, Prisma, Supabase, authentication, role-based access
+Quality & delivery: Git/GitHub, Vitest, Jest, regression testing, debugging, Postman, Vercel, PDF workflows
+Additional: React Native, Expo, Vue.js; foundational Python, Docker and CI/CD; LLM integration via existing providers;
+Claude and Codex for assisted development
+PROFESSIONAL EXPERIENCE
+Freelance Full-Stack Software Developer | Independent / Remote | Apr 2026 – Present
+• Develop independent software products and web application solutions, from requirements and UI design through
+ implementation, testing and deployment.
+• Build React/Next.js interfaces, API-driven workflows, authentication and database integrations; apply test-driven
+ investigation and AI-assisted development with manual verification.
+• Current independent projects include FuelWise SA and Possibility Engine; prototypes and unverified integrations are
+ identified as such.
+Contract Full-Stack Developer | TransHumanity / Remote | Nov 2025 – Apr 2026
+• Delivered production SaaS reporting features, including rich-text editing, report and content management, PDF export
+ workflows and map snapshots.
+• Investigated editor history/selection and cross-feature integration defects; improved export reliability and supported
+ regression testing and GitHub-based reviews.
+Full-Stack Developer | Crunchtime Deliveries / Remote | Jun 2024 – Jun 2025
+• Built React, Next.js and React Native functionality across customer, driver and administrator delivery workflows.
+ 
+• Contributed real-time order tracking, payments, responsive UI and production API integrations with design and backend
+ collaborators.
+Web Developer Intern | Life Choices Studio | Apr 2024 – Jun 2024
+• Built responsive WordPress e-commerce templates, supported performance improvements and joined sprint planning
+ and reviews.
+ADDITIONAL EXPERIENCE
+Support Engineer | Securicom | Feb 2022 – Mar 2023 — Enterprise technical support, incident troubleshooting, SLA-driven ticket
+handling and user communication.
+Junior Network Technician (Volunteer) | CPUT | Dec 2017 – Jan 2019 — Campus network equipment setup and connectivity
+troubleshooting.
+
+Jodi Abrahams  |  2
+SELECTED PROJECTS
+FuelWise SA | Full-stack fuel-cost planning platform
+• Built vehicle-specific fuel estimates, budgeting workflows, spending insights and responsive dashboards; developed
+ validation and anomaly checks for fuel-price monitoring. Automated publishing remains gated pending readiness.
+AI Resume Analyzer | React · TypeScript · Puter.js · PDF.js · Zustand
+• Integrated an existing AI provider to compare uploaded CVs against job descriptions and produce structured user
+ feedback; implemented PDF handling, authentication and results workflows.
+Possibility Engine (In Development) | Next.js · TypeScript · Prisma · PostgreSQL
+• Building an AI-assisted problem-solving application with structured plans, constraint checks and separated
+ provider/persistence modes. Offline regression and Windows browser validation completed; real PostgreSQL
+persistence remains unverified.
+OpsFlow | Next.js · TypeScript · Prisma · PostgreSQL · Vitest
+• Built a SaaS-style operations workspace featuring authentication, role-based workflows, dashboards, report editing and
+ PDF exports.
+EDUCATION & CERTIFICATION
+Full Stack Web Development — Life Choices Coding Academy (2023–2024) | A+ Certification — Pearson VUE (2023)
+Information and Communication Technology — CPUT (incomplete coursework) | Matric — De Kuilen High School

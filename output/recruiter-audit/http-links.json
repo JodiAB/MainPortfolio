@@ -1,0 +1,90 @@
+[
+  {
+    "url": "https://jodiabrahamsportfolio.vercel.app/",
+    "status": 200,
+    "type": [
+      "text/html; charset=utf-8"
+    ],
+    "title": "Jodi Abrahams | Full-Stack Development & AI Engineering"
+  },
+  {
+    "url": "https://jodiabrahamsportfolio.vercel.app/robots.txt",
+    "status": 404,
+    "type": [
+      "text/plain; charset=utf-8"
+    ],
+    "title": ""
+  },
+  {
+    "url": "https://jodiabrahamsportfolio.vercel.app/sitemap.xml",
+    "status": 404,
+    "type": [
+      "text/plain; charset=utf-8"
+    ],
+    "title": ""
+  },
+  {
+    "url": "https://ops-flow-kappa.vercel.app/",
+    "status": 200,
+    "type": [
+      "text/html; charset=utf-8"
+    ],
+    "title": "OpsFlow"
+  },
+  {
+    "url": "https://fuelwise-sa.vercel.app/",
+    "status": 200,
+    "type": [
+      "text/html; charset=utf-8"
+    ],
+    "title": "FuelWise SA — South African Fuel Cost Planner"
+  },
+  {
+    "url": "https://gsap-landing-eight.vercel.app/",
+    "status": 200,
+    "type": [
+      "text/html; charset=utf-8"
+    ],
+    "title": "Landing Page"
+  },
+  {
+    "url": "https://joding-resume-analyzer.vercel.app/auth?next=/",
+    "status": 200,
+    "type": [
+      "text/html"
+    ],
+    "title": "CareerCrafter | Auth"
+  },
+  {
+    "url": "https://joding-ecomm.vercel.app/",
+    "status": 200,
+    "type": [
+      "text/html; charset=utf-8"
+    ],
+    "title": "Nike"
+  },
+  {
+    "url": "https://github.com/JodiAB/foody",
+    "status": 200,
+    "type": [
+      "text/html; charset=utf-8"
+    ],
+    "title": "GitHub - JodiAB/foody · GitHub"
+  },
+  {
+    "url": "https://joding-saas-app.vercel.app/",
+    "status": 500,
+    "type": [
+      "text/html; charset=utf-8"
+    ],
+    "title": "Converso"
+  },
+  {
+    "url": "https://stock-app-uhvi.vercel.app/",
+    "status": 500,
+    "type": [
+      "text/html; charset=utf-8"
+    ],
+    "title": ""
+  }
+]

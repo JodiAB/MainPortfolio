@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Possibility Engine",
+    "url": "http://127.0.0.1:4173/projects/possibility-engine/",
+    "status": 200,
+    "final": "http://127.0.0.1:4173/projects/possibility-engine/"
+  },
+  {
+    "title": "OpsFlow",
+    "url": "https://ops-flow-kappa.vercel.app/",
+    "status": 200,
+    "final": "https://ops-flow-kappa.vercel.app/"
+  },
+  {
+    "title": "LMS SaaS App",
+    "url": "https://joding-saas-app.vercel.app/",
+    "status": 500,
+    "final": "https://joding-saas-app.vercel.app/"
+  },
+  {
+    "title": "AI Resume Analyzer",
+    "url": "https://joding-resume-analyzer.vercel.app/auth?next=/",
+    "status": 200,
+    "final": "https://joding-resume-analyzer.vercel.app/auth?next=/"
+  },
+  {
+    "title": "AI Stock Market App",
+    "url": "https://stock-app-uhvi.vercel.app/",
+    "status": 500,
+    "final": "https://stock-app-uhvi.vercel.app/"
+  },
+  {
+    "title": "Nike-style eCommerce",
+    "url": "https://joding-ecomm.vercel.app/",
+    "status": 200,
+    "final": "https://joding-ecomm.vercel.app/"
+  },
+  {
+    "title": "Food Ordering App",
+    "url": "https://github.com/JodiAB/foody",
+    "status": 200,
+    "final": "https://github.com/JodiAB/foody"
+  },
+  {
+    "title": "Cocktail Animation Website",
+    "url": "https://gsap-landing-eight.vercel.app/",
+    "status": 200,
+    "final": "https://gsap-landing-eight.vercel.app/"
+  },
+  {
+    "title": "FuelWise SA",
+    "url": "https://fuelwise-sa.vercel.app/",
+    "status": 200,
+    "final": "https://fuelwise-sa.vercel.app/"
+  }
+]

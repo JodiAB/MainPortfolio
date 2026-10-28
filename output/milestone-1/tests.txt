@@ -1,0 +1,21 @@
+
+> porfoliomain@0.0.0 test
+> node --test tests/portfolio.test.mjs
+
+✔ Possibility Engine is first and all eight existing project IDs remain (2.3261ms)
+✔ featured project has a real local detail route and no invented public deployment/repository (1.0569ms)
+✔ production detail route contains server-readable metadata, canonical URL and content (3.6954ms)
+✔ direct route redirects canonically, preserves query strings and serves its own metadata (2304.6001ms)
+✔ home metadata keeps the portfolio URL and points to AI engineering work (4.0982ms)
+✔ availability flags retain the three original URLs and project descriptions (1.1872ms)
+✔ shared project actions label unavailable destinations without navigable links (554.4489ms)
+✔ CV version matches the canonical PDF and all download controls use its filename (4.5889ms)
+✔ built server returns the exact versioned CV PDF (3120.2303ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6415.4728

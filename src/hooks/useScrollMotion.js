@@ -1,11 +1,11 @@
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function useScrollMotion(scope) {
-  useLayoutEffect(() => {
+  useEffect(() => {
     const root = scope.current;
     if (!root) return;
     const media = gsap.matchMedia();
@@ -18,7 +18,7 @@ export default function useScrollMotion(scope) {
         motion: "(prefers-reduced-motion: no-preference)",
       },
       ({ conditions }) => {
-        if (!conditions.motion) return;
+        if (!conditions.motion || !conditions.desktop) return;
         const select = gsap.utils.selector(root);
         const distance = conditions.desktop ? 36 : 16;
 
@@ -26,9 +26,9 @@ export default function useScrollMotion(scope) {
         select(".text-heading, .about-grid > article, .skill-group, .project-card, .stage-card, .experience-item, .contact-panel").forEach((element) => {
           gsap.fromTo(
             element,
-            { "--scroll-y": `${element.matches(".text-heading") ? distance / 2 : distance}px` },
+            { translate: `0px ${element.matches(".text-heading") ? distance / 2 : distance}px` },
             {
-              "--scroll-y": "0px",
+              translate: "0px 0px",
               ease: "none",
               scrollTrigger: {
                 trigger: element,

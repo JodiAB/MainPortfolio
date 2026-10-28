@@ -9,7 +9,7 @@ export default function Navbar({ basePath = "" }) {
     if (basePath) return;
     const update = () => {
       let current = "home";
-      items.forEach((item) => {
+      ["Home", "Projects", "Experience", "About", "Contact"].forEach((item) => {
         if (
           document.getElementById(item.toLowerCase())?.getBoundingClientRect()
             .top <= 160

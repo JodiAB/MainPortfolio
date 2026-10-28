@@ -1,0 +1,29 @@
+{
+  "canonical": "https://jodiabrahamsportfolio.vercel.app/",
+  "cv": [
+    {
+      "download": "Jodi_Abrahams_CV.pdf",
+      "href": "https://jodiabrahamsportfolio.vercel.app/assets/Jodi_Abrahams_CV.pdf?v=fc8834564fbe",
+      "target": "",
+      "text": "Download CV ↓"
+    },
+    {
+      "download": "Jodi_Abrahams_CV.pdf",
+      "href": "https://jodiabrahamsportfolio.vercel.app/assets/Jodi_Abrahams_CV.pdf?v=fc8834564fbe",
+      "target": "",
+      "text": "Download CV ↓"
+    },
+    {
+      "download": "",
+      "href": "https://jodiabrahamsportfolio.vercel.app/assets/Jodi_Abrahams_CV.pdf?v=fc8834564fbe",
+      "target": "_blank",
+      "text": "View CV ↗"
+    }
+  ],
+  "description": "Jodi Abrahams — Full Stack Developer in Cape Town. React, Next.js and TypeScript, with hands-on AI Engineering, LLM integration and retrieval evaluation.",
+  "experienceTop": 6712,
+  "headingCount": 1,
+  "scrollWidth": 1433,
+  "title": "Jodi Abrahams | Full-Stack Development & AI Engineering",
+  "width": 1440
+}

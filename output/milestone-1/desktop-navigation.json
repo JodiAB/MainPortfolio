@@ -1,0 +1,22 @@
+[
+  {
+    "focus": "projects",
+    "hash": "#projects"
+  },
+  {
+    "focus": "experience",
+    "hash": "#experience"
+  },
+  {
+    "focus": "about",
+    "hash": "#about"
+  },
+  {
+    "focus": "contact",
+    "hash": "#contact"
+  },
+  {
+    "focus": "home",
+    "hash": "#home"
+  }
+]

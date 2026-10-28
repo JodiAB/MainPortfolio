@@ -1,3 +1,4 @@
+import { projectEvidence } from "../constants/projectEvidence";
 export default function ProjectLinks({ project }) {
   const github =
     project.github ||
@@ -17,7 +18,7 @@ export default function ProjectLinks({ project }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Live Demo ↗
+          {projectEvidence[project.title]?.label || "Live Demo"} ↗
         </a>
       ))}
       {github && (project.sourcePrivate ? (

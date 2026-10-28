@@ -3,9 +3,9 @@ import Project from "../components/Project";
 import CaseStudyModal from "../components/CaseStudyModal";
 import { myProjects } from "../constants";
 const priority = [
+  "FuelWise SA",
   "Possibility Engine",
   "OpsFlow",
-  "FuelWise SA",
   "Cocktail Animation Website",
   "AI Resume Analyzer",
   "LMS SaaS App",
@@ -23,8 +23,8 @@ export default function Projects() {
       <p className="eyebrow">AI Engineering · Web · Mobile · SaaS</p>
       <h2 className="text-heading">Selected Projects</h2>
       <p className="section-intro">
-        Production workflows, practical tools and carefully considered
-        interfaces. Explore what I built and how it works.
+        Independent projects, public betas and engineering prototypes.
+        Status notes separate publicly checked behaviour from documented implementation.
       </p>
       <a className="text-link recruiter-github" href="https://github.com/JodiAB" target="_blank" rel="noreferrer">
         <img src="/assets/logos/github.svg" alt="" width="20" height="20" />

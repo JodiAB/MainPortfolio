@@ -1,5 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
 @import "tailwindcss";
+@font-face {
+  font-family: "Funnel Display";
+  src: url("/assets/fonts/funnel-display-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+}
 @theme {
   --color-primary: #030412;
   --color-midnight: #06091f;
@@ -831,7 +837,7 @@ textarea.field-input {
     radial-gradient(ellipse at 70% 65%, #43dce76b, transparent 45%);
   filter: blur(12px);
   opacity: .24;
-  animation: nebula-drift 9s ease-in-out infinite alternate;
+  animation: nebula-drift 9s ease-in-out infinite alternate paused;
 }
 .button::after {
   content: "";
@@ -883,7 +889,7 @@ textarea.field-input {
   border-radius: 50%;
   background: radial-gradient(ellipse, var(--nebula-accent), transparent 65%);
   opacity: .14;
-  animation: card-nebula 11s ease-in-out infinite alternate;
+  animation: card-nebula 11s ease-in-out infinite alternate paused;
 }
 .skill-group::after, .stage-card::after {
   content: "";
@@ -895,7 +901,7 @@ textarea.field-input {
   height: 2px;
   background: linear-gradient(90deg, transparent, var(--nebula-accent), #e0f9ff, transparent);
   box-shadow: 0 2px 12px var(--nebula-accent);
-  animation: orbital-edge 8s ease-in-out infinite;
+  animation: orbital-edge 8s ease-in-out infinite paused;
 }
 .skill-group:nth-child(2)::after, .stage-card:nth-child(2)::after { animation-delay: -2.5s; }
 .skill-group:nth-child(3)::after, .stage-card:nth-child(3)::after { animation-delay: -5s; }
@@ -973,7 +979,7 @@ textarea.field-input {
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
   transform: none;
-  animation: neon-circuit 4s linear infinite;
+  animation: neon-circuit 4s linear infinite paused;
 }
 .button.button-neon:focus-visible {
   box-shadow: inset 0 0 20px #8462d540, 0 0 22px #70d8f05c, 0 0 38px #a47aec30;
@@ -1039,3 +1045,25 @@ textarea.field-input {
 }
 .button.project-action-unavailable::before,
 .button.project-action-unavailable::after { display: none; }
+
+/* Keep the space artwork without a mandatory mobile WebGL runtime. */
+.astronaut-art { height: 100%; }
+.astronaut-poster { width: 100%; height: 100%; object-fit: contain; mask-image: radial-gradient(ellipse, black 48%, transparent 73%); }
+.motion-toggle { display: block; margin: -15px auto 0; position: relative; font-size: .75rem; }
+.evidence-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding-top: 24px; }
+.evidence-strip .surface { display: block; padding: 24px; }
+.evidence-strip h2 { font-size: 1.2rem; margin: 12px 0; }
+.evidence-strip p { color: #b8bfd0; margin-bottom: 16px; }
+.project-evidence { border-left: 2px solid #8eacdd; padding-left: 12px; margin: 16px 0; color: #c5d6e5; font-size: .85rem; }
+.project-evidence strong { display: block; margin-bottom: 6px; color: #d4c4ff; }
+@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+  .effect-visible::before, .effect-visible::after { animation-play-state: running; }
+  .button.button-neon.effect-visible::after { animation-play-state: running; }
+}
+@media (max-width: 767px) {
+  .evidence-strip { grid-template-columns: 1fr; }
+  .button::before, .button::after, .button.button-neon::after,
+  .skill-group::before, .skill-group::after, .stage-card::before, .stage-card::after { animation: none; }
+  .button:focus-visible::after { animation: starlight-sweep 850ms ease-out; }
+  .hero-astronaut { height: 200px; margin-bottom: 24px; }
+}

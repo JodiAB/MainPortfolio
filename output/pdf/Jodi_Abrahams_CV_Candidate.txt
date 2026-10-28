@@ -1,0 +1,93 @@
+PAGE 1
+CANDIDATE FOR REVIEW - NOT APPROVED | 26 October 2026
+1
+JODI ABRAHAMS
+Full-Stack Software Developer
+Cape Town, South Africa | 078 209 6121 | jodiabrahams9@gmail.com
+Portfolio: jodiabrahamsportfolio.vercel.app | GitHub: JodiAB | LinkedIn: jodi-abrahams
+PROFESSIONAL SUMMARY
+Full-stack software developer building responsive interfaces, SaaS workflows and API-driven applications with
+React, Next.js, TypeScript, JavaScript, Node.js and PostgreSQL. My experience spans authentication, payment
+integrations, real-time features, debugging, automated testing and deployment. I take work from requirements
+through implementation and review, with attention to maintainability and the people using the product. I also
+develop AI-powered application prototypes and use Claude and Codex as development tools, checking
+generated changes through code review and testing.
+TECHNICAL SKILLS
+Frontend: React, Next.js, JavaScript, TypeScript, Vue.js, HTML5, CSS3, Tailwind CSS; React Native;
+responsive interfaces and reusable components.
+Backend & data: Node.js, REST APIs, PostgreSQL, Prisma, MySQL, Supabase, Appwrite; authentication and
+API integration. Python exposure.
+Quality & delivery: Vitest, Jest, Testing Library, Postman, debugging, Git/GitHub, pull requests, npm, Vite,
+Vercel; Docker and CI/CD basics.
+Product & AI workflow: Figma-to-code, TipTap/ProseMirror, PDF exports; GSAP, Framer Motion, React Three
+Fiber/Three.js. Claude and Codex for AI-assisted development; structured model-output validation in application
+prototypes.
+WORK EXPERIENCE
+Freelance Full-Stack Software Developer
+Independent / Remote | Apr 2026 - Present | Full-time
+- Build and maintain independent web applications, translating product requirements into responsive interfaces,
+ API integrations and relational data workflows.
+- Manage implementation, testing, debugging, Git/GitHub review workflows and deployment. Earlier part-time
+ freelance and independent development from Jan 2020 ran alongside employed roles.
+Contract Full Stack Developer
+TransHumanity / Remote | Nov 2025 - Apr 2026
+- Delivered production SaaS reporting features across rich-text editing, report management, content libraries, map
+ snapshots and PDF/export workflows.
+- Resolved editor selection, toolbar state, undo/redo and export-layout issues. Added automated tests and took
+ changes through pull-request review, rebasing and merge.
+Full Stack Developer
+Crunchtime Deliveries / Remote | Jun 2024 - Jun 2025
+- Delivered responsive React, Next.js and React Native interfaces for a commercial SaaS delivery management
+ platform.
+- Built real-time tracking, payment integration and customer, driver and administrator workflows; connected
+ interfaces to backend APIs and supported production rollouts.
+
+
+PAGE 2
+CANDIDATE FOR REVIEW - NOT APPROVED | 26 October 2026
+2
+JODI ABRAHAMS
+Full-Stack Software Developer | Experience, projects & education
+EARLIER EXPERIENCE
+Web Developer Intern
+Life Choices Studio / Cape Town | Apr 2024 - Jun 2024
+- Developed a responsive WordPress e-commerce template, optimised imagery and translated designs into web
+ layouts. Facilitated stand-ups and sprint reviews as Scrum Master.
+Support Engineer
+Securicom / Cape Town | Feb 2022 - Mar 2023
+- Diagnosed software, network and email-security issues for enterprise clients. Managed support tickets,
+ documented resolutions and collaborated on recurring technical problems.
+Junior Network Technician (Volunteer)
+Cape Peninsula University of Technology / Cape Town | Dec 2017 - Jan 2019
+- Assisted with routers, switches, wireless access points and LAN troubleshooting, supporting network engineers
+ during campus infrastructure upgrades.
+SELECTED PROJECT EXPERIENCE
+SaaS Delivery Management Platform
+Commercial development at Crunchtime Deliveries
+- Built web and mobile delivery workflows with React, Next.js, TypeScript/JavaScript and React Native, including
+ payment integration, real-time tracking and role-based interfaces. This work forms part of the employment listed
+on page 1.
+Possibility Engine
+Independent engineering prototype | TypeScript, Next.js; structured AI workflows
+- Developed an AI-assisted problem-solving application with modular interpretation, retrieval, generation and
+ validation stages. Worked on structured outputs, citation/grounding checks, security controls and regression
+testing.
+- Prototype limitations remain: passing structural checks does not establish practical usefulness. PostgreSQL
+ persistence is not claimed as verified pending controlled-test confirmation.
+FuelWise SA
+Independent product | React, TypeScript, Vite, Supabase, REST APIs, Vitest
+- Built and deployed a South African fuel-planning application with interactive calculators, account views,
+ API-backed data, authentication and saved vehicle/calculation workflows.
+- Implemented backend integrations and automated tests, with release tooling and deployment on Vercel.
+ 
+OpsFlow
+Independent portfolio project | Next.js, TypeScript, Prisma, PostgreSQL, Vitest
+- Built a SaaS-style operations workspace with authentication, role-based workflows, dashboards, rich-text
+ reports, PDF exports and automated tests.
+EDUCATION & QUALIFICATIONS
+Full Stack Web Development | Life Choices Coding Academy | 2023 - Mar 2024
+A+ Certification | Pearson VUE Testing Centre | May 2023
+Information and Communication Technology (Incomplete) | Cape Peninsula University of Technology | Jan 2017
+Matric Certificate | De Kuilen High School | Jan 2016
+LANGUAGES
+English: Native | Afrikaans: Basic to intermediate

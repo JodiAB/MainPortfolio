@@ -1,0 +1,221 @@
+- link "Skip to case study":
+  - /url: "#main"
+- banner:
+  - link "Jodi Abrahams home":
+    - /url: /#home
+    - text: Jodi.
+  - navigation "Primary navigation":
+    - link "Home":
+      - /url: /#home
+    - link "About":
+      - /url: /#about
+    - link "Projects":
+      - /url: /#projects
+    - link "Experience":
+      - /url: /#experience
+    - link "Contact":
+      - /url: /#contact
+    - link "Download CV ↓":
+      - /url: /assets/Jodi_Abrahams_CV.pdf?v=fc8834564fbe
+- main:
+  - region "Possibility Engine.":
+    - link "← All projects":
+      - /url: /#projects
+    - paragraph: Featured project / AI Engineering
+    - heading "Possibility Engine." [level=1]:
+      - text: Possibility
+      - text: Engine.
+    - paragraph:
+      - text: Practical constraints.
+      - text: Evidence-aware reasoning.
+    - paragraph: An AI-powered problem-solving application that combines structured LLM reasoning, semantic retrieval and deterministic validation to explore practical solutions using resources users already have.
+    - link "Explore the architecture ↓":
+      - /url: "#architecture"
+    - link "Read the measured results":
+      - /url: "#results"
+    - paragraph: "My role: AI & Full-Stack Developer / Engineering prototype"
+    - figure "Architecture illustration · not a product screenshot":
+      - 'img "Architecture overview: Ollama and pgvector retrieve evidence, Gemini reasons, and server-side checks validate before saving."'
+      - generic: Architecture illustration · not a product screenshot
+      - term: Recorded engine run
+      - definition: 7.35s
+      - term: Runtime path
+      - definition: Completed + saved
+      - term: Answer-quality acceptance
+      - definition: FAIL
+  - region "Verified application technology stack":
+    - paragraph: Built & integrated
+    - list:
+      - listitem: TypeScript
+      - listitem: React
+      - listitem: Next.js
+      - listitem: Node.js runtime
+      - listitem: Google Gemini
+      - listitem: Ollama
+      - listitem: PostgreSQL
+      - listitem: pgvector
+      - listitem: Structured LLM outputs
+      - listitem: RAG
+      - listitem: Automated testing
+  - region "A plausible answer is only the beginning.":
+    - paragraph: 01 / The problem
+    - heading "A plausible answer is only the beginning." [level=2]:
+      - text: A plausible answer
+      - text: is only the beginning.
+    - paragraph: "Everyday problems come with real constraints: the materials on hand, missing measurements, limited tools and actions that need to be reversible. Generic search results rarely account for that specific inventory. An LLM can suggest a convincing plan without evidence that it fits."
+    - paragraph:
+      - text: I built Possibility Engine to explore options within user-supplied constraints, surface unknowns and check reference support. The work centres on
+      - strong: AI systems integration and evaluation
+      - text: ": how to retrieve relevant information, enforce output contracts and recognise when an apparently valid answer still falls short."
+  - region "One request. Explicit checkpoints.":
+    - paragraph: 02 / My solution
+    - heading "One request. Explicit checkpoints." [level=2]
+    - paragraph: Retrieval-Augmented Generation with server-owned evidence and deterministic checks around model-generated proposals.
+    - list "Application architecture, in execution order":
+      - generic: "01"
+      - heading "Define the constraints" [level=3]
+      - paragraph: User request, available resources and unknown measurements.
+      - generic: Request
+      - generic: "02"
+      - heading "Interpret the inventory" [level=3]
+      - paragraph: Gemini returns schema-validated intent, quantities and questions.
+      - generic: Structured interpretation
+      - generic: "03"
+      - heading "Embed the query" [level=3]
+      - paragraph: Local Ollama generates a pinned 768-dimensional query embedding.
+      - generic: nomic-embed-text
+      - generic: "04"
+      - heading "Retrieve reference evidence" [level=3]
+      - paragraph: PostgreSQL / pgvector cosine vector search applies the calibrated cutoff.
+      - generic: Semantic Search
+      - generic: "05"
+      - heading "Assemble the context" [level=3]
+      - paragraph: The server combines earlier inventory and capability lookups with retrieved passages for this request.
+      - generic: Request-scoped context
+      - generic: "06"
+      - heading "Generate a proposal" [level=3]
+      - paragraph: Gemini receives the context and returns structured candidates and exact reference claims.
+      - generic: LLM Integration
+      - generic: "07"
+      - heading "Validate the contract" [level=3]
+      - paragraph: Check safety, quantities, dependencies and server-issued citation IDs.
+      - generic: Deterministic validation
+      - generic: "08"
+      - heading "Check the grounding" [level=3]
+      - paragraph: Validate exact reference quotations; this does not verify every assertion or physical feasibility.
+      - generic: Grounding Validation
+      - generic: "09"
+      - heading "Persist the snapshot" [level=3]
+      - paragraph: Owner-scoped, idempotent saving preserves the result without another model response.
+      - generic: PostgreSQL persistence
+    - paragraph: Safety checks also run on requests and interpreted intent. Exact quotation checks establish reference provenance; they do not prove a proposed construction is feasible or physically safe.
+  - region "Measure the trade-off.":
+    - paragraph: 03 / Measured results
+    - heading "Measure the trade-off." [level=2]
+    - paragraph: A small, developer-labelled retrieval evaluation over six authored reference notes, using a frozen 36-question test set and a separate 18-question calibration set. The 96% figure measures retrieval precision, not answer accuracy. These are project-level measurements, not a broad independent benchmark.
+    - article:
+      - paragraph: Precision among returned passages
+      - heading "18.75% increased to 96%" [level=3]: 18.75% → 96%
+      - paragraph: 24 relevant passages among 25 returned after filtering; baseline 27 of 144.
+    - article:
+      - paragraph: Mean retrieval recall
+      - heading "100% decreased to 87.5%" [level=3]: 100% → 87.5%
+      - paragraph: Higher precision came with missed evidence and false abstentions.
+    - article:
+      - paragraph: Held-out evaluation questions
+      - heading "36" [level=3]
+      - paragraph: Developer-labelled; limited source coverage and no external human evaluation.
+    - heading "The denominator matters." [level=3]
+    - paragraph:
+      - text: The 96% figure measures precision
+      - emphasis: among returned passages
+      - text: ", not Precision@4. Fixed-denominator Precision@4 changed from 18.75% to 16.67% because filtering returned fewer than four passages. False abstention was 13.64% (3 of 22 positive questions). The selected cutoff was 0.70 with top-k 4; no reranker or hybrid retrieval is claimed."
+    - generic "Latest recorded automated verification, Phase 2M":
+      - strong: "218"
+      - text: regression tests passed
+      - strong: "4"
+      - text: PostgreSQL tests passed
+      - strong: "7"
+      - text: browser tests passed
+      - paragraph:
+        - text: TypeScript + production build passed.
+        - text: "Recorded verification: Phase 2M, October 2026."
+  - region "The pipeline ran. The answer still fell short.":
+    - paragraph: 04 / Live acceptance
+    - heading "The pipeline ran. The answer still fell short." [level=2]:
+      - text: The pipeline ran.
+      - text: The answer still fell short.
+    - generic: "Phase 2M · Answer-quality acceptance: FAIL"
+    - paragraph:
+      - text: One bounded, real Gemini scenario planned a removable cardboard tray for eight paper labels. It used actual Ollama embeddings and PostgreSQL retrieval, completed the engine in
+      - strong: 7.35 seconds
+      - text: ", passed citation and extractive-grounding checks, and persisted the application-accepted result without another provider call."
+    - paragraph:
+      - text: The final quality assessment was
+      - strong: FAIL
+      - text: ": the proposal lacked actionable tray geometry and asserted unverified reversibility. The application’s “qualified” label did not establish practical usefulness. I preserved the first output instead of retrying until a favourable answer appeared."
+    - list:
+      - listitem: "Verified: real retrieval, issued citation IDs and three exact reference quotations."
+      - listitem: "Verified: concurrent and repeated saves retained one identical snapshot with owner restrictions."
+      - listitem: "Unresolved: dimensions, cut/fold layout, clip fit, practical feasibility and the categorical reversibility assertion."
+    - paragraph: The recorded browser tests used fixture mode; the live run used an instrumented server harness. A single live execution does not establish overall reliability. This is an engineering prototype, not a production-ready system.
+  - region "The work behind the interface.":
+    - paragraph: 05 / Engineering decisions
+    - heading "The work behind the interface." [level=2]
+    - list:
+      - generic: Integration
+      - heading "Connect real components, then verify them" [level=3]
+      - paragraph: Integrated Gemini structured generation, local Ollama embeddings and PostgreSQL/pgvector retrieval. Checked vector dimensions and model identity to avoid mixing incompatible embeddings.
+      - generic: Retrieval evaluation
+      - heading "Calibrate relevance and measure abstention" [level=3]
+      - paragraph: Used separate calibration and frozen test questions to compare retrieval configurations. Selected a small threshold change and reported improved returned-evidence precision alongside reduced recall and false abstentions.
+      - generic: Evidence contracts
+      - heading "Make citations server-owned" [level=3]
+      - paragraph: Introduced stable opaque passage IDs, Zod output validation and server-side source resolution. Unknown IDs and generated URLs cannot become trusted references. Exact claim/quote checks reject unsupported reference assertions.
+      - generic: Orchestration
+      - heading "Remove a redundant model inspection" [level=3]
+      - paragraph: Reused server-prefetched context instead of an extra model-directed inspection. The trade-off is reduced exploratory freedom in exchange for fewer provider calls and potentially lower latency; one run does not prove a general latency gain.
+      - generic: Safety precision
+      - heading "Diagnose a caution mistaken for an instruction" [level=3]
+      - paragraph: A blanket keyword check rejected a harmless structural-safety disclaimer. A narrow whole-warning correction preserved hazard keywords and checks across fields, with adversarial regressions for hidden instructions and ambiguous language.
+      - generic: Reliability & persistence
+      - heading "Separate execution success from answer quality" [level=3]
+      - paragraph: Verified idempotent saves, owner isolation, deadlines and automated regressions. The final live run exposed unsupported structured certainty and missing geometry that passing schema and quotation checks did not catch.
+  - region "AI reliability is an engineering discipline.":
+    - article:
+      - paragraph: 06 / What I learned
+      - heading "AI reliability is an engineering discipline." [level=2]
+      - paragraph: Full-Stack Development connects the interface, model contracts, vector search and persistence. AI Engineering adds evaluation, failure diagnosis and a clear distinction between what the system checked and what remains unknown.
+      - paragraph: "This project strengthened my work in LLM Integration, Retrieval-Augmented Generation, Automated Testing and security-minded design. Root-cause investigation was as important as generation: a schema-valid response can still be an inadequate product answer."
+    - article:
+      - paragraph: 07 / Proposed future work
+      - heading "Validate the action, too." [level=2]
+      - list:
+        - listitem: Require actionable or explicitly deferred geometry before irreversible cutting advice.
+        - listitem: Keep reversibility unknown until the evidence and proposed assembly justify it.
+        - listitem: Expand evidence-backed physical constraints and clarify measurement requirements.
+        - listitem: Evaluate broader tasks with independently labelled data and supervised human usefulness review.
+      - paragraph: These are proposed improvements, not implemented functionality.
+  - region "Continue exploring":
+    - paragraph: AI Engineering / Full-Stack Development
+    - heading "Built to investigate. Evaluated to understand." [level=2]:
+      - text: Built to investigate.
+      - text: Evaluated to understand.
+    - paragraph: Looking for an engineer who connects models to real systems and communicates their limits?
+    - link "Let’s talk":
+      - /url: /#contact
+      - text: Let’s talk
+      - generic: ↗
+    - link "Explore the other projects →":
+      - /url: /#projects
+  - paragraph: "Evidence basis: the current verified application source, recorded Phase 2E retrieval evaluation and Phase 2M acceptance receipt, reconciled with supporting project documentation. These are developer-recorded results, not an independent audit. Internal traces and fixtures are not published here. A public project repository link will be added only after publication is verified."
+- contentinfo:
+  - paragraph: Cape Town, South Africa · Open to remote opportunities
+  - link "GitHub":
+    - /url: https://github.com/JodiAB
+    - generic: GitHub
+  - link "LinkedIn":
+    - /url: https://www.linkedin.com/in/jodi-abrahams/
+  - link "WhatsApp":
+    - /url: https://wa.me/27782096121
+  - paragraph: © 2026 Jodi Abrahams. All rights reserved.

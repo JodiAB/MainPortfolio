@@ -1,0 +1,369 @@
+- link "Skip to content":
+  - /url: "#main"
+- banner:
+  - link "Jodi Abrahams home":
+    - /url: "#home"
+    - text: Jodi.
+  - navigation "Primary navigation":
+    - link "Home":
+      - /url: "#home"
+    - link "About":
+      - /url: "#about"
+    - link "Projects":
+      - /url: "#projects"
+    - link "Experience":
+      - /url: "#experience"
+    - link "Contact":
+      - /url: "#contact"
+    - link "Download CV ↓":
+      - /url: /assets/Jodi_Abrahams_CV.pdf?v=fc8834564fbe
+- main:
+  - paragraph: Cape Town, South Africa · Open to remote work
+  - heading "Hi, I’m Jodi Abrahams." [level=1]:
+    - text: Hi, I’m
+    - generic: Jodi Abrahams.
+  - paragraph:
+    - text: Full Stack Developer.
+    - text: Strong frontend focus.
+  - paragraph: I build web and mobile products with JavaScript and TypeScript, and integrate and evaluate AI systems with explicit evidence checks.
+  - paragraph: React · Next.js · TypeScript · Vue.js · React Native · Node.js
+  - link "View My Work":
+    - /url: "#projects"
+    - text: View My Work
+    - generic: ↗
+  - link "Let’s Connect":
+    - /url: "#contact"
+  - link "Download CV ↓":
+    - /url: /assets/Jodi_Abrahams_CV.pdf?v=fc8834564fbe
+  - link "View CV (PDF, opens in a new tab)":
+    - /url: /assets/Jodi_Abrahams_CV.pdf?v=fc8834564fbe
+    - text: View CV ↗
+  - paragraph: 5+ years hands-on · 3 years professional experience
+  - paragraph: The developer behind the work
+  - heading "About Me" [level=2]
+  - article:
+    - heading "Thoughtful interfaces. Reliable products." [level=3]
+    - paragraph: I’m a product-minded Full Stack Developer with 5+ years of hands-on experience and 3 years of professional experience building production-ready web and mobile applications. I specialise in turning complex requirements into responsive, maintainable interfaces and reliable product workflows.
+    - paragraph: I care about clean code, performance, usability and shipping software that is ready for real users.
+    - link "Explore my experience ↗":
+      - /url: "#experience"
+  - article:
+    - paragraph: Location & availability
+    - heading "Cape Town. Connected worldwide." [level=3]:
+      - text: Cape Town.
+      - text: Connected worldwide.
+    - paragraph: Based in South Africa and open to remote opportunities worldwide.
+    - link "jodiabrahams9@gmail.com":
+      - /url: mailto:jodiabrahams9@gmail.com
+  - article:
+    - paragraph: Why hire me?
+    - heading "Ownership from start to ship." [level=3]
+    - paragraph: I’ve shipped production features across interfaces, APIs and databases. I’m comfortable taking a feature from requirements through implementation, review and release.
+  - article:
+    - paragraph: Engineering approach
+    - heading "Frontend detail. Full-stack perspective." [level=3]
+    - paragraph: Responsive UI, reusable components and reliable product workflows guide my work. I use testing and Git-based collaboration to keep changes maintainable, and learn unfamiliar tools as a product needs them.
+  - heading "Technical Skills" [level=2]
+  - paragraph: Technologies I use to design, build, test, and ship modern web and mobile products. From responsive interfaces to APIs and release workflows.
+  - paragraph: This portfolio combines React Three Fiber / Three.js for its astronaut presentation with GSAP scroll interactions.
+  - article:
+    - heading "Frontend" [level=3]
+    - generic: JavaScript ES2017+ /
+    - generic: TypeScript /
+    - generic: React /
+    - generic: Next.js /
+    - generic: Vue.js /
+    - generic: HTML5 /
+    - generic: CSS3 /
+    - generic: Tailwind CSS /
+    - generic: Responsive UI
+  - article:
+    - heading "Interactive UI & Digital Experiences" [level=3]
+    - generic: GSAP /
+    - generic: Framer Motion /
+    - generic: React Three Fiber / Three.js /
+    - generic: JavaScript animations /
+    - generic: Responsive interfaces /
+    - generic: Responsive landing pages
+  - article:
+    - heading "Backend & APIs" [level=3]
+    - generic: Node.js /
+    - generic: REST APIs /
+    - generic: Prisma /
+    - generic: PostgreSQL /
+    - generic: MySQL /
+    - generic: Appwrite /
+    - generic: Supabase /
+    - generic: Authentication
+  - article:
+    - heading "Mobile" [level=3]
+    - generic: React Native /
+    - generic: Expo /
+    - generic: NativeWind /
+    - generic: Zustand
+  - article:
+    - heading "Testing & Quality" [level=3]
+    - generic: Vitest /
+    - generic: Jest /
+    - generic: Testing Library /
+    - generic: Postman /
+    - generic: Performance /
+    - generic: Manual QA /
+    - generic: Debugging /
+    - generic: Responsive Testing
+  - article:
+    - heading "Tools & Delivery" [level=3]
+    - generic: Git /
+    - generic: GitHub /
+    - generic: npm /
+    - generic: Vite /
+    - generic: Vercel /
+    - generic: Docker basics /
+    - generic: CI/CD basics /
+    - generic: Figma /
+    - generic: Sentry /
+    - generic: Agile/Scrum
+  - paragraph: AI Engineering · Web · Mobile · SaaS
+  - heading "Selected Projects" [level=2]
+  - paragraph: Production workflows, practical tools and carefully considered interfaces. Explore what I built and how it works.
+  - link "Explore my GitHub":
+    - /url: https://github.com/JodiAB
+    - text: Explore my GitHub
+    - generic: ↗
+  - article:
+    - 'img "Possibility Engine architecture diagram: retrieve, reason and verify"'
+    - generic: AI Engineering / RAG
+    - generic: Featured
+    - heading "Possibility Engine" [level=3]
+    - paragraph: An AI-powered problem-solving application combining structured LLM reasoning, semantic retrieval and deterministic validation to explore solutions using resources people already have. Built and evaluated as an engineering prototype, with explicit evidence checks and documented limitations.
+    - paragraph: "Role: AI & Full-Stack Developer"
+    - list:
+      - listitem: TypeScript
+      - listitem: Next.js
+      - listitem: Gemini
+      - listitem: Ollama
+      - listitem: pgvector
+    - link "Explore Case Study":
+      - /url: /projects/possibility-engine/
+      - text: Explore Case Study
+      - generic: ↗
+  - article:
+    - img "OpsFlow interface preview"
+    - generic: Full-stack SaaS
+    - generic: Featured
+    - heading "OpsFlow" [level=3]
+    - paragraph: Built responsive SaaS dashboards, a rich-text report editor, role-based workflows and exports, with automated tests and production-style architecture.
+    - paragraph: "Role: Full Stack Developer"
+    - list:
+      - listitem: Next.js
+      - listitem: TypeScript
+      - listitem: Prisma
+      - listitem: PostgreSQL
+      - listitem: TailwindCSS
+    - link "Live Demo ↗":
+      - /url: https://ops-flow-kappa.vercel.app/
+    - generic: GitHub · Private
+    - button "Case Study"
+    - button "Read More"
+  - article:
+    - img "FuelWise SA interface preview"
+    - generic: SaaS / Fintech Tool
+    - generic: Featured
+    - heading "FuelWise SA" [level=3]
+    - paragraph: Built and deployed a responsive South African fuel-cost platform with interactive calculators, API-backed data, authentication, saved account workflows, automated tests and production-ready release tooling.
+    - paragraph: "Role: Full Stack Developer"
+    - list:
+      - listitem: React
+      - listitem: TypeScript
+      - listitem: Vite
+      - listitem: Supabase
+      - listitem: TailwindCSS
+    - link "Live Demo ↗":
+      - /url: https://fuelwise-sa.vercel.app/
+    - button "Case Study"
+    - button "Read More"
+  - article:
+    - img "Cocktail Animation Website interface preview"
+    - generic: Frontend Animation
+    - generic: Featured
+    - heading "Cocktail Animation Website" [level=3]
+    - paragraph: Built a responsive interactive landing experience using GSAP, SplitText, parallax effects, scroll-triggered animations and a custom carousel, with a focus on animation timing, usability and frontend performance.
+    - paragraph: "Role: Frontend Developer"
+    - list:
+      - listitem: React
+      - listitem: GSAP
+      - listitem: TailwindCSS
+      - listitem: Vite
+    - link "Live Demo ↗":
+      - /url: https://gsap-landing-eight.vercel.app/
+    - button "Case Study"
+    - button "Read More"
+  - article:
+    - img "AI Resume Analyzer interface preview"
+    - generic: AI Tool
+    - heading "AI Resume Analyzer" [level=3]
+    - paragraph: An AI-powered resume analysis platform that helps users understand how well their resume aligns with job requirements.
+    - paragraph: "Role: Frontend Developer"
+    - list:
+      - listitem: React
+      - listitem: TypeScript
+      - listitem: Zustand
+      - listitem: Puter.js
+      - listitem: React Router
+    - link "Live Demo ↗":
+      - /url: https://joding-resume-analyzer.vercel.app/auth?next=/
+    - button "Case Study"
+    - button "Read More"
+  - article:
+    - img "LMS SaaS App interface preview"
+    - generic: SaaS Platform
+    - heading "LMS SaaS App" [level=3]
+    - paragraph: A modern LMS SaaS platform with secure authentication, subscription management, real-time learning flows, and AI voice tutoring.
+    - paragraph: "Role: Full Stack Developer"
+    - list:
+      - listitem: Next.js
+      - listitem: TypeScript
+      - listitem: Supabase
+      - listitem: Stripe
+      - listitem: Clerk
+    - generic: Demo · Temporarily unavailable
+    - button "Case Study"
+    - button "Read More"
+  - article:
+    - img "Food Ordering App interface preview"
+    - generic: Mobile App
+    - heading "Food Ordering App" [level=3]
+    - paragraph: A mobile food delivery app with a smooth user experience, secure authentication, real-time data, cart workflows, and category browsing.
+    - paragraph: "Role: Mobile Developer"
+    - list:
+      - listitem: React Native
+      - listitem: TypeScript
+      - listitem: Appwrite
+      - listitem: NativeWind
+      - listitem: Zustand
+    - link "GitHub ↗":
+      - /url: https://github.com/JodiAB/foody
+    - button "Case Study"
+    - button "Read More"
+  - article:
+    - img "AI Stock Market App interface preview"
+    - generic: Finance Dashboard
+    - heading "AI Stock Market App" [level=3]
+    - paragraph: An AI-driven stock trading dashboard for tracking live stock data, smart alerts, market insights, and personalized watchlists.
+    - paragraph: "Role: Full Stack Developer"
+    - list:
+      - listitem: Next.js
+      - listitem: TypeScript
+      - listitem: shadcn/ui
+      - listitem: Better Auth
+      - listitem: Inngest
+    - generic: Demo · Temporarily unavailable
+    - button "Case Study"
+    - button "Read More"
+  - article:
+    - img "Nike-style eCommerce interface preview"
+    - generic: eCommerce
+    - heading "Nike-style eCommerce" [level=3]
+    - paragraph: A sleek eCommerce platform inspired by Nike, featuring product browsing, cart functionality, authentication, and secure checkout.
+    - paragraph: "Role: Full Stack Developer"
+    - list:
+      - listitem: Next.js
+      - listitem: TypeScript
+      - listitem: TailwindCSS
+      - listitem: Better Auth
+      - listitem: Neon PostgreSQL
+    - link "Live Demo ↗":
+      - /url: https://joding-ecomm.vercel.app/
+    - button "Case Study"
+    - button "Read More"
+  - paragraph: From requirements to release
+  - heading "How I Work" [level=2]
+  - article:
+    - generic: Stage 1
+    - heading "Understand & Plan" [level=3]
+    - paragraph: I start with the problem, user needs and technical constraints. I map the key workflows and break the work into clear, maintainable steps.
+    - generic: Requirements → User flows → Plan
+  - article:
+    - generic: Stage 2
+    - heading "Build & Collaborate" [level=3]
+    - paragraph: I build reusable components and complete features, sharing progress through Git, pull requests and review feedback.
+    - generic: Components → Integration → Review
+  - article:
+    - generic: Stage 3
+    - heading "Test, Refine & Ship" [level=3]
+    - paragraph: I test critical workflows and edge cases, refine responsive behaviour and address usability and performance before release.
+    - generic: Testing → Refinement → Release
+  - paragraph: Professional background
+  - heading "Experience" [level=2]
+  - article:
+    - generic: Apr 2026 – Present
+    - heading "Freelance Full-Stack Software Developer" [level=3]
+    - paragraph: Independent / Remote
+    - paragraph: Full-time freelance and independent software development
+    - list:
+      - listitem: Own end-to-end delivery of responsive websites and web applications using JavaScript, TypeScript, React, Next.js, HTML5, CSS3, and Tailwind CSS.
+      - listitem: Turn product requirements and Figma designs into polished, reusable, mobile-first interfaces with consistent responsive behaviour.
+      - listitem: Build and integrate REST APIs, authentication, payments, real-time data, relational backends, and third-party services.
+      - listitem: Manage Git and GitHub workflows, deployments, debugging, testing, and production fixes from implementation through release.
+  - article:
+    - generic: Nov 2025 – Apr 2026
+    - heading "Contract Full-Stack Developer" [level=3]
+    - paragraph: TransHumanity
+    - list:
+      - listitem: Delivered production frontend work across a SaaS reporting platform, including report editor, report manager, PDF/export, map snapshot, and content-library workflows.
+      - listitem: Owned improvements to complex rich-text editor behaviour, including toolbar state, selection persistence, undo/redo history, editor preferences, page-count indicators, and markdown support.
+      - listitem: Shipped report-management features covering folder/report cards, report counts, navigation fixes, metadata handling, and trash/archive workflows.
+      - listitem: Improved PDF and report-export quality and strengthened frontend reliability with automated tests, debugging, pull-request review, rebasing, and conflict resolution.
+  - article:
+    - generic: Jun 2024 – Jun 2025
+    - heading "Full-Stack Developer" [level=3]
+    - paragraph: Crunchtime Deliveries
+    - list:
+      - listitem: Delivered responsive web and mobile interfaces using React, Next.js, JavaScript/TypeScript, and React Native for a SaaS-style delivery platform.
+      - listitem: Built real-time tracking, secure payment integration, and multi-role user workflows for customers, drivers, and administrators.
+      - listitem: Connected frontend features to backend services and APIs while supporting production rollouts under tight delivery deadlines.
+      - listitem: Worked closely with designers and backend developers to turn requirements into reusable, responsive, cross-device UI components.
+  - article:
+    - generic: Apr 2024 – Jun 2024
+    - heading "Web Developer Intern" [level=3]
+    - paragraph: Life Choices Studio
+    - list:
+      - listitem: Developed a responsive WordPress e-commerce template using HTML/CSS-based workflows and SEO-optimized imagery for a retail client.
+      - listitem: Translated design requirements into responsive layouts and improved page performance by reducing image-load impact.
+      - listitem: Acted as Scrum Master by facilitating stand-ups and sprint reviews while coordinating work across the project team.
+  - article:
+    - generic: Feb 2022 – Mar 2023
+    - heading "Support Engineer" [level=3]
+    - paragraph: Securicom
+    - generic "Responsibilities"
+  - article:
+    - generic: Dec 2017 – Jan 2019
+    - heading "Junior Network Technician (Volunteer)" [level=3]
+    - paragraph: Cape Peninsula University of Technology
+    - generic "Responsibilities"
+  - paragraph: Have a role or product in mind?
+  - heading "Let’s Talk" [level=2]
+  - paragraph: Whether you’re hiring for a development role, looking for a technical collaborator, or building a product that needs thoughtful engineering, I’d be glad to connect.
+  - link "jodiabrahams9@gmail.com ↗":
+    - /url: mailto:jodiabrahams9@gmail.com
+  - status
+  - text: Full name
+  - textbox "Full name":
+    - /placeholder: Your name
+  - text: Email
+  - textbox "Email":
+    - /placeholder: you@example.com
+  - text: Message
+  - textbox "Message":
+    - /placeholder: Tell me about the role, project or problem you’re working on…
+  - button "Send Message"
+- contentinfo:
+  - paragraph: Cape Town, South Africa · Open to remote opportunities
+  - link "GitHub":
+    - /url: https://github.com/JodiAB
+    - generic: GitHub
+  - link "LinkedIn":
+    - /url: https://www.linkedin.com/in/jodi-abrahams/
+  - link "WhatsApp":
+    - /url: https://wa.me/27782096121
+  - paragraph: © 2026 Jodi Abrahams. All rights reserved.

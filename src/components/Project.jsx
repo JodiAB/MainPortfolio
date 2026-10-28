@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ProjectDetails from "./ProjectDetails";
 import ProjectLinks from "./ProjectLinks";
+import ProjectEvidence from "./ProjectEvidence";
 export default function Project(props) {
   const {
     title,
@@ -32,6 +33,7 @@ export default function Project(props) {
           {featured && <span className="featured-label">Featured</span>}
         </div>
         <h3>{title}</h3>
+        <ProjectEvidence title={title} />
         <p>{description}</p>
         <p className="project-role">Role: {role}</p>
         <ul className="tech-list">

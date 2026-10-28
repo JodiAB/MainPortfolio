@@ -1,0 +1,16 @@
+
+> porfoliomain@0.0.0 lint
+> eslint .
+
+
+C:\Users\Jodi\Desktop\MainPortfolio\src\components\Globe.jsx
+  71:17  warning  Assignments to the 'width' variable from inside React Hook useEffect will be lost after each render. To preserve the value over time, store it in a useRef Hook and keep the mutable value in the '.current' property. Otherwise, you can move this variable directly inside useEffect  react-hooks/exhaustive-deps
+  83:49  warning  Assignments to the 'phi' variable from inside React Hook useEffect will be lost after each render. To preserve the value over time, store it in a useRef Hook and keep the mutable value in the '.current' property. Otherwise, you can move this variable directly inside useEffect    react-hooks/exhaustive-deps
+
+C:\Users\Jodi\Desktop\MainPortfolio\src\components\Particles.jsx
+   92:6  warning  React Hook useEffect has missing dependencies: 'animate' and 'initCanvas'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+   96:6  warning  React Hook useEffect has a missing dependency: 'onMouseMove'. Either include it or remove the dependency array                 react-hooks/exhaustive-deps
+  100:6  warning  React Hook useEffect has a missing dependency: 'initCanvas'. Either include it or remove the dependency array                  react-hooks/exhaustive-deps
+
+✖ 5 problems (0 errors, 5 warnings)
+

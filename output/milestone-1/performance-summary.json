@@ -1,0 +1,1597 @@
+{
+  "groups": {
+    "before-mobile": {
+      "count": 3,
+      "score": {
+        "median": 38,
+        "min": 37,
+        "max": 39
+      },
+      "lcp": {
+        "median": 5499.202875000001,
+        "min": 5387.571400000001,
+        "max": 5964.1287999999995
+      },
+      "tbt": {
+        "median": 3288.275450000001,
+        "min": 1214.5371,
+        "max": 3873.374725000001
+      },
+      "js": {
+        "median": 5140.695999999988,
+        "min": 3202.1479999999906,
+        "max": 5663.587999999976
+      },
+      "cls": {
+        "median": 0.0003784998605387263,
+        "min": 0,
+        "max": 0.0003784998605387263
+      },
+      "bytes": {
+        "median": 3686264,
+        "min": 3686264,
+        "max": 3686264
+      },
+      "benchmark": {
+        "median": 1077,
+        "min": 900,
+        "max": 1339
+      }
+    },
+    "before-desktop": {
+      "count": 3,
+      "score": {
+        "median": 88,
+        "min": 85,
+        "max": 89
+      },
+      "lcp": {
+        "median": 1413.6161499999998,
+        "min": 1409.5048,
+        "max": 1414.1625
+      },
+      "tbt": {
+        "median": 96,
+        "min": 63.5,
+        "max": 187.4999999999999
+      },
+      "js": {
+        "median": 860.1719999999962,
+        "min": 797.8209999999967,
+        "max": 992.4789999999966
+      },
+      "cls": {
+        "median": 0.00122667121475576,
+        "min": 0.00122667121475576,
+        "max": 0.00122667121475576
+      },
+      "bytes": {
+        "median": 4047875,
+        "min": 4047875,
+        "max": 4047875
+      },
+      "benchmark": {
+        "median": 1084,
+        "min": 1068.5,
+        "max": 1245
+      }
+    },
+    "after-mobile": {
+      "count": 3,
+      "score": {
+        "median": 88,
+        "min": 88,
+        "max": 89
+      },
+      "lcp": {
+        "median": 3631.4448999999995,
+        "min": 3630.8288999999995,
+        "max": 3638.2127
+      },
+      "tbt": {
+        "median": 112,
+        "min": 104,
+        "max": 114
+      },
+      "js": {
+        "median": 441.44000000000017,
+        "min": 437.36000000000024,
+        "max": 455.2760000000003
+      },
+      "cls": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "bytes": {
+        "median": 541350,
+        "min": 541350,
+        "max": 541350
+      },
+      "benchmark": {
+        "median": 1203.5,
+        "min": 1045.5,
+        "max": 1257.5
+      }
+    },
+    "after-desktop": {
+      "count": 3,
+      "score": {
+        "median": 95,
+        "min": 90,
+        "max": 96
+      },
+      "lcp": {
+        "median": 1200.8136,
+        "min": 1190.5704,
+        "max": 1201.94
+      },
+      "tbt": {
+        "median": 130,
+        "min": 121.5,
+        "max": 209
+      },
+      "js": {
+        "median": 799.4969999999994,
+        "min": 752.1550000000007,
+        "max": 833.9059999999995
+      },
+      "cls": {
+        "median": 0.00001896923610010556,
+        "min": 0.00001896923610010556,
+        "max": 0.00001896923610010556
+      },
+      "bytes": {
+        "median": 4168578,
+        "min": 4168578,
+        "max": 4168578
+      },
+      "benchmark": {
+        "median": 1201,
+        "min": 1019,
+        "max": 1353.5
+      }
+    }
+  },
+  "runs": [
+    {
+      "file": "local-after-desktop-1.json",
+      "score": 96,
+      "lcp": 1190.5704,
+      "tbt": 121.5,
+      "js": 833.9059999999995,
+      "cls": 0.00001896923610010556,
+      "bytes": 4168578,
+      "benchmark": 1201,
+      "warnings": [],
+      "categories": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:4173/",
+          "transferSize": 1057
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/fonts/funnel-display-latin.woff2",
+          "transferSize": 18032
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/main-b8FtFUxL.js",
+          "transferSize": 56045
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-BNHVIOrY.js",
+          "transferSize": 66792
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-CL4Ygd3r.css",
+          "transferSize": 11074
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/astronaut-poster.jpg",
+          "transferSize": 26796
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/logos/github.svg",
+          "transferSize": 1635
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/linkedIn.svg",
+          "transferSize": 804
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/whatsApp.svg",
+          "transferSize": 964
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/sky.webp",
+          "transferSize": 97292
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/homepage.webp",
+          "transferSize": 75874
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/possibility-engine.svg",
+          "transferSize": 1419
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/screenshots/dashboard.webp",
+          "transferSize": 42608
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/landing.webp",
+          "transferSize": 241710
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/resume%20ai.webp",
+          "transferSize": 35110
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/saas.webp",
+          "transferSize": 58038
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/AstronautScene-v-qJlSE9.js",
+          "transferSize": 263691
+        },
+        {
+          "url": "http://127.0.0.1:4173/logo.jpg",
+          "transferSize": 183566
+        },
+        {
+          "url": "http://127.0.0.1:4173/models/tenhun_falling_spaceman_fanart.glb",
+          "transferSize": 2986071
+        },
+        {
+          "url": "blob:http://127.0.0.1:4173/ba55ea82-d6f5-4be2-b5fd-94126857f013",
+          "transferSize": 0
+        }
+      ],
+      "mainThread": [
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 833.2739999999872
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 391.11899999999764
+        },
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 347.8280000000002
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 135.7380000000044
+        },
+        {
+          "group": "garbageCollection",
+          "groupLabel": "Garbage Collection",
+          "duration": 9.079999999999991
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 3.884
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 1.8719999999999999
+        }
+      ]
+    },
+    {
+      "file": "local-after-desktop-2.json",
+      "score": 90,
+      "lcp": 1201.94,
+      "tbt": 209,
+      "js": 799.4969999999994,
+      "cls": 0.00001896923610010556,
+      "bytes": 4168578,
+      "benchmark": 1019,
+      "warnings": [],
+      "categories": {
+        "performance": 90,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:4173/",
+          "transferSize": 1057
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/fonts/funnel-display-latin.woff2",
+          "transferSize": 18032
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/main-b8FtFUxL.js",
+          "transferSize": 56045
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-BNHVIOrY.js",
+          "transferSize": 66792
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-CL4Ygd3r.css",
+          "transferSize": 11074
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/astronaut-poster.jpg",
+          "transferSize": 26796
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/logos/github.svg",
+          "transferSize": 1635
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/linkedIn.svg",
+          "transferSize": 804
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/whatsApp.svg",
+          "transferSize": 964
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/sky.webp",
+          "transferSize": 97292
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/homepage.webp",
+          "transferSize": 75874
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/possibility-engine.svg",
+          "transferSize": 1419
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/screenshots/dashboard.webp",
+          "transferSize": 42608
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/landing.webp",
+          "transferSize": 241710
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/resume%20ai.webp",
+          "transferSize": 35110
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/saas.webp",
+          "transferSize": 58038
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/AstronautScene-v-qJlSE9.js",
+          "transferSize": 263691
+        },
+        {
+          "url": "http://127.0.0.1:4173/logo.jpg",
+          "transferSize": 183566
+        },
+        {
+          "url": "http://127.0.0.1:4173/models/tenhun_falling_spaceman_fanart.glb",
+          "transferSize": 2986071
+        },
+        {
+          "url": "blob:http://127.0.0.1:4173/7be497a0-f4bd-4921-8324-fd0cc4b783e6",
+          "transferSize": 0
+        }
+      ],
+      "mainThread": [
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 799.0639999999881
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 385.5369999999977
+        },
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 358.1590000000001
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 135.01100000000469
+        },
+        {
+          "group": "garbageCollection",
+          "groupLabel": "Garbage Collection",
+          "duration": 6.852999999999995
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 3.3820000000000006
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 1.592
+        }
+      ]
+    },
+    {
+      "file": "local-after-desktop-3.json",
+      "score": 95,
+      "lcp": 1200.8136,
+      "tbt": 130,
+      "js": 752.1550000000007,
+      "cls": 0.00001896923610010556,
+      "bytes": 4168578,
+      "benchmark": 1353.5,
+      "warnings": [],
+      "categories": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:4173/",
+          "transferSize": 1057
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/fonts/funnel-display-latin.woff2",
+          "transferSize": 18032
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/main-b8FtFUxL.js",
+          "transferSize": 56045
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-BNHVIOrY.js",
+          "transferSize": 66792
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-CL4Ygd3r.css",
+          "transferSize": 11074
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/astronaut-poster.jpg",
+          "transferSize": 26796
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/logos/github.svg",
+          "transferSize": 1635
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/linkedIn.svg",
+          "transferSize": 804
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/whatsApp.svg",
+          "transferSize": 964
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/sky.webp",
+          "transferSize": 97292
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/homepage.webp",
+          "transferSize": 75874
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/possibility-engine.svg",
+          "transferSize": 1419
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/screenshots/dashboard.webp",
+          "transferSize": 42608
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/landing.webp",
+          "transferSize": 241710
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/resume%20ai.webp",
+          "transferSize": 35110
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/saas.webp",
+          "transferSize": 58038
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/AstronautScene-v-qJlSE9.js",
+          "transferSize": 263691
+        },
+        {
+          "url": "http://127.0.0.1:4173/logo.jpg",
+          "transferSize": 183566
+        },
+        {
+          "url": "http://127.0.0.1:4173/models/tenhun_falling_spaceman_fanart.glb",
+          "transferSize": 2986071
+        },
+        {
+          "url": "blob:http://127.0.0.1:4173/d63dc55c-452e-4691-856a-5396b92f49b9",
+          "transferSize": 0
+        }
+      ],
+      "mainThread": [
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 752.6159999999882
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 413.002999999997
+        },
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 320.176
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 169.94500000000494
+        },
+        {
+          "group": "garbageCollection",
+          "groupLabel": "Garbage Collection",
+          "duration": 6.626999999999998
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 3.393
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 1.673
+        }
+      ]
+    },
+    {
+      "file": "local-after-mobile-1.json",
+      "score": 89,
+      "lcp": 3630.8288999999995,
+      "tbt": 104,
+      "js": 441.44000000000017,
+      "cls": 0,
+      "bytes": 541350,
+      "benchmark": 1045.5,
+      "warnings": [],
+      "categories": {
+        "performance": 89,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:4173/",
+          "transferSize": 1057
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/fonts/funnel-display-latin.woff2",
+          "transferSize": 18032
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/main-b8FtFUxL.js",
+          "transferSize": 56045
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-BNHVIOrY.js",
+          "transferSize": 66792
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-CL4Ygd3r.css",
+          "transferSize": 11074
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/astronaut-poster.jpg",
+          "transferSize": 26796
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/logos/github.svg",
+          "transferSize": 1635
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/linkedIn.svg",
+          "transferSize": 804
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/whatsApp.svg",
+          "transferSize": 964
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/sky.webp",
+          "transferSize": 97292
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/homepage.webp",
+          "transferSize": 75874
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/possibility-engine.svg",
+          "transferSize": 1419
+        },
+        {
+          "url": "http://127.0.0.1:4173/logo.jpg",
+          "transferSize": 183566
+        }
+      ],
+      "mainThread": [
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 800.184
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 650.2199999999983
+        },
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 442.3400000000021
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 54.52399999999999
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 17.832
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 4.864
+        }
+      ]
+    },
+    {
+      "file": "local-after-mobile-2.json",
+      "score": 88,
+      "lcp": 3631.4448999999995,
+      "tbt": 114,
+      "js": 437.36000000000024,
+      "cls": 0,
+      "bytes": 541350,
+      "benchmark": 1203.5,
+      "warnings": [],
+      "categories": {
+        "performance": 88,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:4173/",
+          "transferSize": 1057
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/fonts/funnel-display-latin.woff2",
+          "transferSize": 18032
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/main-b8FtFUxL.js",
+          "transferSize": 56045
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-BNHVIOrY.js",
+          "transferSize": 66792
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-CL4Ygd3r.css",
+          "transferSize": 11074
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/astronaut-poster.jpg",
+          "transferSize": 26796
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/logos/github.svg",
+          "transferSize": 1635
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/linkedIn.svg",
+          "transferSize": 804
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/whatsApp.svg",
+          "transferSize": 964
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/sky.webp",
+          "transferSize": 97292
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/homepage.webp",
+          "transferSize": 75874
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/possibility-engine.svg",
+          "transferSize": 1419
+        },
+        {
+          "url": "http://127.0.0.1:4173/logo.jpg",
+          "transferSize": 183566
+        }
+      ],
+      "mainThread": [
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 928.176
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 671.0959999999968
+        },
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 438.4840000000014
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 61.644000000000005
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 17.083999999999996
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 4.56
+        }
+      ]
+    },
+    {
+      "file": "local-after-mobile-3.json",
+      "score": 88,
+      "lcp": 3638.2127,
+      "tbt": 112,
+      "js": 455.2760000000003,
+      "cls": 0,
+      "bytes": 541350,
+      "benchmark": 1257.5,
+      "warnings": [],
+      "categories": {
+        "performance": 88,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:4173/",
+          "transferSize": 1057
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/fonts/funnel-display-latin.woff2",
+          "transferSize": 18032
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/main-b8FtFUxL.js",
+          "transferSize": 56045
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-BNHVIOrY.js",
+          "transferSize": 66792
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-CL4Ygd3r.css",
+          "transferSize": 11074
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/astronaut-poster.jpg",
+          "transferSize": 26796
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/logos/github.svg",
+          "transferSize": 1635
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/linkedIn.svg",
+          "transferSize": 804
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/whatsApp.svg",
+          "transferSize": 964
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/sky.webp",
+          "transferSize": 97292
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/homepage.webp",
+          "transferSize": 75874
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/possibility-engine.svg",
+          "transferSize": 1419
+        },
+        {
+          "url": "http://127.0.0.1:4173/logo.jpg",
+          "transferSize": 183566
+        }
+      ],
+      "mainThread": [
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 993.184
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 637.143999999999
+        },
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 450.36800000000204
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 55.80799999999994
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 18.759999999999998
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 9.056
+        }
+      ]
+    },
+    {
+      "file": "local-before-desktop-1.json",
+      "score": 85,
+      "lcp": 1413.6161499999998,
+      "tbt": 187.4999999999999,
+      "js": 992.4789999999966,
+      "cls": 0.00122667121475576,
+      "bytes": 4047875,
+      "benchmark": 1084,
+      "warnings": [],
+      "categories": {
+        "performance": 85,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:4173/",
+          "transferSize": 1023
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/main-B79xK7ni.js",
+          "transferSize": 54933
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-C1p3dFXi.js",
+          "transferSize": 66740
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-D9-vneit.css",
+          "transferSize": 10828
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap",
+          "transferSize": 871
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/AstronautScene-CAfv-IGz.js",
+          "transferSize": 263796
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/sky.webp",
+          "transferSize": 97292
+        },
+        {
+          "url": "https://fonts.gstatic.com/s/funneldisplay/v3/B50WF7FGv37QNVWgE0ga--4Pbb6dDYs0gnHA.woff2",
+          "transferSize": 17741
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/logos/github.svg",
+          "transferSize": 1635
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/linkedIn.svg",
+          "transferSize": 804
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/whatsApp.svg",
+          "transferSize": 964
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/possibility-engine.svg",
+          "transferSize": 1419
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/screenshots/dashboard.webp",
+          "transferSize": 42608
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/homepage.webp",
+          "transferSize": 75874
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/landing.webp",
+          "transferSize": 241710
+        },
+        {
+          "url": "http://127.0.0.1:4173/logo.jpg",
+          "transferSize": 183566
+        },
+        {
+          "url": "http://127.0.0.1:4173/models/tenhun_falling_spaceman_fanart.glb",
+          "transferSize": 2986071
+        },
+        {
+          "url": "blob:http://127.0.0.1:4173/e4d7978c-937e-46fd-b78a-e9bcbfbce732",
+          "transferSize": 0
+        }
+      ],
+      "mainThread": [
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 993.1659999999899
+        },
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 763.295999999999
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 601.9229999999972
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 326.9009999999906
+        },
+        {
+          "group": "garbageCollection",
+          "groupLabel": "Garbage Collection",
+          "duration": 7.805999999999998
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 4.018
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 2.373
+        }
+      ]
+    },
+    {
+      "file": "local-before-desktop-2.json",
+      "score": 89,
+      "lcp": 1409.5048,
+      "tbt": 96,
+      "js": 797.8209999999967,
+      "cls": 0.00122667121475576,
+      "bytes": 4047875,
+      "benchmark": 1245,
+      "warnings": [],
+      "categories": {
+        "performance": 89,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:4173/",
+          "transferSize": 1023
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/main-B79xK7ni.js",
+          "transferSize": 54933
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-C1p3dFXi.js",
+          "transferSize": 66740
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-D9-vneit.css",
+          "transferSize": 10828
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap",
+          "transferSize": 871
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/AstronautScene-CAfv-IGz.js",
+          "transferSize": 263796
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/sky.webp",
+          "transferSize": 97292
+        },
+        {
+          "url": "https://fonts.gstatic.com/s/funneldisplay/v3/B50WF7FGv37QNVWgE0ga--4Pbb6dDYs0gnHA.woff2",
+          "transferSize": 17741
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/logos/github.svg",
+          "transferSize": 1635
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/linkedIn.svg",
+          "transferSize": 804
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/whatsApp.svg",
+          "transferSize": 964
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/possibility-engine.svg",
+          "transferSize": 1419
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/screenshots/dashboard.webp",
+          "transferSize": 42608
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/homepage.webp",
+          "transferSize": 75874
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/landing.webp",
+          "transferSize": 241710
+        },
+        {
+          "url": "http://127.0.0.1:4173/logo.jpg",
+          "transferSize": 183566
+        },
+        {
+          "url": "http://127.0.0.1:4173/models/tenhun_falling_spaceman_fanart.glb",
+          "transferSize": 2986071
+        },
+        {
+          "url": "blob:http://127.0.0.1:4173/16f4aeb1-4cad-4a1c-8ab0-7e230886da0e",
+          "transferSize": 0
+        }
+      ],
+      "mainThread": [
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 797.2319999999831
+        },
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 691.993
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 572.0949999999978
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 284.1289999999988
+        },
+        {
+          "group": "garbageCollection",
+          "groupLabel": "Garbage Collection",
+          "duration": 6.692999999999995
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 3.747999999999999
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 1.808
+        }
+      ]
+    },
+    {
+      "file": "local-before-desktop-3.json",
+      "score": 88,
+      "lcp": 1414.1625,
+      "tbt": 63.5,
+      "js": 860.1719999999962,
+      "cls": 0.00122667121475576,
+      "bytes": 4047875,
+      "benchmark": 1068.5,
+      "warnings": [],
+      "categories": {
+        "performance": 88,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:4173/",
+          "transferSize": 1023
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/main-B79xK7ni.js",
+          "transferSize": 54933
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-C1p3dFXi.js",
+          "transferSize": 66740
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-D9-vneit.css",
+          "transferSize": 10828
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap",
+          "transferSize": 871
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/AstronautScene-CAfv-IGz.js",
+          "transferSize": 263796
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/sky.webp",
+          "transferSize": 97292
+        },
+        {
+          "url": "https://fonts.gstatic.com/s/funneldisplay/v3/B50WF7FGv37QNVWgE0ga--4Pbb6dDYs0gnHA.woff2",
+          "transferSize": 17741
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/logos/github.svg",
+          "transferSize": 1635
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/linkedIn.svg",
+          "transferSize": 804
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/whatsApp.svg",
+          "transferSize": 964
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/possibility-engine.svg",
+          "transferSize": 1419
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/screenshots/dashboard.webp",
+          "transferSize": 42608
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/homepage.webp",
+          "transferSize": 75874
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/projects/landing.webp",
+          "transferSize": 241710
+        },
+        {
+          "url": "http://127.0.0.1:4173/logo.jpg",
+          "transferSize": 183566
+        },
+        {
+          "url": "http://127.0.0.1:4173/models/tenhun_falling_spaceman_fanart.glb",
+          "transferSize": 2986071
+        },
+        {
+          "url": "blob:http://127.0.0.1:4173/85c7e549-5f7f-450e-8d15-8d6877252481",
+          "transferSize": 0
+        }
+      ],
+      "mainThread": [
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 859.5109999999851
+        },
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 776.9849999999993
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 619.6269999999981
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 339.2779999999904
+        },
+        {
+          "group": "garbageCollection",
+          "groupLabel": "Garbage Collection",
+          "duration": 6.378999999999996
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 5.1579999999999995
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 1.8119999999999998
+        }
+      ]
+    },
+    {
+      "file": "local-before-mobile-1.json",
+      "score": 38,
+      "lcp": 5387.571400000001,
+      "tbt": 3288.275450000001,
+      "js": 5140.695999999988,
+      "cls": 0.0003784998605387263,
+      "bytes": 3686264,
+      "benchmark": 1077,
+      "warnings": [],
+      "categories": {
+        "performance": 38,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:4173/",
+          "transferSize": 1023
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/main-B79xK7ni.js",
+          "transferSize": 54933
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-C1p3dFXi.js",
+          "transferSize": 66740
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-D9-vneit.css",
+          "transferSize": 10828
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap",
+          "transferSize": 871
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/AstronautScene-CAfv-IGz.js",
+          "transferSize": 263796
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/sky.webp",
+          "transferSize": 97292
+        },
+        {
+          "url": "https://fonts.gstatic.com/s/funneldisplay/v3/B50WF7FGv37QNVWgE0ga--4Pbb6dDYs0gnHA.woff2",
+          "transferSize": 17741
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/logos/github.svg",
+          "transferSize": 1635
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/linkedIn.svg",
+          "transferSize": 804
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/whatsApp.svg",
+          "transferSize": 964
+        },
+        {
+          "url": "http://127.0.0.1:4173/logo.jpg",
+          "transferSize": 183566
+        },
+        {
+          "url": "http://127.0.0.1:4173/models/tenhun_falling_spaceman_fanart.glb",
+          "transferSize": 2986071
+        },
+        {
+          "url": "blob:http://127.0.0.1:4173/ea8f6764-16c7-4df7-8052-8e76f7cc1b17",
+          "transferSize": 0
+        }
+      ],
+      "mainThread": [
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 5137.995999999949
+        },
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 2260.3759999999993
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 2100.0079999999916
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 1254.3079999999775
+        },
+        {
+          "group": "garbageCollection",
+          "groupLabel": "Garbage Collection",
+          "duration": 21.359999999999996
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 18.263999999999996
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 7.871999999999999
+        }
+      ]
+    },
+    {
+      "file": "local-before-mobile-2.json",
+      "score": 37,
+      "lcp": 5499.202875000001,
+      "tbt": 3873.374725000001,
+      "js": 5663.587999999976,
+      "cls": 0.0003784998605387263,
+      "bytes": 3686264,
+      "benchmark": 1339,
+      "warnings": [],
+      "categories": {
+        "performance": 37,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:4173/",
+          "transferSize": 1023
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/main-B79xK7ni.js",
+          "transferSize": 54933
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-C1p3dFXi.js",
+          "transferSize": 66740
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-D9-vneit.css",
+          "transferSize": 10828
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap",
+          "transferSize": 871
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/AstronautScene-CAfv-IGz.js",
+          "transferSize": 263796
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/sky.webp",
+          "transferSize": 97292
+        },
+        {
+          "url": "https://fonts.gstatic.com/s/funneldisplay/v3/B50WF7FGv37QNVWgE0ga--4Pbb6dDYs0gnHA.woff2",
+          "transferSize": 17741
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/logos/github.svg",
+          "transferSize": 1635
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/linkedIn.svg",
+          "transferSize": 804
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/whatsApp.svg",
+          "transferSize": 964
+        },
+        {
+          "url": "http://127.0.0.1:4173/logo.jpg",
+          "transferSize": 183566
+        },
+        {
+          "url": "http://127.0.0.1:4173/models/tenhun_falling_spaceman_fanart.glb",
+          "transferSize": 2986071
+        },
+        {
+          "url": "blob:http://127.0.0.1:4173/429626de-267d-461f-acf4-8c796e2b6ed0",
+          "transferSize": 0
+        }
+      ],
+      "mainThread": [
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 5660.259999999918
+        },
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 2756.308
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 1902.7479999999885
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 1079.0520000000286
+        },
+        {
+          "group": "garbageCollection",
+          "groupLabel": "Garbage Collection",
+          "duration": 46.967999999999996
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 18.884
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 6.768
+        }
+      ]
+    },
+    {
+      "file": "local-before-mobile-3.json",
+      "score": 39,
+      "lcp": 5964.1287999999995,
+      "tbt": 1214.5371,
+      "js": 3202.1479999999906,
+      "cls": 0,
+      "bytes": 3686264,
+      "benchmark": 900,
+      "warnings": [
+        "The tested device appears to have a slower CPU than  Lighthouse expects. This can negatively affect your performance score. Learn more about [calibrating an appropriate CPU slowdown multiplier](https://github.com/GoogleChrome/lighthouse/blob/main/docs/throttling.md#cpu-throttling)."
+      ],
+      "categories": {
+        "performance": 39,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "network": [
+        {
+          "url": "http://127.0.0.1:4173/",
+          "transferSize": 1023
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/main-B79xK7ni.js",
+          "transferSize": 54933
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-C1p3dFXi.js",
+          "transferSize": 66740
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/Footer-D9-vneit.css",
+          "transferSize": 10828
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap",
+          "transferSize": 871
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/AstronautScene-CAfv-IGz.js",
+          "transferSize": 263796
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/sky.webp",
+          "transferSize": 97292
+        },
+        {
+          "url": "https://fonts.gstatic.com/s/funneldisplay/v3/B50WF7FGv37QNVWgE0ga--4Pbb6dDYs0gnHA.woff2",
+          "transferSize": 17741
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/logos/github.svg",
+          "transferSize": 1635
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/linkedIn.svg",
+          "transferSize": 804
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/socials/whatsApp.svg",
+          "transferSize": 964
+        },
+        {
+          "url": "http://127.0.0.1:4173/logo.jpg",
+          "transferSize": 183566
+        },
+        {
+          "url": "http://127.0.0.1:4173/models/tenhun_falling_spaceman_fanart.glb",
+          "transferSize": 2986071
+        },
+        {
+          "url": "blob:http://127.0.0.1:4173/9eba2386-b947-48e6-9029-77cf75b095eb",
+          "transferSize": 0
+        }
+      ],
+      "mainThread": [
+        {
+          "group": "scriptEvaluation",
+          "groupLabel": "Script Evaluation",
+          "duration": 3199.2439999999583
+        },
+        {
+          "group": "styleLayout",
+          "groupLabel": "Style & Layout",
+          "duration": 2450.1919999999986
+        },
+        {
+          "group": "other",
+          "groupLabel": "Other",
+          "duration": 2355.291999999993
+        },
+        {
+          "group": "paintCompositeRender",
+          "groupLabel": "Rendering",
+          "duration": 1374.7839999999665
+        },
+        {
+          "group": "garbageCollection",
+          "groupLabel": "Garbage Collection",
+          "duration": 36.995999999999995
+        },
+        {
+          "group": "parseHTML",
+          "groupLabel": "Parse HTML & CSS",
+          "duration": 15.372
+        },
+        {
+          "group": "scriptParseCompile",
+          "groupLabel": "Script Parsing & Compilation",
+          "duration": 7.196000000000001
+        }
+      ]
+    }
+  ]
+}

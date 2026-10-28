@@ -1,0 +1,504 @@
+- link "Skip to content":
+  - /url: "#start-of-content"
+- banner:
+  - heading "Navigation Menu" [level=2]
+  - link "Homepage":
+    - /url: /
+  - navigation "Global":
+    - list:
+      - button "Platform":
+        - text: Platform
+      - button "Solutions":
+        - text: Solutions
+      - button "Resources":
+        - text: Resources
+      - button "Open Source":
+        - text: Open Source
+      - button "Enterprise":
+        - text: Enterprise
+      - link "Pricing":
+        - /url: https://github.com/pricing
+  - button "Search or jump to, type / to search":
+  - link "Sign in":
+    - /url: /login?return_to=https%3A%2F%2Fgithub.com%2FJodiAB%2Ffoody
+    - generic: Sign in
+  - link "Sign up":
+    - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=JodiAB%2Ffoody
+    - generic: Sign up
+  - button "Appearance settings":
+- main:
+  - generic "Global navigation menu":
+    - navigation "Breadcrumbs":
+      - list:
+        - link "JodiAB":
+          - /url: /JodiAB
+          - generic: JodiAB
+        - link "foody":
+          - /url: /JodiAB/foody
+          - generic: foody
+    - heading "Repository navigation" [level=2]
+    - navigation "Repository":
+      - list:
+        - link "Code":
+          - /url: /JodiAB/foody
+          - generic: Code
+        - link "Issues":
+          - /url: /JodiAB/foody/issues
+          - generic: Issues
+        - link "Pull requests":
+          - /url: /JodiAB/foody/pulls
+          - generic: Pull requests
+        - link "Actions":
+          - /url: /JodiAB/foody/actions
+          - generic: Actions
+        - link "Projects":
+          - /url: /JodiAB/foody/projects
+          - generic: Projects
+        - link "Security and quality":
+          - /url: /JodiAB/foody/security
+          - generic: Security and quality
+        - link "Insights":
+          - /url: /JodiAB/foody/pulse
+          - generic: Insights
+  - img "JodiAB"
+  - generic "foody":
+    - strong:
+      - link "foody":
+        - /url: /JodiAB/foody
+  - generic: Public
+  - list:
+    - link "You must be signed in to change notification settings":
+      - /url: /login?return_to=%2FJodiAB%2Ffoody
+      - generic: Notifications
+    - link "You must be signed in to fork a repository":
+      - /url: /login?return_to=%2FJodiAB%2Ffoody
+      - text: Fork
+      - generic: "0"
+      - generic: (0)
+    - link "Star (0)":
+      - /url: /login?return_to=%2FJodiAB%2Ffoody
+      - text: Star
+      - generic: "0"
+      - generic: (0)
+  - button "main branch":
+    - generic: main
+  - link "2 Branches":
+    - /url: /JodiAB/foody/branches
+    - strong: "2"
+    - text: Branches
+  - link "0 Tags":
+    - /url: /JodiAB/foody/tags
+    - strong: "0"
+    - text: Tags
+  - combobox "Go to file"
+  - button "Code":
+    - generic: Code
+  - heading "Latest commit" [level=2]
+  - link "JodiAB":
+    - /url: /JodiAB
+    - img "JodiAB"
+  - link "commits by JodiAB":
+    - /url: /JodiAB/foody/commits?author=JodiAB
+    - text: JodiAB
+  - link "Merge pull request":
+    - /url: /JodiAB/foody/commit/28aa457c955c1c57865ec6289a6ea79b3d625ddf
+  - link "#2":
+    - /url: https://github.com/JodiAB/foody/pull/2
+  - link "from JodiAB/store":
+    - /url: /JodiAB/foody/commit/28aa457c955c1c57865ec6289a6ea79b3d625ddf
+  - button "Open commit details":
+  - link "Commit 28aa457":
+    - /url: /JodiAB/foody/commit/28aa457c955c1c57865ec6289a6ea79b3d625ddf
+    - text: 28aa457
+  - text: ·
+  - generic "Jul 15, 2025, 3:04 PM GMT+2": Jul 15, 2025last year
+  - heading "History" [level=2]
+  - link "13 Commits":
+    - /url: /JodiAB/foody/commits/main/
+    - generic: 13 Commits
+  - heading "Folders and files" [level=2]
+  - table "Folders and files":
+    - rowgroup:
+      - row "Name Last commit message Last commit date":
+        - columnheader "Name"
+        - columnheader "Last commit message":
+          - generic "Last commit message"
+        - columnheader "Last commit date":
+          - generic "Last commit date"
+    - rowgroup:
+      - row ".idea, (Directory) routing Jul 8, 2025last year":
+        - cell ".idea, (Directory)":
+          - link ".idea, (Directory)":
+            - /url: /JodiAB/foody/tree/main/.idea
+            - text: .idea
+        - cell "routing":
+          - link "routing":
+            - /url: /JodiAB/foody/commit/7c8a77753db371e9694fcca1fac2b803ed2e0193
+        - cell "Jul 8, 2025last year":
+          - generic: Jul 8, 2025last year
+      - row ".vscode, (Directory) Initial commit Jul 7, 2025last year":
+        - cell ".vscode, (Directory)":
+          - link ".vscode, (Directory)":
+            - /url: /JodiAB/foody/tree/main/.vscode
+            - text: .vscode
+        - cell "Initial commit":
+          - link "Initial commit":
+            - /url: /JodiAB/foody/commit/5e031c028a962527e24b1ae853e940680785aca7
+        - cell "Jul 7, 2025last year":
+          - generic: Jul 7, 2025last year
+      - row "app, (Directory) done Jul 15, 2025last year":
+        - cell "app, (Directory)":
+          - link "app, (Directory)":
+            - /url: /JodiAB/foody/tree/main/app
+            - text: app
+        - cell "done":
+          - link "done":
+            - /url: /JodiAB/foody/commit/fadb1c6d0a25a14304c4520cd1d2847aff5e310f
+        - cell "Jul 15, 2025last year":
+          - generic: Jul 15, 2025last year
+      - row "assets, (Directory) first commit Jul 7, 2025last year":
+        - cell "assets, (Directory)":
+          - link "assets, (Directory)":
+            - /url: /JodiAB/foody/tree/main/assets
+            - text: assets
+        - cell "first commit":
+          - link "first commit":
+            - /url: /JodiAB/foody/commit/0852df161ca27910ebd278fd20f601bfbb8f79ca
+        - cell "Jul 7, 2025last year":
+          - generic: Jul 7, 2025last year
+      - row "components, (Directory) done Jul 15, 2025last year":
+        - cell "components, (Directory)":
+          - link "components, (Directory)":
+            - /url: /JodiAB/foody/tree/main/components
+            - text: components
+        - cell "done":
+          - link "done":
+            - /url: /JodiAB/foody/commit/fadb1c6d0a25a14304c4520cd1d2847aff5e310f
+        - cell "Jul 15, 2025last year":
+          - generic: Jul 15, 2025last year
+      - row "constants, (Directory) first commit Jul 7, 2025last year":
+        - cell "constants, (Directory)":
+          - link "constants, (Directory)":
+            - /url: /JodiAB/foody/tree/main/constants
+            - text: constants
+        - cell "first commit":
+          - link "first commit":
+            - /url: /JodiAB/foody/commit/0852df161ca27910ebd278fd20f601bfbb8f79ca
+        - cell "Jul 7, 2025last year":
+          - generic: Jul 7, 2025last year
+      - row "lib, (Directory) search & filter done Jul 15, 2025last year":
+        - cell "lib, (Directory)":
+          - link "lib, (Directory)":
+            - /url: /JodiAB/foody/tree/main/lib
+            - text: lib
+        - cell "search & filter done":
+          - link "search & filter done":
+            - /url: /JodiAB/foody/commit/d3daaa9b6db799b2c9369f0040b7384448bb9ec6
+        - cell "Jul 15, 2025last year":
+          - generic: Jul 15, 2025last year
+      - row "store, (Directory) search & filter done Jul 15, 2025last year":
+        - cell "store, (Directory)":
+          - link "store, (Directory)":
+            - /url: /JodiAB/foody/tree/main/store
+            - text: store
+        - cell "search & filter done":
+          - link "search & filter done":
+            - /url: /JodiAB/foody/commit/d3daaa9b6db799b2c9369f0040b7384448bb9ec6
+        - cell "Jul 15, 2025last year":
+          - generic: Jul 15, 2025last year
+      - row ".gitignore, (File) fixes Jul 15, 2025last year":
+        - cell ".gitignore, (File)":
+          - link ".gitignore, (File)":
+            - /url: /JodiAB/foody/blob/main/.gitignore
+            - text: .gitignore
+        - cell "fixes":
+          - link "fixes":
+            - /url: /JodiAB/foody/commit/098ae0174aa68402ac03ed5b9191a44850da87bf
+        - cell "Jul 15, 2025last year":
+          - generic: Jul 15, 2025last year
+      - row "README.md, (File) Initial commit Jul 7, 2025last year":
+        - cell "README.md, (File)":
+          - link "README.md, (File)":
+            - /url: /JodiAB/foody/blob/main/README.md
+            - text: README.md
+        - cell "Initial commit":
+          - link "Initial commit":
+            - /url: /JodiAB/foody/commit/5e031c028a962527e24b1ae853e940680785aca7
+        - cell "Jul 7, 2025last year":
+          - generic: Jul 7, 2025last year
+      - row "app.json, (File) Auth Functionality Jul 10, 2025last year":
+        - cell "app.json, (File)":
+          - link "app.json, (File)":
+            - /url: /JodiAB/foody/blob/main/app.json
+            - text: app.json
+        - cell "Auth Functionality":
+          - link "Auth Functionality":
+            - /url: /JodiAB/foody/commit/bc752a73756f8be3b3b445d895031a2a0b10f225
+        - cell "Jul 10, 2025last year":
+          - generic: Jul 10, 2025last year
+      - row "babel.config.js, (File) first commit Jul 7, 2025last year":
+        - cell "babel.config.js, (File)":
+          - link "babel.config.js, (File)":
+            - /url: /JodiAB/foody/blob/main/babel.config.js
+            - text: babel.config.js
+        - cell "first commit":
+          - link "first commit":
+            - /url: /JodiAB/foody/commit/0852df161ca27910ebd278fd20f601bfbb8f79ca
+        - cell "Jul 7, 2025last year":
+          - generic: Jul 7, 2025last year
+      - row "eslint.config.js, (File) Initial commit Jul 7, 2025last year":
+        - cell "eslint.config.js, (File)":
+          - link "eslint.config.js, (File)":
+            - /url: /JodiAB/foody/blob/main/eslint.config.js
+            - text: eslint.config.js
+        - cell "Initial commit":
+          - link "Initial commit":
+            - /url: /JodiAB/foody/commit/5e031c028a962527e24b1ae853e940680785aca7
+        - cell "Jul 7, 2025last year":
+          - generic: Jul 7, 2025last year
+      - row "images.d.ts, (File) first commit Jul 7, 2025last year":
+        - cell "images.d.ts, (File)":
+          - link "images.d.ts, (File)":
+            - /url: /JodiAB/foody/blob/main/images.d.ts
+            - text: images.d.ts
+        - cell "first commit":
+          - link "first commit":
+            - /url: /JodiAB/foody/commit/0852df161ca27910ebd278fd20f601bfbb8f79ca
+        - cell "Jul 7, 2025last year":
+          - generic: Jul 7, 2025last year
+      - row "metro.config.js, (File) Auth Functionality Jul 10, 2025last year":
+        - cell "metro.config.js, (File)":
+          - link "metro.config.js, (File)":
+            - /url: /JodiAB/foody/blob/main/metro.config.js
+            - text: metro.config.js
+        - cell "Auth Functionality":
+          - link "Auth Functionality":
+            - /url: /JodiAB/foody/commit/bc752a73756f8be3b3b445d895031a2a0b10f225
+        - cell "Jul 10, 2025last year":
+          - generic: Jul 10, 2025last year
+      - row "nativewind-env.d.ts, (File) first commit Jul 7, 2025last year":
+        - cell "nativewind-env.d.ts, (File)":
+          - link "nativewind-env.d.ts, (File)":
+            - /url: /JodiAB/foody/blob/main/nativewind-env.d.ts
+            - text: nativewind-env.d.ts
+        - cell "first commit":
+          - link "first commit":
+            - /url: /JodiAB/foody/commit/0852df161ca27910ebd278fd20f601bfbb8f79ca
+        - cell "Jul 7, 2025last year":
+          - generic: Jul 7, 2025last year
+      - row "package-lock.json, (File) done Jul 15, 2025last year":
+        - cell "package-lock.json, (File)":
+          - link "package-lock.json, (File)":
+            - /url: /JodiAB/foody/blob/main/package-lock.json
+            - text: package-lock.json
+        - cell "done":
+          - link "done":
+            - /url: /JodiAB/foody/commit/fadb1c6d0a25a14304c4520cd1d2847aff5e310f
+        - cell "Jul 15, 2025last year":
+          - generic: Jul 15, 2025last year
+      - row "package.json, (File) done Jul 15, 2025last year":
+        - cell "package.json, (File)":
+          - link "package.json, (File)":
+            - /url: /JodiAB/foody/blob/main/package.json
+            - text: package.json
+        - cell "done":
+          - link "done":
+            - /url: /JodiAB/foody/commit/fadb1c6d0a25a14304c4520cd1d2847aff5e310f
+        - cell "Jul 15, 2025last year":
+          - generic: Jul 15, 2025last year
+      - row "tailwind.config.js, (File) first commit Jul 7, 2025last year":
+        - cell "tailwind.config.js, (File)":
+          - link "tailwind.config.js, (File)":
+            - /url: /JodiAB/foody/blob/main/tailwind.config.js
+            - text: tailwind.config.js
+        - cell "first commit":
+          - link "first commit":
+            - /url: /JodiAB/foody/commit/0852df161ca27910ebd278fd20f601bfbb8f79ca
+        - cell "Jul 7, 2025last year":
+          - generic: Jul 7, 2025last year
+      - row "tsconfig.json, (File) first commit Jul 7, 2025last year":
+        - cell "tsconfig.json, (File)":
+          - link "tsconfig.json, (File)":
+            - /url: /JodiAB/foody/blob/main/tsconfig.json
+            - text: tsconfig.json
+        - cell "first commit":
+          - link "first commit":
+            - /url: /JodiAB/foody/commit/0852df161ca27910ebd278fd20f601bfbb8f79ca
+        - cell "Jul 7, 2025last year":
+          - generic: Jul 7, 2025last year
+      - row "type.d.ts, (File) Auth Functionality Jul 10, 2025last year":
+        - cell "type.d.ts, (File)":
+          - link "type.d.ts, (File)":
+            - /url: /JodiAB/foody/blob/main/type.d.ts
+            - text: type.d.ts
+        - cell "Auth Functionality":
+          - link "Auth Functionality":
+            - /url: /JodiAB/foody/commit/bc752a73756f8be3b3b445d895031a2a0b10f225
+        - cell "Jul 10, 2025last year":
+          - generic: Jul 10, 2025last year
+  - heading "Repository files navigation" [level=2]
+  - navigation "Repository files":
+    - list:
+      - link "README":
+        - /url: "#"
+        - generic: README
+  - button "Outline":
+  - article:
+    - heading "Welcome to your Expo app 👋" [level=1]
+    - 'link "Permalink: Welcome to your Expo app 👋"':
+      - /url: "#welcome-to-your-expo-app-"
+    - paragraph:
+      - text: This is an
+      - link "Expo":
+        - /url: https://expo.dev
+      - text: project created with
+      - link "create-expo-app":
+        - /url: https://www.npmjs.com/package/create-expo-app
+        - code: create-expo-app
+      - text: .
+    - heading "Get started" [level=2]
+    - 'link "Permalink: Get started"':
+      - /url: "#get-started"
+    - list:
+      - paragraph: Install dependencies
+      - generic: npm install
+      - button "Copy code to clipboard":
+      - paragraph: Start the app
+      - generic: npx expo start
+      - button "Copy code to clipboard":
+    - paragraph: In the output, you'll find options to open the app in a
+    - list:
+      - link "development build":
+        - /url: https://docs.expo.dev/develop/development-builds/introduction/
+      - link "Android emulator":
+        - /url: https://docs.expo.dev/workflow/android-studio-emulator/
+      - link "iOS simulator":
+        - /url: https://docs.expo.dev/workflow/ios-simulator/
+      - link "Expo Go":
+        - /url: https://expo.dev/go
+      - text: ", a limited sandbox for trying out app development with Expo"
+    - paragraph:
+      - text: You can start developing by editing the files inside the
+      - strong: app
+      - text: directory. This project uses
+      - link "file-based routing":
+        - /url: https://docs.expo.dev/router/introduction
+      - text: .
+    - heading "Get a fresh project" [level=2]
+    - 'link "Permalink: Get a fresh project"':
+      - /url: "#get-a-fresh-project"
+    - paragraph: "When you're ready, run:"
+    - generic: npm run reset-project
+    - button "Copy code to clipboard":
+    - paragraph:
+      - text: This command will move the starter code to the
+      - strong: app-example
+      - text: directory and create a blank
+      - strong: app
+      - text: directory where you can start developing.
+    - heading "Learn more" [level=2]
+    - 'link "Permalink: Learn more"':
+      - /url: "#learn-more"
+    - paragraph: "To learn more about developing your project with Expo, look at the following resources:"
+    - list:
+      - link "Expo documentation":
+        - /url: https://docs.expo.dev/
+      - text: ": Learn fundamentals, or go into advanced topics with our"
+      - link "guides":
+        - /url: https://docs.expo.dev/guides
+      - text: .
+      - link "Learn Expo tutorial":
+        - /url: https://docs.expo.dev/tutorial/introduction/
+      - text: ": Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web."
+    - heading "Join the community" [level=2]
+    - 'link "Permalink: Join the community"':
+      - /url: "#join-the-community"
+    - paragraph: Join our community of developers creating universal apps.
+    - list:
+      - link "Expo on GitHub":
+        - /url: https://github.com/expo/expo
+      - text: ": View our open source platform and contribute."
+      - link "Discord community":
+        - /url: https://chat.expo.dev
+      - text: ": Chat with Expo users and ask questions."
+  - heading "About" [level=2]
+  - generic: No description, website, or topics provided.
+  - heading "Resources" [level=3]
+  - link "Readme":
+    - /url: "#readme-ov-file"
+    - text: Readme
+  - link "Activity":
+    - /url: /JodiAB/foody/activity
+    - text: Activity
+  - heading "Stars" [level=3]
+  - strong: "0"
+  - text: stars
+  - heading "Watchers" [level=3]
+  - strong: "0"
+  - text: watching
+  - heading "Forks" [level=3]
+  - link "0 forks":
+    - /url: /JodiAB/foody/forks
+    - strong: "0"
+    - text: forks
+  - link "Report repository":
+    - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FJodiAB%2Ffoody&report=JodiAB+%28user%29
+  - heading "Releases" [level=2]:
+    - link "Releases":
+      - /url: /JodiAB/foody/releases
+  - generic: No releases published
+  - heading "Contributors (1)" [level=2]:
+    - link "Contributors":
+      - /url: /JodiAB/foody/graphs/contributors
+    - generic: "1"
+    - generic: (1)
+  - list:
+    - link "@JodiAB":
+      - /url: /JodiAB
+      - img "@JodiAB"
+    - generic "JodiAB Jodi":
+      - link "JodiABJodi":
+        - /url: /JodiAB
+        - strong: JodiAB
+        - text: Jodi
+  - heading "Languages" [level=2]
+  - 'progressbar "TypeScript: 92.4%"'
+  - 'progressbar "CSS: 5.5%"'
+  - 'progressbar "JavaScript: 2.1%"'
+  - list:
+    - link "TypeScript 92.4%":
+      - /url: /JodiAB/foody/search?l=typescript
+      - generic: TypeScript
+      - generic: 92.4%
+    - link "CSS 5.5%":
+      - /url: /JodiAB/foody/search?l=css
+      - generic: CSS
+      - generic: 5.5%
+    - link "JavaScript 2.1%":
+      - /url: /JodiAB/foody/search?l=javascript
+      - generic: JavaScript
+      - generic: 2.1%
+- contentinfo:
+  - heading "Footer" [level=2]
+  - link "GitHub Homepage":
+    - /url: https://github.com
+  - generic: © 2026 GitHub, Inc.
+  - navigation "Footer":
+    - heading "Footer navigation" [level=3]
+    - list "Footer navigation":
+      - link "Terms":
+        - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+      - link "Privacy":
+        - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+      - link "Security":
+        - /url: https://github.com/security
+      - link "Status":
+        - /url: https://www.githubstatus.com/
+      - link "Community":
+        - /url: https://github.community/
+      - link "Docs":
+        - /url: https://docs.github.com/
+      - link "Contact":
+        - /url: https://support.github.com?tags=dotcom-footer
+      - button "Manage cookies"
+      - button "Do not share my personal information"

@@ -1,0 +1,23 @@
+
+> porfoliomain@0.0.0 build
+> vite build
+
+vite v7.0.5 building for production...
+transforming...
+✓ 1052 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                2.05 kB │ gzip:   0.78 kB
+dist/projects/possibility-engine/index.html   16.98 kB │ gzip:   5.78 kB
+dist/assets/possibilityEngine-DUNlY9sS.css     7.31 kB │ gzip:   2.28 kB
+dist/assets/Footer-CL4Ygd3r.css               48.61 kB │ gzip:  10.71 kB
+dist/assets/possibilityEngine-UnTXptOl.js      0.34 kB │ gzip:   0.25 kB
+dist/assets/main-b8FtFUxL.js                 144.80 kB │ gzip:  55.64 kB
+dist/assets/Footer-BNHVIOrY.js               209.56 kB │ gzip:  66.38 kB
+dist/assets/AstronautScene-v-qJlSE9.js       958.19 kB │ gzip: 263.11 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 22.97s

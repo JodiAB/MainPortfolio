@@ -1,0 +1,175 @@
+- banner:
+  - navigation "Primary":
+    - link "Nike Home":
+      - /url: /
+      - img "Nike"
+    - list:
+      - link "Men":
+        - /url: /products?gender=men
+      - link "Women":
+        - /url: /products?gender=women
+      - link "Kids":
+        - /url: /products?gender=unisex
+      - link "Collections":
+        - /url: /collections
+      - link "Contact":
+        - /url: /contact
+    - button "Search"
+    - button "My Cart (2)"
+- main:
+  - navigation:
+    - link "Home":
+      - /url: /
+    - text: /
+    - link "Products":
+      - /url: /products
+    - text: / Nike Air Max 15
+  - button "Thumbnail 1":
+    - img "Thumbnail 1"
+  - img "Product image"
+  - button "Previous image":
+  - button "Next image":
+  - heading "Nike Air Max 15" [level=1]
+  - paragraph: Unisex Shoes
+  - paragraph: $131.99
+  - listbox "Choose color":
+    - option "Color Blue" [selected]:
+      - img "Blue"
+    - option "Color Blue":
+      - img "Blue"
+    - option "Color Blue":
+      - img "Blue"
+    - option "Color Gray":
+      - img "Gray"
+    - option "Color Gray":
+      - img "Gray"
+    - option "Color Gray":
+      - img "Gray"
+  - paragraph: Select Size
+  - button "Size Guide"
+  - button "5"
+  - button "5.5"
+  - button "6"
+  - button "6.5"
+  - button "7"
+  - button "7.5"
+  - button "8"
+  - button "8.5"
+  - button "9"
+  - button "9.5"
+  - button "10"
+  - button "10.5"
+  - button "11"
+  - button "11.5"
+  - button "12"
+  - button "Add to Bag":
+    - text: Add to Bag
+  - button "Favorite":
+    - text: Favorite
+  - button "Product Details" [expanded]:
+    - generic: Product Details
+  - paragraph: Experience comfort and performance with Nike Air Max 15.
+  - button "Shipping & Returns":
+    - generic: Shipping & Returns
+  - button "Reviews (0)":
+    - generic: Reviews (0)
+  - heading "You Might Also Like" [level=2]
+  - link "Nike Air Max 12":
+    - /url: /products/102d1617-784d-4b22-aaf9-bbef50fc7b4b
+    - article:
+      - img "Nike Air Max 12"
+      - heading "Nike Air Max 12" [level=3]
+      - generic: $83.99
+  - link "Nike Air Max 9":
+    - /url: /products/ab2b60cc-364b-49a1-a1e5-49355c6c0b4b
+    - article:
+      - img "Nike Air Max 9"
+      - heading "Nike Air Max 9" [level=3]
+      - generic: $80.99
+  - link "Nike Air Max 7":
+    - /url: /products/91f9a121-3ace-4dc7-b63f-63491d6a7ef5
+    - article:
+      - img "Nike Air Max 7"
+      - heading "Nike Air Max 7" [level=3]
+      - generic: $86.99
+  - link "Nike Air Max 3":
+    - /url: /products/981cf974-b0fd-4790-93bb-0c1991dbfccd
+    - article:
+      - img "Nike Air Max 3"
+      - heading "Nike Air Max 3" [level=3]
+      - generic: $83.99
+  - link "Nike Air Max 1":
+    - /url: /products/b6f02606-6615-4dcd-869a-6ed030ff727b
+    - article:
+      - img "Nike Air Max 1"
+      - heading "Nike Air Max 1" [level=3]
+      - generic: $101.99
+  - link "Nike Air Max 5":
+    - /url: /products/89893db6-3e28-4126-8f98-9c0477fd421d
+    - article:
+      - img "Nike Air Max 5"
+      - heading "Nike Air Max 5" [level=3]
+      - generic: $80.99
+- contentinfo:
+  - img "Nike"
+  - heading "Featured" [level=4]
+  - list:
+    - link "Air Force 1":
+      - /url: "#"
+    - link "Huarache":
+      - /url: "#"
+    - link "Air Max 90":
+      - /url: "#"
+    - link "Air Max 95":
+      - /url: "#"
+  - heading "Shoes" [level=4]
+  - list:
+    - link "All Shoes":
+      - /url: "#"
+    - link "Custom Shoes":
+      - /url: "#"
+    - link "Jordan Shoes":
+      - /url: "#"
+    - link "Running Shoes":
+      - /url: "#"
+  - heading "Clothing" [level=4]
+  - list:
+    - link "All Clothing":
+      - /url: "#"
+    - link "Modest Wear":
+      - /url: "#"
+    - link "Hoodies & Pullovers":
+      - /url: "#"
+    - link "Shirts & Tops":
+      - /url: "#"
+  - heading "Kids'" [level=4]
+  - list:
+    - link "Infant & Toddler Shoes":
+      - /url: "#"
+    - link "Kids' Shoes":
+      - /url: "#"
+    - link "Kids' Jordan Shoes":
+      - /url: "#"
+    - link "Kids' Basketball Shoes":
+      - /url: "#"
+  - link "X":
+    - /url: "#"
+    - img "X"
+  - link "Facebook":
+    - /url: "#"
+    - img "Facebook"
+  - link "Instagram":
+    - /url: "#"
+    - img "Instagram"
+  - generic: Croatia
+  - generic: © 2025 Nike, Inc. All Rights Reserved
+  - list:
+    - link "Guides":
+      - /url: "#"
+    - link "Terms of Sale":
+      - /url: "#"
+    - link "Terms of Use":
+      - /url: "#"
+    - link "Nike Privacy Policy":
+      - /url: "#"
+- alert

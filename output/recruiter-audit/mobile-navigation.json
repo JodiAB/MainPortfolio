@@ -1,0 +1,27 @@
+[
+  {
+    "name": "About",
+    "url": "https://jodiabrahamsportfolio.vercel.app/#about",
+    "closed": true
+  },
+  {
+    "name": "Projects",
+    "url": "https://jodiabrahamsportfolio.vercel.app/#projects",
+    "closed": true
+  },
+  {
+    "name": "Experience",
+    "url": "https://jodiabrahamsportfolio.vercel.app/#experience",
+    "closed": true
+  },
+  {
+    "name": "Contact",
+    "url": "https://jodiabrahamsportfolio.vercel.app/#contact",
+    "closed": true
+  },
+  {
+    "name": "Home",
+    "url": "https://jodiabrahamsportfolio.vercel.app/#home",
+    "closed": true
+  }
+]

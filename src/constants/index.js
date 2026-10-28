@@ -340,11 +340,11 @@ export const myProjects = [
     year: "2026",
     role: "Full Stack Developer",
     description:
-      "Built and deployed a responsive South African fuel-cost platform with interactive calculators, API-backed data, authentication, saved account workflows, automated tests and production-ready release tooling.",
+      "A public-beta fuel planning tool for South Africa. Working manual calculators sit alongside backend, account and price-monitoring infrastructure with explicit release gates.",
     problem:
       "South African drivers face frequent fuel price changes, but most people do not know how those changes affect their monthly budget, trip costs, delivery profit, or vehicle ownership costs.",
     solution:
-      "I built FuelWise SA as a production-ready fuel planning platform with SA fuel price data, calculators, account features, saved vehicles, fuel alerts, fleet reporting, nearby stations, SEO pages, and launch-ready safety checks.",
+      "I built public fuel calculators with manual-price fallback, alongside account features, saved vehicles, price monitoring, fleet reporting and alert infrastructure. Automatic publishing remains gated; these integrations are not all verified live.",
     outcome:
       "Created a practical public web app with real production deployment, Supabase-backed data, Google authentication, cached fuel prices, test coverage, smoke tests, SEO setup, and growth-focused tools for South African users.",
     subDescription: [

@@ -1,0 +1,148 @@
+- main:
+  - navigation:
+    - link "logo Velvet Pour":
+      - /url: "#home"
+      - img "logo"
+      - paragraph: Velvet Pour
+    - list:
+      - link "Cocktails":
+        - /url: "#cocktails"
+      - link "About Us":
+        - /url: "#about"
+      - link "The Art":
+        - /url: "#work"
+      - link "Contact":
+        - /url: "#contact"
+  - heading "MOJITO" [level=1]:
+    - generic: M
+    - generic: O
+    - generic: J
+    - generic: I
+    - generic: T
+    - generic: O
+  - img "left-leaf"
+  - img "right-leaf"
+  - paragraph: Cool. Crisp. Classic.
+  - paragraph:
+    - generic: Sip the Spirit
+    - generic: of Summer
+  - paragraph:
+    - generic: Every cocktail on our menu is a
+    - generic: blend of premium ingredients,
+    - generic: creative flair, and timeless recipes
+    - generic: — designed to delight your senses.
+  - link "View cocktails":
+    - /url: "#cocktails"
+  - img "l-leaf"
+  - img "r-leaf"
+  - heading "Most popular cocktails:" [level=2]
+  - list:
+    - heading "Chapel Hill Shiraz" [level=3]
+    - paragraph: AU | Battle
+    - generic: "- $10"
+    - heading "Caten Malbee" [level=3]
+    - paragraph: AU | Battle
+    - generic: "- $49"
+    - heading "Rhino Pale Ale" [level=3]
+    - paragraph: CA | 750 ml
+    - generic: "- $20"
+    - heading "Irish Guinness" [level=3]
+    - paragraph: IE | 600 ml
+    - generic: "- $29"
+  - heading "Most loved mocktails:" [level=2]
+  - list:
+    - heading "Tropical Bloom" [level=3]
+    - paragraph: US | Battle
+    - generic: "- $10"
+    - heading "Passionfruit Mint" [level=3]
+    - paragraph: US | Battle
+    - generic: "- $49"
+    - heading "Citrus Glow" [level=3]
+    - paragraph: CA | 750 ml
+    - generic: "- $20"
+    - heading "Lavender Fizz" [level=3]
+    - paragraph: IE | 600 ml
+    - generic: "- $29"
+  - paragraph: Best Cocktails
+  - heading "Where every detail matters -from muddle to garnish" [level=2]:
+    - generic: Where
+    - generic: every
+    - generic: detail
+    - generic: matters
+    - generic: "-"
+    - generic: from
+    - generic: muddle
+    - generic: to
+    - generic: garnish
+  - paragraph: Every cocktail we serve is a reflection of our obsession with detail — from the first muddle to the final garnish. That care is what turns a simple drink into something truly memorable.
+  - paragraph: 4.5/5
+  - paragraph: More than +12000 customers
+  - img "grid-img-1"
+  - img "grid-img-2"
+  - img "grid-img-5"
+  - img "grid-img-3"
+  - img "grid-img-4"
+  - heading "The ART" [level=2]
+  - list:
+    - img "check"
+    - paragraph: Handpicked ingredients
+    - img "check"
+    - paragraph: Signature techniques
+    - img "check"
+    - paragraph: Bartending artistry in action
+    - img "check"
+    - paragraph: Freshly muddled flavors
+  - img "cocktail"
+  - list:
+    - img "check"
+    - paragraph: Perfectly balanced blends
+    - img "check"
+    - paragraph: Garnished to perfection
+    - img "check"
+    - paragraph: Ice-cold every time
+    - img "check"
+    - paragraph: Expertly shaken & stirred
+  - heading "Sip-Worthy Perfection" [level=2]
+  - heading "Made with Craft, Poured with Passion" [level=3]
+  - paragraph: This isn’t just a drink. It’s a carefully crafted moment made just for you.
+  - region "Cocktail Menu":
+    - img "left-leaf"
+    - img "right-leaf"
+    - heading "Cocktail Menu" [level=2]
+    - navigation "Cocktail Navigation":
+      - button "Classic Mojito"
+      - button "Raspberry Mojito"
+      - button "Violet Breeze" [active]
+      - button "Curacao Mojito"
+    - button "Raspberry Mojito":
+      - generic: Raspberry Mojito
+    - button "Curacao Mojito":
+      - generic: Curacao Mojito
+    - paragraph: "Recipe for:"
+    - paragraph: Violet Breeze
+    - heading "Simple Ingredients, Bold Flavor" [level=2]
+    - paragraph: Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.
+  - img "leaf-right"
+  - img "leaf-left"
+  - heading "Where to Find Us" [level=2]:
+    - generic: Where
+    - generic: to
+    - generic: Find
+    - generic: Us
+  - heading "Visit Our Bar" [level=3]
+  - paragraph: "456, Raq Blvd. #404, Los Angeles, CA 90210"
+  - heading "Contact Us" [level=3]
+  - paragraph: (555) 987-6543
+  - paragraph: hello@jsmcocktail.com
+  - heading "Open Every Day" [level=3]
+  - paragraph: "Mon–Thu : 11:00am – 12am"
+  - paragraph: "Fri : 11:00am – 2am"
+  - paragraph: "Sat : 9:00am – 2am"
+  - paragraph: "Sun : 9:00am – 1am"
+  - heading "Socials" [level=3]
+  - link "Instagram":
+    - /url: "#"
+  - link "X (Twitter)":
+    - /url: "#"
+  - link "Facebook":
+    - /url: "#"

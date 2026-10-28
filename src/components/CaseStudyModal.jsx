@@ -1,5 +1,6 @@
 import Modal from "./Modal";
 import ProjectLinks from "./ProjectLinks";
+import ProjectEvidence from "./ProjectEvidence";
 export default function CaseStudyModal({ project, onClose }) {
   const sections = [
     ["Problem", project.problem],
@@ -15,6 +16,7 @@ export default function CaseStudyModal({ project, onClose }) {
   ];
   return (
     <Modal title={`${project.title} — Case Study`} onClose={onClose}>
+      <ProjectEvidence title={project.title} />
       <img
         className="modal-image"
         src={project.image}

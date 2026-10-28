@@ -1,0 +1,126 @@
+- banner:
+  - navigation "Primary":
+    - link "Nike Home":
+      - /url: /
+      - img "Nike"
+    - list:
+      - link "Men":
+        - /url: /products?gender=men
+      - link "Women":
+        - /url: /products?gender=women
+      - link "Kids":
+        - /url: /products?gender=unisex
+      - link "Collections":
+        - /url: /collections
+      - link "Contact":
+        - /url: /contact
+    - button "Search"
+    - button "My Cart (2)"
+- main:
+  - region "Latest shoes":
+    - heading "Latest shoes" [level=2]
+    - link "Nike Air Max 15":
+      - /url: /products/a3802357-4c5c-40f7-bbcd-af5db4dc6d19
+      - article:
+        - img "Nike Air Max 15"
+        - heading "Nike Air Max 15" [level=3]
+        - generic: $87.99 - $186.99
+        - paragraph: Unisex Shoes
+    - link "Nike Air Max 14":
+      - /url: /products/6ab9b3b2-c184-480a-8d20-663e16bda23a
+      - article:
+        - img "Nike Air Max 14"
+        - heading "Nike Air Max 14" [level=3]
+        - generic: $86.99 - $200.99
+        - paragraph: Women Shoes
+    - link "Nike Air Max 13":
+      - /url: /products/9aac41e0-915b-450f-8f5f-bfe8154a21d6
+      - article:
+        - img "Nike Air Max 13"
+        - heading "Nike Air Max 13" [level=3]
+        - generic: $91.99 - $193.99
+        - paragraph: Men Shoes
+    - link "Nike Air Max 12":
+      - /url: /products/102d1617-784d-4b22-aaf9-bbef50fc7b4b
+      - article:
+        - img "Nike Air Max 12"
+        - heading "Nike Air Max 12" [level=3]
+        - generic: $83.99 - $198.99
+        - paragraph: Unisex Shoes
+    - link "Nike Air Max 11":
+      - /url: /products/1e31d58a-2b99-452b-b7c0-e2292994f499
+      - article:
+        - img "Nike Air Max 11"
+        - heading "Nike Air Max 11" [level=3]
+        - generic: $81.99 - $188.99
+        - paragraph: Men Shoes
+    - link "Nike Air Max 10":
+      - /url: /products/34c99607-14ef-4cf2-b9aa-19266704049b
+      - article:
+        - img "Nike Air Max 10"
+        - heading "Nike Air Max 10" [level=3]
+        - generic: $81.99 - $184.99
+        - paragraph: Unisex Shoes
+- contentinfo:
+  - img "Nike"
+  - heading "Featured" [level=4]
+  - list:
+    - link "Air Force 1":
+      - /url: "#"
+    - link "Huarache":
+      - /url: "#"
+    - link "Air Max 90":
+      - /url: "#"
+    - link "Air Max 95":
+      - /url: "#"
+  - heading "Shoes" [level=4]
+  - list:
+    - link "All Shoes":
+      - /url: "#"
+    - link "Custom Shoes":
+      - /url: "#"
+    - link "Jordan Shoes":
+      - /url: "#"
+    - link "Running Shoes":
+      - /url: "#"
+  - heading "Clothing" [level=4]
+  - list:
+    - link "All Clothing":
+      - /url: "#"
+    - link "Modest Wear":
+      - /url: "#"
+    - link "Hoodies & Pullovers":
+      - /url: "#"
+    - link "Shirts & Tops":
+      - /url: "#"
+  - heading "Kids'" [level=4]
+  - list:
+    - link "Infant & Toddler Shoes":
+      - /url: "#"
+    - link "Kids' Shoes":
+      - /url: "#"
+    - link "Kids' Jordan Shoes":
+      - /url: "#"
+    - link "Kids' Basketball Shoes":
+      - /url: "#"
+  - link "X":
+    - /url: "#"
+    - img "X"
+  - link "Facebook":
+    - /url: "#"
+    - img "Facebook"
+  - link "Instagram":
+    - /url: "#"
+    - img "Instagram"
+  - generic: Croatia
+  - generic: © 2025 Nike, Inc. All Rights Reserved
+  - list:
+    - link "Guides":
+      - /url: "#"
+    - link "Terms of Sale":
+      - /url: "#"
+    - link "Terms of Use":
+      - /url: "#"
+    - link "Nike Privacy Policy":
+      - /url: "#"
+- alert

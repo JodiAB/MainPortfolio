@@ -1,0 +1,441 @@
+diff --git a/index.html b/index.html
+index 42bc366..a6de15e 100644
+--- a/index.html
++++ b/index.html
+@@ -2,34 +2,35 @@
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
++    <link rel="preload" href="/assets/fonts/funnel-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+     <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta name="theme-color" content="#030014" />
+     <meta
+       name="description"
+-      content="Jodi Abrahams — Full Stack Developer in Cape Town. React, Next.js and TypeScript, with hands-on AI Engineering, LLM integration and retrieval evaluation."
++      content="Full-Stack Software Developer in Cape Town. React, Next.js, TypeScript, Node.js and PostgreSQL; commercial SaaS reporting and delivery-platform experience."
+     />
+     <meta name="author" content="Jodi Abrahams" />
+     <link rel="canonical" href="https://jodiabrahamsportfolio.vercel.app/" />
+ 
+     <meta property="og:type" content="website" />
+-    <meta property="og:title" content="Jodi Abrahams | Full-Stack Development & AI Engineering" />
++    <meta property="og:title" content="Jodi Abrahams | Full-Stack Software Developer" />
+     <meta
+       property="og:description"
+-      content="Full-stack projects and hands-on AI engineering: explore Possibility Engine, a Gemini and pgvector prototype with measured evaluation and transparent limitations."
++      content="Commercial SaaS experience, FuelWise SA public beta and AI Engineering case studies with transparent evidence and limitations."
+     />
+     <meta property="og:url" content="https://jodiabrahamsportfolio.vercel.app/" />
+     <meta property="og:image" content="https://jodiabrahamsportfolio.vercel.app/logo.jpg" />
+ 
+     <meta name="twitter:card" content="summary" />
+-    <meta name="twitter:title" content="Jodi Abrahams | Full-Stack Development & AI Engineering" />
++    <meta name="twitter:title" content="Jodi Abrahams | Full-Stack Software Developer" />
+     <meta
+       name="twitter:description"
+-      content="Full-Stack Development, AI Engineering and carefully built interfaces. Based in Cape Town, South Africa."
++      content="React, Next.js, TypeScript and Node.js. Commercial software experience and independent projects. Open to remote opportunities."
+     />
+     <meta name="twitter:image" content="https://jodiabrahamsportfolio.vercel.app/logo.jpg" />
+ 
+-    <title>Jodi Abrahams | Full-Stack Development & AI Engineering</title>
++    <title>Jodi Abrahams | Full-Stack Software Developer</title>
+   </head>
+   <body>
+     <div id="root"></div>
+diff --git a/projects/possibility-engine/index.html b/projects/possibility-engine/index.html
+index 2002cf2..d0f1c3f 100644
+--- a/projects/possibility-engine/index.html
++++ b/projects/possibility-engine/index.html
+@@ -2,6 +2,7 @@
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
++    <link rel="preload" href="/assets/fonts/funnel-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta name="theme-color" content="#030412" />
+     <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+@@ -101,7 +102,7 @@
+       </section>
+ 
+       <section class="pe-closing surface" aria-label="Continue exploring"><div><p class="eyebrow">AI Engineering / Full-Stack Development</p><h2>Built to investigate.<br />Evaluated to understand.</h2><p>Looking for an engineer who connects models to real systems and communicates their limits?</p></div><div class="pe-closing-actions"><a class="button button-secondary button-neon" href="/#contact">Let’s talk <span aria-hidden="true">↗</span></a><a class="text-link" href="/#projects">Explore the other projects →</a></div></section>
+-      <p class="pe-provenance">Evidence basis: the current verified application source, recorded Phase 2E retrieval evaluation and Phase 2M acceptance receipt, reconciled with supporting project documentation. These are developer-recorded results, not an independent audit. Internal traces and fixtures are not published here. A public project repository link will be added only after publication is verified.</p>
++      <p class="pe-provenance">Evidence scope (reviewed 27 October 2026): the approved October CV records offline/fixture validation and says real PostgreSQL persistence remains unverified. This case study separately reports Phase 2M developer-recorded tests and one live server-harness run from October 2026; these receipts were not independently rerun during the portfolio review. The CV is preserved as approved. Evidence basis: the current verified application source, recorded Phase 2E retrieval evaluation and Phase 2M acceptance receipt, reconciled with supporting project documentation. These are developer-recorded results, not an independent audit. Internal traces and fixtures are not published here. A public project repository link will be added only after publication is verified.</p>
+     </main>
+     <div id="case-footer"></div>
+     <script type="module" src="/src/case-study.jsx"></script>
+diff --git a/src/App.jsx b/src/App.jsx
+index d0119a1..e4b67ef 100644
+--- a/src/App.jsx
++++ b/src/App.jsx
+@@ -8,25 +8,28 @@ import Experiences from "./sections/Experiences";
+ import Contact from "./sections/Contact";
+ import Footer from "./sections/Footer";
+ import Approach from "./sections/Approach";
+-import { MotionConfig } from "motion/react";
++import CommercialHighlights from "./components/CommercialHighlights";
++import useVisibleEffects from "./hooks/useVisibleEffects";
+ export default function App() {
+   const mainRef = useRef(null);
+   useScrollMotion(mainRef);
++  useVisibleEffects();
+   return (
+-    <MotionConfig reducedMotion="user">
++    <>
+       <a className="skip-link" href="#main">
+         Skip to content
+       </a>
+       <Navbar />
+       <main ref={mainRef} id="main" tabIndex={-1}>
+         <Hero />
+-        <About />
++        <CommercialHighlights />
+         <Projects />
+-        <Approach />
+         <Experiences />
++        <About />
++        <Approach />
+         <Contact />
+       </main>
+       <Footer />
+-    </MotionConfig>
++    </>
+   );
+ }
+diff --git a/src/components/CaseStudyModal.jsx b/src/components/CaseStudyModal.jsx
+index 7233520..74cdbc9 100644
+--- a/src/components/CaseStudyModal.jsx
++++ b/src/components/CaseStudyModal.jsx
+@@ -1,5 +1,6 @@
+ import Modal from "./Modal";
+ import ProjectLinks from "./ProjectLinks";
++import ProjectEvidence from "./ProjectEvidence";
+ export default function CaseStudyModal({ project, onClose }) {
+   const sections = [
+     ["Problem", project.problem],
+@@ -15,6 +16,7 @@ export default function CaseStudyModal({ project, onClose }) {
+   ];
+   return (
+     <Modal title={`${project.title} — Case Study`} onClose={onClose}>
++      <ProjectEvidence title={project.title} />
+       <img
+         className="modal-image"
+         src={project.image}
+diff --git a/src/components/HeroText.jsx b/src/components/HeroText.jsx
+index 12405f3..bd9026c 100644
+--- a/src/components/HeroText.jsx
++++ b/src/components/HeroText.jsx
+@@ -7,16 +7,17 @@ export default function HeroText() {
+         Hi, I’m <span>Jodi Abrahams.</span>
+       </h1>
+       <p className="hero-position">
+-        Full Stack Developer.
++        Full-Stack Software Developer.
+         <br />
+-        <span>Strong frontend focus.</span>
++        <span>From interface to API.</span>
+       </p>
+       <p className="hero-description">
+-        I build web and mobile products with JavaScript and TypeScript,
+-        and integrate and evaluate AI systems with explicit evidence checks.
++        I build SaaS applications, responsive interfaces and APIs. Commercial
++        work includes reporting tools at TransHumanity and delivery workflows
++        at Crunchtime Deliveries.
+       </p>
+       <p className="hero-stack">
+-        React · Next.js · TypeScript · Vue.js · React Native · Node.js
++        React · Next.js · TypeScript · Node.js · PostgreSQL
+       </p>
+       <div className="actions">
+         <a className="button button-primary" href="#projects">
+@@ -33,7 +34,7 @@ export default function HeroText() {
+         </a>
+       </div>
+       <p className="hero-proof">
+-        5+ years hands-on · 3 years professional experience
++        5+ years hands-on · 3 years across software development and IT support
+       </p>
+     </div>
+   );
+diff --git a/src/components/Project.jsx b/src/components/Project.jsx
+index 1f47703..802f5c0 100644
+--- a/src/components/Project.jsx
++++ b/src/components/Project.jsx
+@@ -1,6 +1,7 @@
+ import { useState } from "react";
+ import ProjectDetails from "./ProjectDetails";
+ import ProjectLinks from "./ProjectLinks";
++import ProjectEvidence from "./ProjectEvidence";
+ export default function Project(props) {
+   const {
+     title,
+@@ -32,6 +33,7 @@ export default function Project(props) {
+           {featured && <span className="featured-label">Featured</span>}
+         </div>
+         <h3>{title}</h3>
++        <ProjectEvidence title={title} />
+         <p>{description}</p>
+         <p className="project-role">Role: {role}</p>
+         <ul className="tech-list">
+diff --git a/src/components/ProjectDetails.jsx b/src/components/ProjectDetails.jsx
+index bc92d58..5ce3e93 100644
+--- a/src/components/ProjectDetails.jsx
++++ b/src/components/ProjectDetails.jsx
+@@ -1,8 +1,10 @@
+ import Modal from "./Modal";
+ import ProjectLinks from "./ProjectLinks";
++import ProjectEvidence from "./ProjectEvidence";
+ export default function ProjectDetails(props) {
+   return (
+     <Modal title={props.title} onClose={props.closeModal}>
++      <ProjectEvidence title={props.title} />
+       <img
+         className="modal-image"
+         src={props.image}
+diff --git a/src/components/ProjectLinks.jsx b/src/components/ProjectLinks.jsx
+index f9d70fb..3fe8d50 100644
+--- a/src/components/ProjectLinks.jsx
++++ b/src/components/ProjectLinks.jsx
+@@ -1,3 +1,4 @@
++import { projectEvidence } from "../constants/projectEvidence";
+ export default function ProjectLinks({ project }) {
+   const github =
+     project.github ||
+@@ -17,7 +18,7 @@ export default function ProjectLinks({ project }) {
+           target="_blank"
+           rel="noopener noreferrer"
+         >
+-          Live Demo ↗
++          {projectEvidence[project.title]?.label || "Live Demo"} ↗
+         </a>
+       ))}
+       {github && (project.sourcePrivate ? (
+diff --git a/src/constants/index.js b/src/constants/index.js
+index 1ad96b0..cd42b97 100644
+--- a/src/constants/index.js
++++ b/src/constants/index.js
+@@ -340,11 +340,11 @@ export const myProjects = [
+     year: "2026",
+     role: "Full Stack Developer",
+     description:
+-      "Built and deployed a responsive South African fuel-cost platform with interactive calculators, API-backed data, authentication, saved account workflows, automated tests and production-ready release tooling.",
++      "A public-beta fuel planning tool for South Africa. Working manual calculators sit alongside backend, account and price-monitoring infrastructure with explicit release gates.",
+     problem:
+       "South African drivers face frequent fuel price changes, but most people do not know how those changes affect their monthly budget, trip costs, delivery profit, or vehicle ownership costs.",
+     solution:
+-      "I built FuelWise SA as a production-ready fuel planning platform with SA fuel price data, calculators, account features, saved vehicles, fuel alerts, fleet reporting, nearby stations, SEO pages, and launch-ready safety checks.",
++      "I built public fuel calculators with manual-price fallback, alongside account features, saved vehicles, price monitoring, fleet reporting and alert infrastructure. Automatic publishing remains gated; these integrations are not all verified live.",
+     outcome:
+       "Created a practical public web app with real production deployment, Supabase-backed data, Google authentication, cached fuel prices, test coverage, smoke tests, SEO setup, and growth-focused tools for South African users.",
+     subDescription: [
+diff --git a/src/hooks/useScrollMotion.js b/src/hooks/useScrollMotion.js
+index b09ae27..69d9785 100644
+--- a/src/hooks/useScrollMotion.js
++++ b/src/hooks/useScrollMotion.js
+@@ -1,11 +1,11 @@
+-import { useLayoutEffect } from "react";
++import { useEffect } from "react";
+ import { gsap } from "gsap";
+ import { ScrollTrigger } from "gsap/ScrollTrigger";
+ 
+ gsap.registerPlugin(ScrollTrigger);
+ 
+ export default function useScrollMotion(scope) {
+-  useLayoutEffect(() => {
++  useEffect(() => {
+     const root = scope.current;
+     if (!root) return;
+     const media = gsap.matchMedia();
+@@ -18,7 +18,7 @@ export default function useScrollMotion(scope) {
+         motion: "(prefers-reduced-motion: no-preference)",
+       },
+       ({ conditions }) => {
+-        if (!conditions.motion) return;
++        if (!conditions.motion || !conditions.desktop) return;
+         const select = gsap.utils.selector(root);
+         const distance = conditions.desktop ? 36 : 16;
+ 
+@@ -26,9 +26,9 @@ export default function useScrollMotion(scope) {
+         select(".text-heading, .about-grid > article, .skill-group, .project-card, .stage-card, .experience-item, .contact-panel").forEach((element) => {
+           gsap.fromTo(
+             element,
+-            { "--scroll-y": `${element.matches(".text-heading") ? distance / 2 : distance}px` },
++            { translate: `0px ${element.matches(".text-heading") ? distance / 2 : distance}px` },
+             {
+-              "--scroll-y": "0px",
++              translate: "0px 0px",
+               ease: "none",
+               scrollTrigger: {
+                 trigger: element,
+diff --git a/src/index.css b/src/index.css
+index 5aabf60..95b851c 100644
+--- a/src/index.css
++++ b/src/index.css
+@@ -1,5 +1,11 @@
+-@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+ @import "tailwindcss";
++@font-face {
++  font-family: "Funnel Display";
++  src: url("/assets/fonts/funnel-display-latin.woff2") format("woff2");
++  font-style: normal;
++  font-weight: 300 800;
++  font-display: swap;
++}
+ @theme {
+   --color-primary: #030412;
+   --color-midnight: #06091f;
+@@ -831,7 +837,7 @@ textarea.field-input {
+     radial-gradient(ellipse at 70% 65%, #43dce76b, transparent 45%);
+   filter: blur(12px);
+   opacity: .24;
+-  animation: nebula-drift 9s ease-in-out infinite alternate;
++  animation: nebula-drift 9s ease-in-out infinite alternate paused;
+ }
+ .button::after {
+   content: "";
+@@ -883,7 +889,7 @@ textarea.field-input {
+   border-radius: 50%;
+   background: radial-gradient(ellipse, var(--nebula-accent), transparent 65%);
+   opacity: .14;
+-  animation: card-nebula 11s ease-in-out infinite alternate;
++  animation: card-nebula 11s ease-in-out infinite alternate paused;
+ }
+ .skill-group::after, .stage-card::after {
+   content: "";
+@@ -895,7 +901,7 @@ textarea.field-input {
+   height: 2px;
+   background: linear-gradient(90deg, transparent, var(--nebula-accent), #e0f9ff, transparent);
+   box-shadow: 0 2px 12px var(--nebula-accent);
+-  animation: orbital-edge 8s ease-in-out infinite;
++  animation: orbital-edge 8s ease-in-out infinite paused;
+ }
+ .skill-group:nth-child(2)::after, .stage-card:nth-child(2)::after { animation-delay: -2.5s; }
+ .skill-group:nth-child(3)::after, .stage-card:nth-child(3)::after { animation-delay: -5s; }
+@@ -973,7 +979,7 @@ textarea.field-input {
+   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+   mask-composite: exclude;
+   transform: none;
+-  animation: neon-circuit 4s linear infinite;
++  animation: neon-circuit 4s linear infinite paused;
+ }
+ .button.button-neon:focus-visible {
+   box-shadow: inset 0 0 20px #8462d540, 0 0 22px #70d8f05c, 0 0 38px #a47aec30;
+@@ -1039,3 +1045,25 @@ textarea.field-input {
+ }
+ .button.project-action-unavailable::before,
+ .button.project-action-unavailable::after { display: none; }
++
++/* Keep the space artwork without a mandatory mobile WebGL runtime. */
++.astronaut-art { height: 100%; }
++.astronaut-poster { width: 100%; height: 100%; object-fit: contain; mask-image: radial-gradient(ellipse, black 48%, transparent 73%); }
++.motion-toggle { display: block; margin: -15px auto 0; position: relative; font-size: .75rem; }
++.evidence-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding-top: 24px; }
++.evidence-strip .surface { display: block; padding: 24px; }
++.evidence-strip h2 { font-size: 1.2rem; margin: 12px 0; }
++.evidence-strip p { color: #b8bfd0; margin-bottom: 16px; }
++.project-evidence { border-left: 2px solid #8eacdd; padding-left: 12px; margin: 16px 0; color: #c5d6e5; font-size: .85rem; }
++.project-evidence strong { display: block; margin-bottom: 6px; color: #d4c4ff; }
++@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
++  .effect-visible::before, .effect-visible::after { animation-play-state: running; }
++  .button.button-neon.effect-visible::after { animation-play-state: running; }
++}
++@media (max-width: 767px) {
++  .evidence-strip { grid-template-columns: 1fr; }
++  .button::before, .button::after, .button.button-neon::after,
++  .skill-group::before, .skill-group::after, .stage-card::before, .stage-card::after { animation: none; }
++  .button:focus-visible::after { animation: starlight-sweep 850ms ease-out; }
++  .hero-astronaut { height: 200px; margin-bottom: 24px; }
++}
+diff --git a/src/sections/About.jsx b/src/sections/About.jsx
+index ec64044..1a6465c 100644
+--- a/src/sections/About.jsx
++++ b/src/sections/About.jsx
+@@ -9,8 +9,9 @@ export default function About() {
+           <h3>Thoughtful interfaces. Reliable products.</h3>
+           <p>
+             I’m a product-minded Full Stack Developer with 5+ years of hands-on
+-            experience and 3 years of professional experience building
+-            production-ready web and mobile applications. I specialise in
++            experience, including independent projects, and 3 years across
++            software development and IT support. My approved CV records 2+
++            years of professional development experience. I specialise in
+             turning complex requirements into responsive, maintainable
+             interfaces and reliable product workflows.
+           </p>
+diff --git a/src/sections/Hero.jsx b/src/sections/Hero.jsx
+index f647d78..61ef2c0 100644
+--- a/src/sections/Hero.jsx
++++ b/src/sections/Hero.jsx
+@@ -1,15 +1,27 @@
+-import { lazy, Suspense } from "react";
++import { lazy, Suspense, useEffect, useState } from "react";
+ import HeroText from "../components/HeroText";
+ const AstronautScene = lazy(() => import("../components/AstronautScene"));
+ export default function Hero() {
++  const [play, setPlay] = useState(false);
++  useEffect(() => {
++    const preference = matchMedia("(min-width: 768px) and (prefers-reduced-motion: no-preference)");
++    const update = () => setPlay(preference.matches);
++    update();
++    preference.addEventListener("change", update);
++    return () => preference.removeEventListener("change", update);
++  }, []);
++  const poster = <img className="astronaut-poster" src="/assets/astronaut-poster.jpg" alt="" width="466" height="450" decoding="async" />;
+   return (
+     <section tabIndex={-1} id="home" className="hero c-space">
+       <div className="hero-landscape" aria-hidden="true" />
+       <HeroText />
+-      <div className="hero-astronaut" aria-hidden="true">
+-        <Suspense fallback={<div className="orbit-placeholder" />}>
+-          <AstronautScene />
+-        </Suspense>
++      <div className="hero-astronaut">
++        <div className="astronaut-art" aria-hidden="true">
++          {play ? <Suspense fallback={poster}><AstronautScene /></Suspense> : poster}
++        </div>
++        <button className="text-link motion-toggle" onClick={() => setPlay(!play)} aria-pressed={play}>
++          {play ? "Pause astronaut" : "Animate astronaut"}
++        </button>
+       </div>
+     </section>
+   );
+diff --git a/src/sections/Navbar.jsx b/src/sections/Navbar.jsx
+index 0e49725..c21d27a 100644
+--- a/src/sections/Navbar.jsx
++++ b/src/sections/Navbar.jsx
+@@ -9,7 +9,7 @@ export default function Navbar({ basePath = "" }) {
+     if (basePath) return;
+     const update = () => {
+       let current = "home";
+-      items.forEach((item) => {
++      ["Home", "Projects", "Experience", "About", "Contact"].forEach((item) => {
+         if (
+           document.getElementById(item.toLowerCase())?.getBoundingClientRect()
+             .top <= 160
+diff --git a/src/sections/Projects.jsx b/src/sections/Projects.jsx
+index 45a5a55..aae44c8 100644
+--- a/src/sections/Projects.jsx
++++ b/src/sections/Projects.jsx
+@@ -3,9 +3,9 @@ import Project from "../components/Project";
+ import CaseStudyModal from "../components/CaseStudyModal";
+ import { myProjects } from "../constants";
+ const priority = [
++  "FuelWise SA",
+   "Possibility Engine",
+   "OpsFlow",
+-  "FuelWise SA",
+   "Cocktail Animation Website",
+   "AI Resume Analyzer",
+   "LMS SaaS App",
+@@ -23,8 +23,8 @@ export default function Projects() {
+       <p className="eyebrow">AI Engineering · Web · Mobile · SaaS</p>
+       <h2 className="text-heading">Selected Projects</h2>
+       <p className="section-intro">
+-        Production workflows, practical tools and carefully considered
+-        interfaces. Explore what I built and how it works.
++        Independent projects, public betas and engineering prototypes.
++        Status notes separate publicly checked behaviour from documented implementation.
+       </p>
+       <a className="text-link recruiter-github" href="https://github.com/JodiAB" target="_blank" rel="noreferrer">
+         <img src="/assets/logos/github.svg" alt="" width="20" height="20" />

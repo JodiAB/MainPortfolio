@@ -9,8 +9,9 @@ export default function About() {
           <h3>Thoughtful interfaces. Reliable products.</h3>
           <p>
             I’m a product-minded Full Stack Developer with 5+ years of hands-on
-            experience and 3 years of professional experience building
-            production-ready web and mobile applications. I specialise in
+            experience, including independent projects, and 3 years across
+            software development and IT support. My approved CV records 2+
+            years of professional development experience. I specialise in
             turning complex requirements into responsive, maintainable
             interfaces and reliable product workflows.
           </p>

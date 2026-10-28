@@ -1,0 +1,6 @@
+Astronaut poster: still captured from the portfolio's existing 3D rendering.
+Model: Tenhun Falling spaceman (FanArt), by wallmasterr.
+Source: https://sketchfab.com/3d-models/tenhun-falling-spaceman-fanart-9fd80b6a259f41fd99e6f56eee686dc5
+Author: https://sketchfab.com/wallmasterr
+License: CC-BY-4.0 https://creativecommons.org/licenses/by/4.0/
+Adaptation: screenshot of the rendered model with the existing portfolio background.

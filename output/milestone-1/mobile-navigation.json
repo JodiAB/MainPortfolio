@@ -1,0 +1,27 @@
+[
+  {
+    "focus": "projects",
+    "hash": "#projects",
+    "menu": "false"
+  },
+  {
+    "focus": "experience",
+    "hash": "#experience",
+    "menu": "false"
+  },
+  {
+    "focus": "about",
+    "hash": "#about",
+    "menu": "false"
+  },
+  {
+    "focus": "contact",
+    "hash": "#contact",
+    "menu": "false"
+  },
+  {
+    "focus": "home",
+    "hash": "#home",
+    "menu": "false"
+  }
+]

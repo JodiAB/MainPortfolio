@@ -1,0 +1,59 @@
+
+> porfoliomain@0.0.0 test
+> node --test tests/portfolio.test.mjs
+
+✔ Possibility Engine is first and all eight existing project IDs remain (2.7511ms)
+✔ featured project has a real local detail route and no invented public deployment/repository (1.5048ms)
+✔ production detail route contains server-readable metadata, canonical URL and content (3.1705ms)
+✖ direct route redirects canonically, preserves query strings and serves its own metadata (1861.8901ms)
+✔ home metadata keeps the portfolio URL and points to AI engineering work (10.4769ms)
+✔ availability flags retain the three original URLs and project descriptions (1.3595ms)
+✔ shared project actions label unavailable destinations without navigable links (495.128ms)
+✔ CV version matches the canonical PDF and all download controls use its filename (6.0267ms)
+✖ built server returns the exact versioned CV PDF (84.7943ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 7
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3675.947
+
+✖ failing tests:
+
+test at tests\portfolio.test.mjs:24:1
+✖ direct route redirects canonically, preserves query strings and serves its own metadata (1861.8901ms)
+  TypeError: fetch failed
+      at node:internal/deps/undici/undici:16416:13
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async TestContext.<anonymous> (file:///C:/Users/Jodi/Desktop/MainPortfolio/tests/portfolio.test.mjs:29:18)
+      at async Test.run (node:internal/test_runner/test:1110:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:785:7) {
+    [cause]: Error: connect EACCES 127.0.0.1:52439
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 52439
+    }
+  }
+
+test at tests\portfolio.test.mjs:76:1
+✖ built server returns the exact versioned CV PDF (84.7943ms)
+  TypeError: fetch failed
+      at node:internal/deps/undici/undici:16416:13
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async TestContext.<anonymous> (file:///C:/Users/Jodi/Desktop/MainPortfolio/tests/portfolio.test.mjs:80:18)
+      at async Test.run (node:internal/test_runner/test:1110:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:785:7) {
+    [cause]: Error: connect EACCES 127.0.0.1:52441
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+      errno: -4092,
+      code: 'EACCES',
+      syscall: 'connect',
+      address: '127.0.0.1',
+      port: 52441
+    }
+  }

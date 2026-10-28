@@ -1,0 +1,216 @@
+- link "Skip to main content":
+  - /url: "#main-content"
+- banner:
+  - link "FW FuelWise SA Fuel costs made clearer":
+    - /url: /
+    - generic: FW
+    - generic: FuelWise SA
+    - generic: Fuel costs made clearer
+  - navigation "Main navigation":
+    - link "Home":
+      - /url: /
+    - link "Dashboard":
+      - /url: /dashboard
+    - button "Tools":
+      - generic: Tools
+    - link "Sign in":
+      - /url: /login
+- region "FuelWise public beta":
+  - paragraph:
+    - strong: FuelWise SA is currently in public beta.
+    - text: Fuel prices are provided for planning purposes and should be verified before major financial decisions.
+  - link "Give feedback":
+    - /url: /contact?feedback=1&page=%2Ffull-tank#feedback-heading
+  - button "Dismiss public beta banner": Dismiss
+- main:
+  - paragraph: Full tank calculator
+  - heading "Full tank petrol calculator" [level=1]
+  - paragraph: Estimate a full tank or litre-based fill-up in South Africa. Enter your tank size, choose petrol or diesel, and use the latest FuelWise price or your own pump price.
+  - generic: Tank size in litres
+  - spinbutton "Tank size in litres": "45"
+  - strong: Use saved vehicle
+  - paragraph:
+    - link "Sign in":
+      - /url: /login
+    - text: to save vehicle details for next time.
+  - group "Fuel price":
+    - generic: Fuel price
+    - generic "Fuel price source notes":
+      - generic: Manual price override
+      - generic: Manual price override available
+      - generic: No account needed
+    - generic: Fuel type
+    - combobox "Fuel type":
+      - option "Petrol 95 ULP" [selected]
+      - option "Petrol 93 ULP"
+      - option "Diesel 50ppm"
+      - option "Diesel 500ppm"
+      - option "Diesel grade unknown"
+    - generic: Zone
+    - combobox "Zone":
+      - option "Inland" [selected]
+      - option "Coastal"
+    - paragraph: "Using manual price override: R 20,00 / L."
+    - checkbox "Use manual price override" [checked]
+    - generic: Use manual price override
+    - generic: Manual price per litre in rand
+    - spinbutton "Manual price per litre in rand" [active]: "20"
+  - complementary:
+    - generic: Full tank cost
+    - strong: R 900,00
+    - paragraph: This is an estimate before loyalty discounts, service fees, or price changes.
+    - generic "How this is calculated"
+    - paragraph:
+      - link "Sign in":
+        - /url: /login
+      - text: to save this result.
+    - generic "Share result":
+      - paragraph: Share this estimate
+      - button "Copy result"
+      - button "Share"
+      - link "WhatsApp":
+        - /url: https://wa.me/?text=Full%20tank%20estimate%3A%20R%C2%A0900%2C00.%0A45%20L%20tank%20using%20Petrol%2095%20Inland.%0AFuel%20price%3A%20R%C2%A020%2C00%2FL.%0ACalculated%20with%20FuelWise%20SA%3A%20https%3A%2F%2Ffuelwise-sa.vercel.app
+    - generic "Share FuelWise":
+      - strong: Share FuelWise with someone who drives.
+      - paragraph: Send the app to a friend, family member, driver, or small business owner who wants clearer fuel cost estimates.
+      - button "Copy invite"
+      - button "Share"
+      - link "WhatsApp":
+        - /url: https://wa.me/?text=Share%20FuelWise%20with%20someone%20who%20drives.%0AFree%20South%20African%20fuel%20calculators%20for%20full%20tanks%2C%20monthly%20budgets%2C%20trip%20splits%2C%20delivery%20profit%2C%20nearby%20stations%2C%20and%20fleet%20planning.%0ATry%20it%20here%3A%20https%3A%2F%2Ffuelwise-sa.vercel.app%0AFuel%20costs%20are%20estimates.%20Always%20confirm%20pump%20prices.
+  - region "Full tank petrol questions":
+    - paragraph: Petrol calculator help
+    - heading "Full tank petrol questions" [level=2]
+    - paragraph:
+      - strong: "Quick answer:"
+      - text: Need to know what 45 litres of petrol may cost? Enter 45 litres, choose petrol 93 or 95, and use the latest FuelWise price or your own pump price.
+    - paragraph:
+      - strong: "Use this when:"
+      - text: you know the tank size in litres, or you want to answer a litres-to-Rand question such as 45 litres of petrol. Use the broader fuel cost calculator when you are still choosing between tank, trip, monthly, petrol, diesel, and cost-per-km estimates.
+    - generic "How much is 45 litres of petrol in South Africa?"
+    - paragraph: Multiply 45 litres by the latest petrol price per litre for your grade and zone, or enter the current pump price manually. FuelWise SA uses that price to show an estimate.
+    - generic "How much is a full tank of petrol for a 1.5 litre car?"
+    - generic "Related fuel calculators":
+      - link "Latest fuel prices":
+        - /url: /fuel-prices
+      - link "Fuel cost calculator South Africa":
+        - /url: /fuel-cost-calculator-south-africa
+      - link "Fuel price calculator South Africa":
+        - /url: /fuel-price-calculator-south-africa
+      - link "Petrol cost calculator":
+        - /url: /petrol-cost-calculator
+      - link "Monthly fuel budget calculator":
+        - /url: /monthly-fuel-budget-calculator
+      - link "Trip fuel cost calculator":
+        - /url: /trip-fuel-cost-calculator
+      - link "How much is 45 litres of petrol?":
+        - /url: /guides/how-much-is-45-litres-of-petrol
+      - link "Full tank petrol guide":
+        - /url: /guides/how-much-is-a-full-tank-of-petrol
+  - complementary:
+    - generic: Related guide
+    - strong: How much is 45 litres of petrol?
+    - paragraph: Answer common 45 litre and full-tank petrol questions without hardcoding a pump price.
+    - link "Read guide":
+      - /url: /guides/how-much-is-45-litres-of-petrol
+- contentinfo:
+  - paragraph: FuelWise SA is in public beta. Fuel prices and calculator results are estimates for planning and should be verified before major decisions.
+  - paragraph: Legal and payment policy pages are provided in English until reviewed translations are ready.
+  - generic: Language
+  - combobox "Language":
+    - option "English" [selected]
+    - option "Afrikaans"
+    - option "isiZulu"
+    - option "isiXhosa"
+    - option "Sesotho"
+    - option "Setswana"
+  - navigation "Fuel guides":
+    - link "Full tank calculator":
+      - /url: /full-tank-calculator
+    - link "Fuel cost calculator South Africa":
+      - /url: /fuel-cost-calculator-south-africa
+    - link "Monthly fuel budget guide":
+      - /url: /monthly-fuel-budget-calculator
+    - link "Delivery driver profit guide":
+      - /url: /delivery-driver-fuel-profit-calculator
+    - link "Trip fuel cost calculator":
+      - /url: /trip-fuel-cost-calculator
+    - link "Fleet fuel cost guide":
+      - /url: /fleet-fuel-cost-calculator
+    - link "Car ownership cost calculator":
+      - /url: /car-ownership-cost-calculator
+    - link "Travel claim calculator":
+      - /url: /travel-claim-calculator
+    - link "Transport fare impact calculator":
+      - /url: /transport-fare-impact-calculator
+    - link "Trip petrol split calculator":
+      - /url: /trip-petrol-split-calculator
+    - link "Nearby petrol stations South Africa":
+      - /url: /nearby-petrol-stations-south-africa
+    - link "Fuel price increase calculator":
+      - /url: /fuel-price-increase-calculator
+    - link "Petrol cost calculator":
+      - /url: /petrol-cost-calculator
+    - link "Diesel cost calculator":
+      - /url: /diesel-cost-calculator
+    - link "E-hailing fuel cost calculator":
+      - /url: /e-hailing-fuel-cost-calculator
+    - link "Car running cost calculator":
+      - /url: /car-running-cost-calculator
+    - link "Route fuel cost calculator":
+      - /url: /route-fuel-cost-calculator
+    - link "What affects fuel price South Africa":
+      - /url: /what-affects-fuel-price-south-africa
+    - link "How to budget for fuel South Africa":
+      - /url: /how-to-budget-for-fuel-south-africa
+    - link "Fuel cost per km South Africa":
+      - /url: /fuel-cost-per-km-south-africa
+    - link "E-hailing fuel cost guide South Africa":
+      - /url: /e-hailing-fuel-cost-guide-south-africa
+    - link "Delivery driver fuel cost guide South Africa":
+      - /url: /delivery-driver-fuel-cost-guide-south-africa
+    - link "December road trip fuel budget South Africa":
+      - /url: /december-road-trip-fuel-budget-south-africa
+    - link "FuelWise Android app":
+      - /url: /fuelwise-android-app
+    - link "Petrol price South Africa":
+      - /url: /petrol-price-south-africa
+    - link "Diesel price South Africa":
+      - /url: /diesel-price-south-africa
+    - link "Fuel price calculator South Africa":
+      - /url: /fuel-price-calculator-south-africa
+    - link "Inland vs coastal fuel prices":
+      - /url: /inland-vs-coastal-fuel-prices
+    - link "Diesel 50ppm vs 500ppm":
+      - /url: /diesel-50ppm-vs-500ppm
+    - link "Petrol 93 vs 95 South Africa":
+      - /url: /petrol-93-vs-95-south-africa
+    - link "August 2026 fuel price South Africa":
+      - /url: /august-2026-fuel-price-south-africa
+    - link "Join FuelWise testers":
+      - /url: /join-fuelwise-testers
+  - navigation "Legal links":
+    - link "Guides":
+      - /url: /guides
+    - link "About":
+      - /url: /about
+    - link "Status":
+      - /url: /status
+    - link "Roadmap":
+      - /url: /roadmap
+    - link "Give feedback":
+      - /url: /contact?feedback=1&page=%2F#feedback-heading
+    - link "Privacy Policy":
+      - /url: /privacy
+    - link "Terms of Use":
+      - /url: /terms
+    - link "Refund Policy":
+      - /url: /refund-policy
+    - link "Contact / Support":
+      - /url: /contact
+    - link "Data deletion":
+      - /url: /data-deletion
+    - link "support@fuelwisesa.co.za":
+      - /url: mailto:support@fuelwisesa.co.za
+- button "Open FuelWise tutorial guide":
+  - generic: Tutorial guide
+  - strong: "?"
