@@ -74,7 +74,7 @@ const Skills = () => {
           mobile products. From responsive interfaces to APIs and release
           workflows.
         </p>
-        <p className="subtext mt-3">This portfolio combines React Three Fiber / Three.js for its astronaut presentation with GSAP scroll interactions.</p>
+        <p className="subtext mt-3">Commercial work includes React, Next.js, JavaScript/TypeScript and React Native delivery interfaces. Independent projects extend into Node.js, PostgreSQL and AI provider integration. I use Claude and Codex for AI-assisted development; Docker and CI/CD are foundational skills.</p>
       </div>
 
       <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

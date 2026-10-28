@@ -66,7 +66,7 @@ test('CV version matches the canonical PDF and all download controls use its fil
  const bytes=readFileSync('public/assets/'+CV_FILENAME);
  assert.equal(bytes.subarray(0,5).toString(),'%PDF-');
  assert.equal(CV_PATH,`/assets/${CV_FILENAME}?v=${createHash('sha256').update(bytes).digest('hex').slice(0,12)}`);
- for(const file of ['src/components/HeroText.jsx','src/sections/Navbar.jsx']){
+ for(const file of ['src/components/HeroText.jsx','src/sections/Navbar.jsx','src/sections/Contact.jsx']){
   const source=readFileSync(file,'utf8');assert(source.includes('href={CV_PATH} download={CV_FILENAME}'));
  }
  assert(readFileSync('src/components/HeroText.jsx','utf8').includes('View CV'));

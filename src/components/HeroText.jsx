@@ -2,7 +2,7 @@ import { CV_PATH, CV_FILENAME } from "../constants/site";
 export default function HeroText() {
   return (
     <div className="hero-copy">
-      <p className="eyebrow">Cape Town, South Africa · Open to remote work</p>
+      <p className="eyebrow">Cape Town · Available for international remote roles</p>
       <h1>
         Hi, I’m <span>Jodi Abrahams.</span>
       </h1>
@@ -17,7 +17,7 @@ export default function HeroText() {
         at Crunchtime Deliveries.
       </p>
       <p className="hero-stack">
-        React · Next.js · TypeScript · Node.js · PostgreSQL
+        React · Next.js · TypeScript · JavaScript · Node.js · PostgreSQL
       </p>
       <div className="actions">
         <a className="button button-primary" href="#projects">

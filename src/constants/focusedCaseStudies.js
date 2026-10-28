@@ -1,0 +1,45 @@
+// Evidence: approved October 2026 CV, existing Experience content and dated public review.
+export const commercialCaseStudies = {
+  crunchtime: {
+    title: "Crunchtime Deliveries",
+    description: "Commercial delivery-platform development · Jun 2024 – Jun 2025",
+    problem: "A delivery service needs customer, driver and administrator workflows to stay connected across web and mobile interfaces, including order progress and payments.",
+    roleSummary: "Full-Stack Developer. I contributed React, Next.js and React Native functionality, working with designers and backend developers. This was team delivery, not a claim that I built the entire platform alone.",
+    techStack: ["React", "Next.js", "JavaScript", "TypeScript", "React Native", "REST APIs"],
+    challenge: "Keep different user roles and devices consistent while integrating backend services and supporting production releases under tight deadlines.",
+    solution: "I built reusable responsive interfaces, connected them to production APIs and contributed real-time order tracking and payment integration across customer, driver and administrator workflows.",
+    decisions: ["Reuse interface components across workflows while keeping role-specific tasks clear.", "Integrate with backend services in collaboration with the backend team rather than implying sole ownership of those systems.", "Support cross-device review and production rollouts alongside design and backend collaborators."],
+    outcome: "Delivered commercial interface and integration work documented in my approved CV and employment history. No revenue, conversion or performance uplift is claimed without measurements.",
+    evidence: "Evidence basis: approved October 2026 CV and portfolio employment history. Employer source code, infrastructure and screenshots are not published. Payment-provider details and independent end-to-end verification are not available in this public case study.",
+  },
+  transhumanity: {
+    title: "TransHumanity",
+    description: "Commercial SaaS reporting · Nov 2025 – Apr 2026",
+    problem: "Reporting users need to edit rich content, organise reports and export reliable PDFs without losing editor state or disrupting their workflow.",
+    roleSummary: "Contract Full-Stack Developer. My documented contribution focused on production frontend reporting features, rich-text editor behaviour, report management and PDF/export reliability.",
+    techStack: ["Rich-text editing", "PDF/export workflows", "Automated regression testing", "Git/GitHub"],
+    challenge: "Editor history, selection state and export behaviour interact across features. A visible formatting change must not break undo/redo or the exported report.",
+    solution: "I investigated history and selection defects, improved toolbar and report-management behaviour, and supported export workflows, map snapshots and content management.",
+    decisions: ["Treat editor selection and history as cross-feature behaviour when investigating defects.", "Check report output as well as the on-screen editing experience.", "Use regression tests and GitHub-based review to support integration changes."],
+    outcome: "Shipped production SaaS reporting contributions and supported debugging, regression testing and reviews. Specific business metrics are not claimed.",
+    evidence: "Evidence basis: approved October 2026 CV and existing employment history. Employer code and private reports remain confidential. A framework or test-count claim is not added where the supplied evidence does not establish it.",
+  },
+};
+
+export const fuelWiseCaseStudy = {
+  title: "FuelWise SA",
+  description: "Independent fuel-planning application · Public beta",
+  problem: "South African drivers need to translate fuel prices into a useful estimate for their own tank, journey or monthly budget, including when an automatic price source is unavailable.",
+  roleSummary: "Full-Stack Developer on an independent project. I developed calculators and responsive interfaces alongside backend, account and price-monitoring infrastructure. It is not presented as commissioned client work.",
+  techStack: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "Vercel", "Vitest"],
+  challenge: "A calculator should remain usable when the price feed fails, without silently presenting missing or stale prices as current.",
+  solution: "Separate the calculation from price retrieval. Users can enter their own price per litre and tank capacity; the full-tank estimate multiplies litres by price. Vehicle-specific inputs and budgeting tools are part of the documented implementation; the public review verified the manual full-tank path.",
+  decisions: ["Keep manual-price input available when automatic data is missing.", "Expose freshness and availability states rather than imply every displayed price is live.", "Separate public calculators from account-based saving and gated alert/publishing infrastructure."],
+  architecture: ["React/Vite route-based calculator interfaces; Supabase account/data integration and Vercel API routes are documented in the project materials.", "Backend price monitoring includes validation and anomaly checks. Automated publishing remains gated pending readiness.", "The public guest walkthrough does not independently verify saved accounts, billing, alerts or every backend integration."],
+  outcome: "Public browser check, 27 October 2026: 45 litres at a manually entered R20 per litre returned R900. The automatic feed was unavailable during that review. This verifies the bounded calculation, not every beta feature.",
+  evidence: "Sources: approved October 2026 CV, existing project implementation notes and a captured public-browser calculation. No invented usage metrics or backend test counts. Price-feed availability can change after the dated check.",
+  walkthrough: ["Open the public full-tank calculator.", "Choose manual pricing and enter a price per litre, for example R20.", "Enter the vehicle's tank capacity, for example 45 litres.", "Review the estimate: 45 × R20 = R900. This is an illustrative input, not a current fuel-price quote."],
+  walkthroughImage: "/assets/projects/fuelwise-sa/manual-calculator-review.jpg",
+  walkthroughCaption: "Actual public-browser check on 27 October 2026. Manual example values; not live fuel-price data.",
+  href: "https://fuelwise-sa.vercel.app/full-tank",
+};

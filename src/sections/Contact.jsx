@@ -1,5 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { CV_PATH, CV_FILENAME } from "../constants/site";
+import { mySocials } from "../constants";
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
@@ -46,16 +48,21 @@ export default function Contact() {
     >
       <div className="surface contact-panel">
         <div className="contact-copy">
-          <p className="eyebrow">Have a role or product in mind?</p>
-          <h2 className="text-heading">Let’s Talk</h2>
+          <p className="eyebrow">Available for remote opportunities</p>
+          <h2 className="text-heading">Let’s work together</h2>
           <p>
-            Whether you’re hiring for a development role, looking for a
-            technical collaborator, or building a product that needs thoughtful
-            engineering, I’d be glad to connect.
+            Based in Cape Town, South Africa. Open to international remote teams
+            and available to start immediately.
           </p>
-          <a className="text-link" href="mailto:jodiabrahams9@gmail.com">
-            jodiabrahams9@gmail.com ↗
-          </a>
+          <ul className="hiring-roles" aria-label="Roles of interest">
+            {["Full-Stack Developer", "Software Engineer", "Frontend Developer", "AI Application Developer"].map(role => <li key={role}>{role}</li>)}
+          </ul>
+          <div className="actions hiring-actions" aria-label="Hiring contact options">
+            <a className="button button-primary" href="mailto:jodiabrahams9@gmail.com">Email Jodi ↗</a>
+            {mySocials.filter(social => ["LinkedIn", "GitHub"].includes(social.name)).map(social => <a key={social.name} className="button button-secondary" href={social.href} target="_blank" rel="noreferrer">{social.name} ↗</a>)}
+            <a className="button button-secondary" href={CV_PATH} target="_blank" rel="noreferrer" aria-label="View CV (PDF, opens in a new tab)">View CV ↗</a>
+            <a className="button button-secondary button-neon" href={CV_PATH} download={CV_FILENAME}>Download CV ↓</a>
+          </div>
         </div>
         <form onSubmit={submit} aria-busy={loading}>
           <div role="status" aria-live="polite">

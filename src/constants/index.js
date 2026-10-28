@@ -278,18 +278,18 @@ export const myProjects = [
     year: "2025",
     role: "Mobile Developer",
     description:
-      "A mobile food delivery app with a smooth user experience, secure authentication, real-time data, cart workflows, and category browsing.",
+      "An Expo / React Native food-ordering interface with documented cart and browsing workflows and an Appwrite account/menu integration. Public source is available; no live mobile build is verified here.",
     problem:
-      "Many food ordering apps lack reliable real-time updates and secure authentication, causing cart loss, delays, and user drop-off.",
+      "Bring menu browsing, category search, account access and cart interactions into a coherent mobile ordering interface.",
     solution:
-      "I implemented secure Google authentication, real-time Appwrite database updates, category filtering, search, and an optimized cart flow.",
+      "The inspected Appwrite adapter implements email/password sign-in, account creation, current-user lookup, menu queries and category retrieval. Cart behaviour is documented in the portfolio but was not run in this review.",
     outcome:
       "Built a mobile-first ordering experience that demonstrates authentication, backend integration, global state management, and responsive mobile UI.",
     subDescription: [
-      "Integrated Google Auth and Appwrite for secure login and database functionality.",
+      "Public source includes Appwrite email/password account functions and database queries; Google sign-in is not verified by the inspected adapter.",
       "Implemented cart functionality, category filtering, and a search system.",
       "Used Zustand and NativeWind for global state management and styling.",
-      "Tested performance with Expo and Sentry for monitoring crashes and behavior.",
+      "Expo and Sentry are declared dependencies. Runtime monitoring and device performance were not verified in this review.",
     ],
     href: "https://github.com/JodiAB/foody",
     github: "https://github.com/JodiAB/foody",

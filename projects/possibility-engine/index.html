@@ -32,7 +32,7 @@
           <p class="pe-lead">Practical constraints.<br />Evidence-aware reasoning.</p>
           <p>An AI-powered problem-solving application that combines structured LLM reasoning, semantic retrieval and deterministic validation to explore practical solutions using resources users already have.</p>
           <div class="pe-hero-actions"><a class="button button-secondary button-neon" href="#architecture">Explore the architecture ↓</a><a class="text-link" href="#results">Read the measured results</a></div>
-          <p class="pe-context">My role: AI &amp; Full-Stack Developer <span aria-hidden="true">/</span> Engineering prototype</p>
+          <p class="pe-context">My role: AI &amp; Full-Stack Developer <span aria-hidden="true">/</span> In development · Engineering prototype</p>
         </div>
         <figure class="pe-hero-figure">
           <img src="/assets/projects/possibility-engine.svg" alt="Architecture overview: Ollama and pgvector retrieve evidence, Gemini reasons, and server-side checks validate before saving." width="1200" height="675" fetchpriority="high" />
@@ -65,6 +65,7 @@
           <li><span class="pe-step-number">09</span><h3>Persist the snapshot</h3><p>Owner-scoped, idempotent saving preserves the result without another model response.</p><span class="pe-stage-label">PostgreSQL persistence</span></li>
         </ol>
         <p class="pe-caption">Safety checks also run on requests and interpreted intent. Exact quotation checks establish reference provenance; they do not prove a proposed construction is feasible or physically safe.</p>
+        <div class="pe-method-note"><h3>Application boundaries</h3><p>The Next.js and TypeScript application separates structured generation through Gemini, embeddings through Ollama, and retrieval/persistence through PostgreSQL. Request and output validation surround provider calls; server-owned citation resolution and owner-scoped saving keep model output from defining trusted references or ownership. Browser fixture tests and the separate live server-harness run exercise different paths, so neither is presented as a verified production user journey.</p></div>
       </section>
 
       <section id="results" class="pe-section" aria-labelledby="results-title">

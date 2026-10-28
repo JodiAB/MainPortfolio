@@ -1067,3 +1067,15 @@ textarea.field-input {
   .button:focus-visible::after { animation: starlight-sweep 850ms ease-out; }
   .hero-astronaut { height: 200px; margin-bottom: 24px; }
 }
+
+/* Recruiter case studies extend the existing modal and contact surfaces. */
+.evidence-strip button { text-align: left; min-height: 44px; }
+.case-walkthrough { list-style: decimal; padding-left: 24px; color: #c2cadd; margin-block: 16px; }
+.case-evidence-figure { margin-block: 24px; }
+.case-evidence-figure img { width: 100%; height: auto; border-radius: 10px; }
+.case-evidence-figure figcaption { color: #bac6db; font-size: .85rem; margin-top: 10px; }
+.case-evidence-note { border-top: 1px solid #ffffff26; margin-top: 24px; }
+.hiring-roles { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; list-style: none; padding: 0; }
+.hiring-roles li { padding: 5px 10px; border: 1px solid #ffffff26; border-radius: 8px; color: #d3c7f1; font-size: .85rem; }
+.hiring-actions { gap: 10px; margin-top: 20px; }
+.hiring-actions .button { font-size: .85rem; }
