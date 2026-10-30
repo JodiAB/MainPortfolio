@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { CV_PATH, CV_FILENAME } from "../constants/site";
-const items = ["Home", "About", "Projects", "Experience", "Contact"];
+const items = ["Home", "Experience", "Projects", "About", "Contact"];
 export default function Navbar({ basePath = "" }) {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("home");
@@ -9,13 +9,17 @@ export default function Navbar({ basePath = "" }) {
     if (basePath) return;
     const update = () => {
       let current = "home";
-      ["Home", "Projects", "Experience", "About", "Contact"].forEach((item) => {
+      items.forEach((item) => {
         if (
           document.getElementById(item.toLowerCase())?.getBoundingClientRect()
             .top <= 160
         )
           current = item.toLowerCase();
       });
+      // The final section may not reach the threshold before scrolling ends.
+      if (window.scrollY > 0 && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+        current = items[items.length - 1].toLowerCase();
+      }
       setActive(current);
     };
     update();

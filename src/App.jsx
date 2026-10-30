@@ -23,8 +23,8 @@ export default function App() {
       <main ref={mainRef} id="main" tabIndex={-1}>
         <Hero />
         <CommercialHighlights />
-        <Projects />
         <Experiences />
+        <Projects />
         <About />
         <Approach />
         <Contact />
