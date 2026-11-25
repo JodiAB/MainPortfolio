@@ -64,9 +64,9 @@ export const myProjects = [
     problem:
       "Small teams often manage projects, tasks, reports, and members across disconnected tools, making it difficult to track progress, permissions, and workspace activity from one reliable place.",
     solution:
-      "I built a full-stack operations workspace with authentication, workspace-scoped data, role-based permissions, project and task workflows, team management, rich report editing, PDF export, documentation, and a deployed live demo.",
+      "I built a full-stack operations workspace with authentication, workspace-scoped data, role-based permissions, project and task workflows, team management, rich report editing, PDF export, documentation, and a standalone interactive sample workspace.",
     outcome:
-      "Created a portfolio-ready SaaS product that demonstrates real-world architecture, protected workflows, relational data modeling, deployment readiness, and product polish beyond basic CRUD.",
+      "Built a SaaS project demonstrating protected workflows, relational data modeling and business operations. The standalone interactive sample uses fictional data; the authenticated deployment is separate.",
     subDescription: [
       "Built with Next.js, TypeScript, Prisma, PostgreSQL, Tailwind CSS, TipTap, Vitest, and Vercel.",
       "Implemented authentication, protected routes, workspace-scoped data, invited member registration, and owner/admin/member role-based access.",
@@ -108,7 +108,7 @@ export const myProjects = [
         "Introduce live collaboration for report editing.",
       ],
     },
-    href: "https://ops-flow-kappa.vercel.app/",
+    href: "/projects/opsflow/demo.html",
     github: "https://github.com/JodiAB/OpsFlow",
     logo: "",
     image: "/assets/projects/screenshots/dashboard.webp",

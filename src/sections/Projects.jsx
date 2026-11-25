@@ -3,9 +3,9 @@ import Project from "../components/Project";
 import CaseStudyModal from "../components/CaseStudyModal";
 import { myProjects } from "../constants";
 const priority = [
-  "Possibility Engine",
   "OpsFlow",
   "FuelWise SA",
+  "Possibility Engine",
   "Cocktail Animation Website",
   "AI Resume Analyzer",
   "LMS SaaS App",
