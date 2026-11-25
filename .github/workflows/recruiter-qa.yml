@@ -8,13 +8,26 @@ permissions:
   contents: read
 jobs:
   browser:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: false
       - run: node --version && npm ci && npm run build && npm test
-      - run: npm install --no-save --package-lock=false @playwright/test@1.56.1
-      - run: npx playwright install --with-deps chromium
-      - run: npx playwright test --config=tests/recruiter-playwright.config.mjs
+      - name: Review production dependency advisories
+        run: |
+          npm audit --omit=dev --json > "$RUNNER_TEMP/recruiter-audit.json" || true
+          node -e 'const r=require(process.argv[1]); console.log(JSON.stringify({metadata:r.metadata,vulnerabilities:Object.fromEntries(Object.entries(r.vulnerabilities||{}).map(([k,v])=>[k,{severity:v.severity,isDirect:v.isDirect,range:v.range,fixAvailable:v.fixAvailable}]))},null,2))' "$RUNNER_TEMP/recruiter-audit.json"
+      - name: Install isolated browser test harness
+        run: |
+          npm install --prefix "$RUNNER_TEMP/recruiter-playwright" --no-save --package-lock=false @playwright/test@1.56.1
+          ln -s "$RUNNER_TEMP/recruiter-playwright/node_modules/@playwright" node_modules/@playwright
+          "$RUNNER_TEMP/recruiter-playwright/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Run browser tests
+        run: '"$RUNNER_TEMP/recruiter-playwright/node_modules/.bin/playwright" test --config=tests/recruiter-playwright.config.mjs'
+      - name: Validate CV PDF
+        run: |
+          pdfinfo public/assets/Jodi_Abrahams_CV.pdf
+          pdftotext public/assets/Jodi_Abrahams_CV.pdf - | grep -F "JODI ABRAHAMS"
+
