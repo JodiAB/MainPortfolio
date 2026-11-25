@@ -1,7 +1,7 @@
 name: Recruiter workspace QA
 on:
   push:
-    branches: ["portfolio/recruiter-qa"]
+    branches: ["portfolio/recruiter-qa*"]
   pull_request:
     branches: [main]
 permissions:
