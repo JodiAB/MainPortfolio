@@ -54,7 +54,7 @@ test('shared project actions label unavailable destinations without navigable li
  try{
   const {default:ProjectLinks}=await server.ssrLoadModule('/src/components/ProjectLinks.jsx');
   const render=title=>renderToStaticMarkup(createElement(ProjectLinks,{project:myProjects.find(p=>p.title===title)}));
-  const ops=render('OpsFlow');assert.match(ops,/GitHub.*Private/);assert(!ops.includes('href="https://github.com/JodiAB/OpsFlow"'));assert(ops.includes('href="https://ops-flow-kappa.vercel.app/"'));
+  const ops=render('OpsFlow');assert.match(ops,/GitHub.*Private/);assert(!ops.includes('href="https://github.com/JodiAB/OpsFlow"'));assert(ops.includes('href="/projects/opsflow/demo.html"'));
   for(const title of ['LMS SaaS App','AI Stock Market App']){const markup=render(title);assert.match(markup,/Demo.*Temporarily unavailable/);assert(!markup.includes('href='));}
   assert(render('Nike-style eCommerce').includes('href="https://joding-ecomm.vercel.app/"'));
  }finally{await server.close();}
@@ -81,4 +81,15 @@ test('built server returns the exact versioned CV PDF',async()=>{
   assert.equal(response.status,200);assert.match(response.headers.get('content-type'),/application\/pdf/);
   assert.deepEqual(Buffer.from(await response.arrayBuffer()),readFileSync('public/assets/'+CV_FILENAME));
  }finally{await new Promise((resolve,reject)=>server.httpServer.close(error=>error?reject(error):resolve()));}
+});
+
+
+test('business projects are prioritized and the isolated OpsFlow sample is included in the build',()=>{
+ const source=readFileSync('src/sections/Projects.jsx','utf8');
+ assert.match(source,/const priority = \[\s*"OpsFlow",\s*"FuelWise SA",\s*"Possibility Engine"/);
+ const demo=readFileSync('dist/projects/opsflow/demo.html','utf8');
+ assert.match(demo,/All names and records are fictional/);
+ assert.match(demo,/Task workflow/);
+ assert.match(demo,/Print \/ Save as PDF/);
+ assert(!/\bfetch\s*\(|localStorage|sessionStorage|XMLHttpRequest/.test(demo));
 });
