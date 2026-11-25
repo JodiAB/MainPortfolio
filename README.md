@@ -362,3 +362,8 @@ I am currently focused on building stronger full-stack SaaS projects, improving 
 ## License
 
 This project is for personal portfolio use. Feel free to explore the code for learning purposes.
+
+
+## Calendar API practice
+
+[Mock calendar exercise](https://jodiabrahamsportfolio.vercel.app/projects/calendar-integration/index.html) — fictional Graph-shaped responses, pagination and explicit error states. No live Graph connection.
