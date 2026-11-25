@@ -22,8 +22,9 @@ I enjoy building products that feel complete, not just prototypes. My projects o
 
 A full-stack SaaS operations workspace for managing projects, tasks, teams, reports, and workspace analytics.
 
-**Live Demo:** [OpsFlow](https://ops-flow-kappa.vercel.app/)
-**GitHub:** [Repository](https://github.com/JodiAB/OpsFlow)
+**Interactive demo (no app account):** [OpsFlow sample workspace](https://jodiabrahamsportfolio.vercel.app/projects/opsflow/demo.html)
+
+The demo uses fictional, browser-only data. The full application's authenticated deployment is separate and its database-dependent workflows require further verification. Source repository is private. See [technical architecture](docs/BUSINESS_PROJECTS.md).
 
 **Highlights:**
 
@@ -40,6 +41,16 @@ A full-stack SaaS operations workspace for managing projects, tasks, teams, repo
 **Tech Stack:**
 
 Next.js, TypeScript, Prisma, PostgreSQL, Tailwind CSS, TipTap, Vitest, Vercel
+
+---
+
+### FuelWise SA
+
+South African fuel-cost planning and budgeting tools, including trip and fill-up estimates, regional price context and account workflows.
+
+**Website:** [FuelWise SA](https://fuelwisesa.co.za/) · [Technical architecture](docs/BUSINESS_PROJECTS.md)
+
+React, TypeScript, Vite, Supabase, Vitest and Vercel. Source is private; price estimates and release controls are described in the case study.
 
 ---
 
@@ -90,7 +101,7 @@ React, GSAP, Vite, Tailwind CSS
 
 An AI-powered resume analysis platform that helps users understand how well their resumes match job requirements.
 
-**Live Demo:** [AI Resume Analyzer](https://joding-resume-analyzer.vercel.app/auth?next=/)
+**App (sign-in required):** [AI Resume Analyzer](https://joding-resume-analyzer.vercel.app/auth?next=/) · [Public source](https://github.com/JodiAB/resume-analyzer)
 
 **Highlights:**
 
@@ -111,7 +122,7 @@ React, TypeScript, Zustand, Puter.js, React Router
 
 A modern learning management SaaS platform with authentication, subscription handling, real-time learning workflows, and AI voice tutoring.
 
-**Live Demo:** [LMS SaaS App](https://joding-saas-app.vercel.app/)
+**Demo:** Temporarily unavailable.
 
 **Highlights:**
 
@@ -153,7 +164,7 @@ Next.js, TypeScript, Better Auth, Stripe, Neon PostgreSQL, Drizzle ORM, Tailwind
 
 An AI-driven stock trading dashboard for tracking live stock data, alerts, insights, and personalized watchlists.
 
-**Live Demo:** [AI Stock Market App](https://stock-app-uhvi.vercel.app/)
+**Demo:** Temporarily unavailable.
 
 **Highlights:**
 
@@ -224,8 +235,8 @@ This portfolio was built with:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/JodiAB/YOUR_PORTFOLIO_REPO_NAME.git
-cd YOUR_PORTFOLIO_REPO_NAME
+git clone https://github.com/JodiAB/MainPortfolio.git
+cd MainPortfolio
 ```
 
 ### 2. Install dependencies
