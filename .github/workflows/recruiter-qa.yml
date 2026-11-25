@@ -28,6 +28,28 @@ jobs:
         run: '"$RUNNER_TEMP/recruiter-playwright/node_modules/.bin/playwright" test --config=tests/recruiter-playwright.config.mjs'
       - name: Validate CV PDF
         run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends poppler-utils
           pdfinfo public/assets/Jodi_Abrahams_CV.pdf
           pdftotext public/assets/Jodi_Abrahams_CV.pdf - | grep -F "JODI ABRAHAMS"
 
+  dependency-candidate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Generate compatible lockfile repair (no force or install scripts)
+        run: |
+          cp package-lock.json "$RUNNER_TEMP/old-lock.json"
+          cp package.json "$RUNNER_TEMP/old-package.json"
+          npm audit fix --package-lock-only --ignore-scripts || true
+          cmp package.json "$RUNNER_TEMP/old-package.json"
+          npm audit --omit=dev --json > "$RUNNER_TEMP/new-audit.json" || true
+          node -e 'const r=require(process.argv[1]); console.log("PATCH_AUDIT "+JSON.stringify(r.metadata?.vulnerabilities)); if(!r.metadata?.vulnerabilities || r.metadata.vulnerabilities.total!==0) process.exit(1)' "$RUNNER_TEMP/new-audit.json"
+      - name: Validate patched lockfile and portfolio build
+        run: npm ci && npm run build && npm test
+      - name: Emit exact machine-generated lockfile patch after tests
+        run: |
+          node --input-type=module -e 'import fs from "node:fs";import crypto from "node:crypto";const old=JSON.parse(fs.readFileSync(process.argv[1],"utf8")),raw=fs.readFileSync("package-lock.json","utf8"),next=JSON.parse(raw);for(const k of new Set([...Object.keys(old.packages),...Object.keys(next.packages)])){if(JSON.stringify(old.packages[k])!==JSON.stringify(next.packages[k]))console.log("PATCH_ENTRY "+JSON.stringify([k,next.packages[k]??null]));}const top={...next};delete top.packages;console.log("PATCH_TOP "+JSON.stringify(top));console.log("PATCH_ORDER "+JSON.stringify(Object.keys(next.packages)));console.log("PATCH_HASH "+crypto.createHash("sha256").update(raw).digest("hex"));' "$RUNNER_TEMP/old-lock.json"
