@@ -24,7 +24,7 @@ A full-stack SaaS operations workspace for managing projects, tasks, teams, repo
 
 **Interactive demo (no app account):** [OpsFlow sample workspace](https://jodiabrahamsportfolio.vercel.app/projects/opsflow/demo.html)
 
-The demo uses fictional, browser-only data. The full application's authenticated deployment is separate and its database-dependent workflows require further verification. Source repository is private. See [technical architecture](docs/BUSINESS_PROJECTS.md).
+The guest workspace includes dashboard, projects, tasks, reports, team and settings, with fictional browser-only records, simulated role switching, formatted report blocks and reset. It uses a standalone lightweight report editor rather than the original TipTap implementation. The full application's authenticated deployment is separate and its database-dependent workflows require further verification. Source repository is private. See [technical architecture](docs/BUSINESS_PROJECTS.md).
 
 **Highlights:**
 

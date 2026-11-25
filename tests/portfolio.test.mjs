@@ -88,9 +88,9 @@ test('business projects are prioritized and the isolated OpsFlow sample is inclu
  const source=readFileSync('src/sections/Projects.jsx','utf8');
  assert.match(source,/const priority = \[\s*"OpsFlow",\s*"FuelWise SA",\s*"Possibility Engine"/);
  const demo=readFileSync('dist/projects/opsflow/demo.html','utf8');
- assert.match(demo,/All names and records are fictional/);
- assert.match(demo,/Task workflow/);
- assert.match(demo,/Print \/ Save as PDF/);
+ assert.match(demo,/Fictional sample data/);
+ assert.match(demo,/Workspace sections/);
+ assert.match(demo,/workspace\.js/);
  assert(!/\bfetch\s*\(|localStorage|sessionStorage|XMLHttpRequest/.test(demo));
 });
 
@@ -104,4 +104,13 @@ test('recruiter-facing destinations and labels are explicit',()=>{
  const resume=myProjects.find(p=>p.title==='AI Resume Analyzer');
  assert.equal(resume.demoLabel,'App (sign-in required)');
  assert.equal(resume.github,'https://github.com/JodiAB/resume-analyzer');
+});
+
+test('expanded guest workspace ships all six screens and blocks outbound connections',()=>{
+ const html=readFileSync('dist/projects/opsflow/demo.html','utf8');
+ const js=readFileSync('dist/projects/opsflow/workspace.js','utf8');
+ assert.match(html,/connect-src 'none'/);
+ for(const label of ['Operations dashboard','Project workspace','Task management','Reports workspace','Team management','Settings'])assert(js.includes(label));
+ assert.match(js,/Print \/ Save as PDF/);
+ assert(!/\bfetch\s*\(|XMLHttpRequest|localStorage|sessionStorage/.test(js));
 });
