@@ -93,3 +93,15 @@ test('business projects are prioritized and the isolated OpsFlow sample is inclu
  assert.match(demo,/Print \/ Save as PDF/);
  assert(!/\bfetch\s*\(|localStorage|sessionStorage|XMLHttpRequest/.test(demo));
 });
+
+
+test('recruiter-facing destinations and labels are explicit',()=>{
+ const ops=myProjects.find(p=>p.title==='OpsFlow');
+ assert.equal(ops.demoLabel,'Interactive demo');
+ const fuel=myProjects.find(p=>p.title==='FuelWise SA');
+ assert.equal(fuel.href,'https://fuelwisesa.co.za/');
+ assert.equal(fuel.demoLabel,'Visit website');
+ const resume=myProjects.find(p=>p.title==='AI Resume Analyzer');
+ assert.equal(resume.demoLabel,'App (sign-in required)');
+ assert.equal(resume.github,'https://github.com/JodiAB/resume-analyzer');
+});

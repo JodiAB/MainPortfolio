@@ -17,7 +17,7 @@ export default function ProjectLinks({ project }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Live Demo ↗
+          {project.demoLabel || "Live Demo"} ↗
         </a>
       ))}
       {github && (project.sourcePrivate ? (
